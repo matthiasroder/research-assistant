@@ -1,0 +1,4 @@
+# Research Assistant Dependencies
+anthropic>=0.40.0
+feedparser>=6.0.0
+pyyaml>=6.0

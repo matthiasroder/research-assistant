@@ -1,0 +1,20 @@
+# Research Assistant Feed Configuration
+# Add RSS/Atom feed URLs for blogs and news sources you want to follow
+
+feeds:
+  # Example feeds - replace with your own
+  - name: Matthias Röder
+    url: https://matthiasroder.com/rss
+
+  - name: Hacker News (Front Page)
+    url: https://hnrss.org/frontpage
+
+  # Add more feeds:
+  # - name: Your Favorite Blog
+  #   url: https://example.com/feed.xml
+  #
+  # - name: TechCrunch
+  #   url: https://techcrunch.com/feed/
+  #
+  # Find RSS feeds by adding /feed, /rss, or /atom to most blog URLs
+  # Or use a service like https://hnrss.org for Hacker News feeds
