@@ -68,7 +68,7 @@ Be selective. Most articles should score 1-3. Only score 4-5 if truly relevant t
 
     try:
         response = client.messages.create(
-            model="claude-3-5-haiku-latest",
+            model="claude-haiku-4-5-20251001",
             max_tokens=500,
             messages=[{"role": "user", "content": prompt}]
         )
