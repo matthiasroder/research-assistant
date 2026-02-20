@@ -115,4 +115,4 @@ This tool was built in a single collaborative session between a human and Claude
 
 ## License
 
-MIT - Use it, fork it, make it yours.
+MIT - See LICENSE file
