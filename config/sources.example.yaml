@@ -1,0 +1,66 @@
+# Example source registry for the research platform.
+#
+# Copy this file and pass it with:
+# python3 -m research_platform.runner monitor-sources \
+#   --brief "Monitor configured sources" \
+#   --source-file config/my-sources.yaml
+
+sources:
+  - id: example-website
+    type: webpage
+    name: Example Website
+    url: https://example.com
+    access:
+      method: public
+
+  - id: example-feed
+    type: rss
+    name: Example RSS Feed
+    url: https://hnrss.org/frontpage
+    access:
+      method: public
+
+  - id: example-x-profile
+    type: x_profile
+    name: OpenAI on X
+    url: https://x.com/openai
+    access:
+      method: browser_session
+      store_full_text: false
+
+  - id: licensed-news-api
+    type: api_json
+    name: Licensed News API
+    url: https://provider.example.com/v1/search?q=agentic+research
+    access:
+      method: api_key
+      api_key_env: LICENSED_NEWS_API_KEY
+      api_key_header: Authorization
+      api_key_prefix: "Bearer "
+      store_full_text: false
+      max_store_chars: 1000
+      license: provider_terms
+    metadata:
+      items_path: articles
+      title_fields: [title, headline]
+      url_fields: [url, web_url]
+      text_fields: [description, abstract, summary]
+      published_fields: [published_at, date]
+
+  - id: library-catalogue-api
+    type: api_json
+    name: Library Catalogue
+    url: https://catalogue.example.edu/api/search?q=agentic+research
+    access:
+      method: api_key
+      api_key_env: LIBRARY_CATALOGUE_API_KEY
+      api_key_header: X-Api-Key
+      store_full_text: false
+      max_store_chars: 1000
+      license: metadata_only
+    metadata:
+      items_path: records
+      title_fields: [title]
+      url_fields: [url, permalink]
+      text_fields: [abstract, description]
+      published_fields: [date, year]

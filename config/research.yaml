@@ -1,0 +1,23 @@
+# Research platform configuration.
+#
+# The first implementation has an Anthropic provider and a local extractive
+# fallback. Add provider-specific keys as environment variables, not here.
+
+min_relevance_score: 1
+
+models:
+  evaluation:
+    provider: local
+    # provider: anthropic
+    # model: claude-haiku-4-5-20251001
+
+access_profiles:
+  public:
+    method: public
+
+  # Future connectors can use named profiles for paywalled providers,
+  # institution proxies, browser sessions, or API-key based catalogues.
+  browser_session:
+    method: browser_session
+    store_full_text: false
+

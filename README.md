@@ -2,6 +2,75 @@
 
 An AI-powered research assistant that runs while you sleep. It fetches RSS feeds, filters for relevance to *your* current work, and writes a personalized digest to your repo every morning.
 
+## Platform Direction
+
+This repository is being expanded from a personal RSS digest into a small agentic
+research platform. The old feed workflow still exists under
+`scripts/research_assistant/`, but the new platform code lives in
+`research_platform/` and treats RSS as just one connector.
+
+The new platform shape is:
+
+```text
+source discovery -> source connectors -> normalized ResearchItems
+-> evaluation/model gateway -> findings/output -> run folder
+```
+
+Current first-slice capabilities:
+
+- Analyze one or more normal website URLs.
+- Discover candidate source URLs for a research topic.
+- Fetch RSS/Atom feeds as one source type.
+- Normalize X/Twitter post URLs as social research items.
+- Read configured JSON APIs for licensed news providers, catalogues, and other
+  metadata services.
+- Run with local extractive evaluation by default.
+- Route evaluation through Anthropic when configured.
+- Write every run to `runs/<run-id>/` with sources, items, evaluations, findings,
+  and provenance.
+
+Run examples:
+
+```bash
+python3 -m research_platform.runner analyze-url \
+  --brief "What does this say about agentic research platforms?" \
+  --url "https://example.com"
+
+python3 -m research_platform.runner research-topic \
+  --brief "agentic research platforms for enterprise knowledge work"
+
+python3 -m research_platform.runner monitor-sources \
+  --brief "Watch these sources for important research-platform updates" \
+  --url "https://example.com/feed.xml"
+
+python3 -m research_platform.runner monitor-sources \
+  --brief "Monitor configured demo sources" \
+  --source-file config/demo-sources.yaml
+```
+
+Configuration lives in `config/research.yaml`. The default model provider is
+`local`, so the platform can run without credentials. To use Claude-backed
+evaluation, set:
+
+```yaml
+models:
+  evaluation:
+    provider: anthropic
+    model: claude-haiku-4-5-20251001
+```
+
+and provide `ANTHROPIC_API_KEY` in the environment.
+
+Configured source registries use the format shown in
+`config/sources.example.yaml`. Copy it to your own file before running it;
+several entries are placeholders for licensed providers. API-backed providers
+should reference secrets by environment variable name, not by storing keys in
+YAML.
+
+There is also a Codex skill definition at `skills/research-platform/SKILL.md`.
+It describes how Codex should invoke the local runner for topic research, URL
+analysis, and monitoring.
+
 ## How It Works
 
 ```
