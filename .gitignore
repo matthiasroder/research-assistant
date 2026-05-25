@@ -1,8 +1,2 @@
 __pycache__/
 *.pyc
-
-knowledge/platform_state.json
-
-runs/*
-!runs/.gitkeep
-

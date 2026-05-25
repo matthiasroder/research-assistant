@@ -1,0 +1,95 @@
+[
+  {
+    "item": {
+      "id": "ebc94135f5495a55",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Magnifica Humanitas (Encyclical Letter)",
+      "url": "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
+      "text": "Article URL: https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html\nComments URL: https://news.ycombinator.com/item?id=48265206\nPoints: 119\n# Comments: 24",
+      "author": "theletterf",
+      "published_at": "Mon, 25 May 2026 10:11:29 +0000",
+      "retrieved_at": "2026-05-25T11:53:05.248863+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html Comments URL: https://news.ycombinator.com/item?id=48265206 Points: 119 # Comments: 24",
+    "key_points": [
+      "Article URL: https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html Comments URL: https://news.ycombinator.com/item?id=48265206 Points: 119 # Comments: 24"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "81d5d65c5e44ca47",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "IBM Spins Off the First Pure-Play Quantum Chip Foundry",
+      "url": "https://futurumgroup.com/insights/2-billion-chips-act-investment-in-quantum-bets-on-ibms-300mm-superconducting-silicon/",
+      "text": "Article URL: https://futurumgroup.com/insights/2-billion-chips-act-investment-in-quantum-bets-on-ibms-300mm-superconducting-silicon/\nComments URL: https://news.ycombinator.com/item?id=48265056\nPoints: 8\n# Comments: 0",
+      "author": "rbanffy",
+      "published_at": "Mon, 25 May 2026 09:43:03 +0000",
+      "retrieved_at": "2026-05-25T11:53:05.248880+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://futurumgroup.com/insights/2-billion-chips-act-investment-in-quantum-bets-on-ibms-300mm-superconducting-silicon/ Comments URL: https://news.ycombinator.com/item?id=48265056 Points: 8 # Comments: 0",
+    "key_points": [
+      "Article URL: https://futurumgroup.com/insights/2-billion-chips-act-investment-in-quantum-bets-on-ibms-300mm-superconducting-silicon/ Comments URL: https://news.ycombinator.com/item?id=48265056 Points: 8 # Comments: 0"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "b062f24b24377b7d",
+      "source_id": "openai-x-profile",
+      "source_type": "x_profile",
+      "title": "X profile @openai",
+      "url": "https://x.com/openai",
+      "text": "X/Twitter profile metadata placeholder. Configure an authenticated X API, browser-session, export, or list connector to retrieve timeline items.",
+      "author": "openai",
+      "published_at": null,
+      "retrieved_at": "2026-05-25T11:53:05.248897+00:00",
+      "metadata": {
+        "status_id": null,
+        "requires_authenticated_retrieval": true
+      },
+      "access_rights": {
+        "store_full_text": false,
+        "reason": "social/auth connector not configured"
+      },
+      "provenance": {
+        "connector": "x_profile",
+        "retrieval": "url_normalization"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "X/Twitter profile metadata placeholder. Configure an authenticated X API, browser-session, export, or list connector to retrieve timeline items.",
+    "key_points": [
+      "X/Twitter profile metadata placeholder.",
+      "Configure an authenticated X API, browser-session, export, or list connector to retrieve timeline items."
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  }
+]

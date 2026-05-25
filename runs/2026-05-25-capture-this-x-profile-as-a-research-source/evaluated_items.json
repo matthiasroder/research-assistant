@@ -1,0 +1,37 @@
+[
+  {
+    "item": {
+      "id": "c4b4665a38abab3d",
+      "source_id": "f6b12cfad5488596",
+      "source_type": "x_profile",
+      "title": "X profile @openai",
+      "url": "https://x.com/openai",
+      "text": "X/Twitter profile metadata placeholder. Configure an authenticated X API, browser-session, export, or list connector to retrieve timeline items.",
+      "author": "openai",
+      "published_at": null,
+      "retrieved_at": "2026-05-25T11:23:17.630275+00:00",
+      "metadata": {
+        "status_id": null,
+        "requires_authenticated_retrieval": true
+      },
+      "access_rights": {
+        "store_full_text": false,
+        "reason": "social/auth connector not configured"
+      },
+      "provenance": {
+        "connector": "x_profile",
+        "retrieval": "url_normalization"
+      }
+    },
+    "relevance_score": 2,
+    "summary": "X/Twitter profile metadata placeholder. Configure an authenticated X API, browser-session, export, or list connector to retrieve timeline items.",
+    "key_points": [
+      "X/Twitter profile metadata placeholder.",
+      "Configure an authenticated X API, browser-session, export, or list connector to retrieve timeline items."
+    ],
+    "tags": [
+      "profile"
+    ],
+    "rationale": "Matched query terms: profile"
+  }
+]

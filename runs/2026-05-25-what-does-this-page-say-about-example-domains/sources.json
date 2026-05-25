@@ -1,0 +1,12 @@
+[
+  {
+    "id": "c22aa04d0faf2c27",
+    "type": "webpage",
+    "name": "https://example.com",
+    "url": "https://example.com",
+    "access": {
+      "method": "public"
+    },
+    "metadata": {}
+  }
+]

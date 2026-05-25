@@ -48,6 +48,25 @@ python3 -m research_platform.runner monitor-sources \
   --source-file config/demo-sources.yaml
 ```
 
+## Scheduled Monitoring
+
+The platform includes a GitHub Actions workflow at
+`.github/workflows/research-platform-monitor.yml`. It runs daily at `04:00 UTC`
+and can also be started manually from the GitHub Actions tab.
+
+The scheduled monitor reads `config/monitor-sources.yaml`, runs:
+
+```bash
+python -m research_platform.runner monitor-sources \
+  --brief "Monitor configured research sources" \
+  --source-file config/monitor-sources.yaml \
+  --max-items-per-source 20
+```
+
+and commits the resulting `runs/` folder plus `knowledge/platform_state.json`
+back to the private repository. Edit `config/monitor-sources.yaml` to change
+what the scheduled monitor watches.
+
 Configuration lives in `config/research.yaml`. The default model provider is
 `local`, so the platform can run without credentials. To use Claude-backed
 evaluation, set:

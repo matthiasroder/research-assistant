@@ -1,0 +1,82 @@
+{
+  "run_id": "2026-05-25-monitor-configured-demo-sources",
+  "brief": {
+    "question": "Monitor configured demo sources",
+    "mode": "monitor-sources",
+    "topics": [],
+    "constraints": {}
+  },
+  "sources": [
+    {
+      "id": "example-website",
+      "type": "webpage",
+      "name": "Example Website",
+      "url": "https://example.com",
+      "access": {
+        "method": "public"
+      },
+      "metadata": {}
+    },
+    {
+      "id": "example-x-profile",
+      "type": "x_profile",
+      "name": "OpenAI on X",
+      "url": "https://x.com/openai",
+      "access": {
+        "method": "browser_session",
+        "store_full_text": false
+      },
+      "metadata": {}
+    }
+  ],
+  "items": [
+    {
+      "id": "8e046abdadd0c3ad",
+      "source_id": "example-website",
+      "source_type": "webpage",
+      "title": "Example Domain",
+      "url": "https://example.com",
+      "text": "Example Domain \n This domain is for use in documentation examples without needing permission. Avoid use in operations. \n Learn more",
+      "author": null,
+      "published_at": null,
+      "retrieved_at": "2026-05-25T11:24:59.813348+00:00",
+      "metadata": {
+        "content_type": "text/html",
+        "feed_links": []
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "webpage",
+        "retrieval": "urlopen"
+      }
+    },
+    {
+      "id": "84fd5f720207007d",
+      "source_id": "example-x-profile",
+      "source_type": "x_profile",
+      "title": "X profile @openai",
+      "url": "https://x.com/openai",
+      "text": "X/Twitter profile metadata placeholder. Configure an authenticated X API, browser-session, export, or list connector to retrieve timeline items.",
+      "author": "openai",
+      "published_at": null,
+      "retrieved_at": "2026-05-25T11:24:59.813434+00:00",
+      "metadata": {
+        "status_id": null,
+        "requires_authenticated_retrieval": true
+      },
+      "access_rights": {
+        "store_full_text": false,
+        "reason": "social/auth connector not configured"
+      },
+      "provenance": {
+        "connector": "x_profile",
+        "retrieval": "url_normalization"
+      }
+    }
+  ],
+  "evaluated_items": [],
+  "findings_markdown": "No relevant items were found.",
+  "created_at": "2026-05-25T11:24:59.814167+00:00"
+}

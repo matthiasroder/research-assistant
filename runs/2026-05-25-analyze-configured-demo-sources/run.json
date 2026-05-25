@@ -1,0 +1,148 @@
+{
+  "run_id": "2026-05-25-analyze-configured-demo-sources",
+  "brief": {
+    "question": "Analyze configured demo sources",
+    "mode": "analyze-url",
+    "topics": [],
+    "constraints": {}
+  },
+  "sources": [
+    {
+      "id": "example-website",
+      "type": "webpage",
+      "name": "Example Website",
+      "url": "https://example.com",
+      "access": {
+        "method": "public"
+      },
+      "metadata": {}
+    },
+    {
+      "id": "example-x-profile",
+      "type": "x_profile",
+      "name": "OpenAI on X",
+      "url": "https://x.com/openai",
+      "access": {
+        "method": "browser_session",
+        "store_full_text": false
+      },
+      "metadata": {}
+    }
+  ],
+  "items": [
+    {
+      "id": "8e046abdadd0c3ad",
+      "source_id": "example-website",
+      "source_type": "webpage",
+      "title": "Example Domain",
+      "url": "https://example.com",
+      "text": "Example Domain \n This domain is for use in documentation examples without needing permission. Avoid use in operations. \n Learn more",
+      "author": null,
+      "published_at": null,
+      "retrieved_at": "2026-05-25T11:25:03.725703+00:00",
+      "metadata": {
+        "content_type": "text/html",
+        "feed_links": []
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "webpage",
+        "retrieval": "urlopen"
+      }
+    },
+    {
+      "id": "84fd5f720207007d",
+      "source_id": "example-x-profile",
+      "source_type": "x_profile",
+      "title": "X profile @openai",
+      "url": "https://x.com/openai",
+      "text": "X/Twitter profile metadata placeholder. Configure an authenticated X API, browser-session, export, or list connector to retrieve timeline items.",
+      "author": "openai",
+      "published_at": null,
+      "retrieved_at": "2026-05-25T11:25:03.725759+00:00",
+      "metadata": {
+        "status_id": null,
+        "requires_authenticated_retrieval": true
+      },
+      "access_rights": {
+        "store_full_text": false,
+        "reason": "social/auth connector not configured"
+      },
+      "provenance": {
+        "connector": "x_profile",
+        "retrieval": "url_normalization"
+      }
+    }
+  ],
+  "evaluated_items": [
+    {
+      "item": {
+        "id": "8e046abdadd0c3ad",
+        "source_id": "example-website",
+        "source_type": "webpage",
+        "title": "Example Domain",
+        "url": "https://example.com",
+        "text": "Example Domain \n This domain is for use in documentation examples without needing permission. Avoid use in operations. \n Learn more",
+        "author": null,
+        "published_at": null,
+        "retrieved_at": "2026-05-25T11:25:03.725703+00:00",
+        "metadata": {
+          "content_type": "text/html",
+          "feed_links": []
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "webpage",
+          "retrieval": "urlopen"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Example Domain This domain is for use in documentation examples without needing permission. Avoid use in operations.",
+      "key_points": [
+        "Example Domain This domain is for use in documentation examples without needing permission.",
+        "Avoid use in operations."
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "84fd5f720207007d",
+        "source_id": "example-x-profile",
+        "source_type": "x_profile",
+        "title": "X profile @openai",
+        "url": "https://x.com/openai",
+        "text": "X/Twitter profile metadata placeholder. Configure an authenticated X API, browser-session, export, or list connector to retrieve timeline items.",
+        "author": "openai",
+        "published_at": null,
+        "retrieved_at": "2026-05-25T11:25:03.725759+00:00",
+        "metadata": {
+          "status_id": null,
+          "requires_authenticated_retrieval": true
+        },
+        "access_rights": {
+          "store_full_text": false,
+          "reason": "social/auth connector not configured"
+        },
+        "provenance": {
+          "connector": "x_profile",
+          "retrieval": "url_normalization"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "X/Twitter profile metadata placeholder. Configure an authenticated X API, browser-session, export, or list connector to retrieve timeline items.",
+      "key_points": [
+        "X/Twitter profile metadata placeholder.",
+        "Configure an authenticated X API, browser-session, export, or list connector to retrieve timeline items."
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    }
+  ],
+  "findings_markdown": "# Findings: Analyze configured demo sources\n\n## Summary\n\nReviewed 2 item(s). Highest-scoring material is listed first.\n\n## Relevant Items\n\n### Example Domain\n- URL: https://example.com\n- Source type: webpage\n- Relevance: 1/5\n- Summary: Example Domain This domain is for use in documentation examples without needing permission. Avoid use in operations.\n- Key points:\n  - Example Domain This domain is for use in documentation examples without needing permission.\n  - Avoid use in operations.\n- Rationale: No strong lexical overlap with the brief.\n\n### X profile @openai\n- URL: https://x.com/openai\n- Source type: x_profile\n- Relevance: 1/5\n- Summary: X/Twitter profile metadata placeholder. Configure an authenticated X API, browser-session, export, or list connector to retrieve timeline items.\n- Key points:\n  - X/Twitter profile metadata placeholder.\n  - Configure an authenticated X API, browser-session, export, or list connector to retrieve timeline items.\n- Rationale: No strong lexical overlap with the brief.\n",
+  "created_at": "2026-05-25T11:25:03.727766+00:00"
+}

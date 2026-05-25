@@ -1,0 +1,83 @@
+{
+  "run_id": "2026-05-25-capture-this-social-source-as-a-research-item",
+  "brief": {
+    "question": "Capture this social source as a research item",
+    "mode": "analyze-url",
+    "topics": [],
+    "constraints": {}
+  },
+  "sources": [
+    {
+      "id": "b8bfce598c87bf0e",
+      "type": "x_post",
+      "name": "https://x.com/someone/status/1234567890",
+      "url": "https://x.com/someone/status/1234567890",
+      "access": {
+        "method": "public"
+      },
+      "metadata": {}
+    }
+  ],
+  "items": [
+    {
+      "id": "cbba6859e92c4e74",
+      "source_id": "b8bfce598c87bf0e",
+      "source_type": "x_post",
+      "title": "X post by @someone",
+      "url": "https://x.com/someone/status/1234567890",
+      "text": "X/Twitter post metadata placeholder. Configure an authenticated X API, browser-session, or export connector to retrieve full post text.",
+      "author": "someone",
+      "published_at": null,
+      "retrieved_at": "2026-05-25T11:21:46.515161+00:00",
+      "metadata": {
+        "status_id": "1234567890",
+        "requires_authenticated_retrieval": true
+      },
+      "access_rights": {
+        "store_full_text": false,
+        "reason": "social/auth connector not configured"
+      },
+      "provenance": {
+        "connector": "x_post",
+        "retrieval": "url_normalization"
+      }
+    }
+  ],
+  "evaluated_items": [
+    {
+      "item": {
+        "id": "cbba6859e92c4e74",
+        "source_id": "b8bfce598c87bf0e",
+        "source_type": "x_post",
+        "title": "X post by @someone",
+        "url": "https://x.com/someone/status/1234567890",
+        "text": "X/Twitter post metadata placeholder. Configure an authenticated X API, browser-session, or export connector to retrieve full post text.",
+        "author": "someone",
+        "published_at": null,
+        "retrieved_at": "2026-05-25T11:21:46.515161+00:00",
+        "metadata": {
+          "status_id": "1234567890",
+          "requires_authenticated_retrieval": true
+        },
+        "access_rights": {
+          "store_full_text": false,
+          "reason": "social/auth connector not configured"
+        },
+        "provenance": {
+          "connector": "x_post",
+          "retrieval": "url_normalization"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "X/Twitter post metadata placeholder. Configure an authenticated X API, browser-session, or export connector to retrieve full post text.",
+      "key_points": [
+        "X/Twitter post metadata placeholder.",
+        "Configure an authenticated X API, browser-session, or export connector to retrieve full post text."
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    }
+  ],
+  "findings_markdown": "# Findings: Capture this social source as a research item\n\n## Summary\n\nReviewed 1 item(s). Highest-scoring material is listed first.\n\n## Relevant Items\n\n### X post by @someone\n- URL: https://x.com/someone/status/1234567890\n- Source type: x_post\n- Relevance: 1/5\n- Summary: X/Twitter post metadata placeholder. Configure an authenticated X API, browser-session, or export connector to retrieve full post text.\n- Key points:\n  - X/Twitter post metadata placeholder.\n  - Configure an authenticated X API, browser-session, or export connector to retrieve full post text.\n- Rationale: No strong lexical overlap with the brief.\n",
+  "created_at": "2026-05-25T11:21:46.517021+00:00"
+}

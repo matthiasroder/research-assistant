@@ -1,0 +1,44 @@
+[
+  {
+    "id": "d334fed91ce686d5",
+    "source_id": "01c63a8a9abb7257",
+    "source_type": "rss",
+    "title": "Magnifica Humanitas (Encyclical Letter)",
+    "url": "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html",
+    "text": "Article URL: https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html\nComments URL: https://news.ycombinator.com/item?id=48265206\nPoints: 61\n# Comments: 11",
+    "author": "theletterf",
+    "published_at": "Mon, 25 May 2026 10:11:29 +0000",
+    "retrieved_at": "2026-05-25T11:22:28.806170+00:00",
+    "metadata": {
+      "feed_title": "Hacker News: Front Page"
+    },
+    "access_rights": {
+      "store_full_text": true
+    },
+    "provenance": {
+      "connector": "rss",
+      "retrieval": "feedparser"
+    }
+  },
+  {
+    "id": "432bd0a68762fb29",
+    "source_id": "01c63a8a9abb7257",
+    "source_type": "rss",
+    "title": "Show HN: Geomatic \u2013 a command-driven geometry studio enabled with autodiff",
+    "url": "https://www.tinyvolt.com/geomatic",
+    "text": "All commands have the format `output = \\func inputs` or just `\\function inputs`. Points and scalars are built on the fly. Eg `\\line a b` to an empty canvas creates points `a` and `b`, and joins them with a line.One can use broadcasting semantics similar to NumPy and PyTorch in a visual setting (imagine creating a list of circles where one dim corresponds to radius and another to the center). One can also use backpropagation, run gradient descent or visualize vector fields. Almost everything is reactive so changing a variable updates all of the downstream geometry. It also allows anyone to write and load their own visualization, which can be broadcasted and differentiated through.\n\nComments URL: https://news.ycombinator.com/item?id=48264635\nPoints: 23\n# Comments: 6",
+    "author": "nivter",
+    "published_at": "Mon, 25 May 2026 08:25:00 +0000",
+    "retrieved_at": "2026-05-25T11:22:28.806189+00:00",
+    "metadata": {
+      "feed_title": "Hacker News: Front Page"
+    },
+    "access_rights": {
+      "store_full_text": true
+    },
+    "provenance": {
+      "connector": "rss",
+      "retrieval": "feedparser"
+    }
+  }
+]

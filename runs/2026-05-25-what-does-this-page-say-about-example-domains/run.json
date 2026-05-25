@@ -1,0 +1,83 @@
+{
+  "run_id": "2026-05-25-what-does-this-page-say-about-example-domains",
+  "brief": {
+    "question": "What does this page say about example domains?",
+    "mode": "analyze-url",
+    "topics": [],
+    "constraints": {}
+  },
+  "sources": [
+    {
+      "id": "c22aa04d0faf2c27",
+      "type": "webpage",
+      "name": "https://example.com",
+      "url": "https://example.com",
+      "access": {
+        "method": "public"
+      },
+      "metadata": {}
+    }
+  ],
+  "items": [
+    {
+      "id": "5b72e1544525ef04",
+      "source_id": "c22aa04d0faf2c27",
+      "source_type": "webpage",
+      "title": "Example Domain",
+      "url": "https://example.com",
+      "text": "Example Domain \n This domain is for use in documentation examples without needing permission. Avoid use in operations. \n Learn more",
+      "author": null,
+      "published_at": null,
+      "retrieved_at": "2026-05-25T11:24:59.813326+00:00",
+      "metadata": {
+        "content_type": "text/html",
+        "feed_links": []
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "webpage",
+        "retrieval": "urlopen"
+      }
+    }
+  ],
+  "evaluated_items": [
+    {
+      "item": {
+        "id": "5b72e1544525ef04",
+        "source_id": "c22aa04d0faf2c27",
+        "source_type": "webpage",
+        "title": "Example Domain",
+        "url": "https://example.com",
+        "text": "Example Domain \n This domain is for use in documentation examples without needing permission. Avoid use in operations. \n Learn more",
+        "author": null,
+        "published_at": null,
+        "retrieved_at": "2026-05-25T11:24:59.813326+00:00",
+        "metadata": {
+          "content_type": "text/html",
+          "feed_links": []
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "webpage",
+          "retrieval": "urlopen"
+        }
+      },
+      "relevance_score": 2,
+      "summary": "Example Domain This domain is for use in documentation examples without needing permission. Avoid use in operations.",
+      "key_points": [
+        "Example Domain This domain is for use in documentation examples without needing permission.",
+        "Avoid use in operations."
+      ],
+      "tags": [
+        "example"
+      ],
+      "rationale": "Matched query terms: example"
+    }
+  ],
+  "findings_markdown": "# Findings: What does this page say about example domains?\n\n## Summary\n\nReviewed 1 item(s). Highest-scoring material is listed first.\n\n## Relevant Items\n\n### Example Domain\n- URL: https://example.com\n- Source type: webpage\n- Relevance: 2/5\n- Summary: Example Domain This domain is for use in documentation examples without needing permission. Avoid use in operations.\n- Key points:\n  - Example Domain This domain is for use in documentation examples without needing permission.\n  - Avoid use in operations.\n- Tags: example\n- Rationale: Matched query terms: example\n",
+  "created_at": "2026-05-25T11:24:59.817915+00:00"
+}
