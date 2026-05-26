@@ -1,0 +1,606 @@
+[
+  {
+    "item": {
+      "id": "89a93be00c00cf37",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Ask HN: Is anyone working at least 4 hours daily on an Apple Vision Pro?",
+      "url": "https://news.ycombinator.com/item?id=48275508",
+      "text": "I asked this in 2024 and would love to see the change: https://news.ycombinator.com/item?id=41748125\n\nComments URL: https://news.ycombinator.com/item?id=48275508\nPoints: 55\n# Comments: 22",
+      "author": "widenrun",
+      "published_at": "Tue, 26 May 2026 05:49:35 +0000",
+      "retrieved_at": "2026-05-26T07:33:37.554050+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "I asked this in 2024 and would love to see the change: https://news.ycombinator.com/item?id=41748125 Comments URL: https://news.ycombinator.com/item?id=48275508 Points: 55 # Comments: 22",
+    "key_points": [
+      "I asked this in 2024 and would love to see the change: https://news.ycombinator.com/item?id=41748125 Comments URL: https://news.ycombinator.com/item?id=48275508 Points: 55 # Comments: 22"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "ca9a95a4a2dd69b6",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "The User Is Visibly Frustrated",
+      "url": "https://pscanf.com/s/354/",
+      "text": "Article URL: https://pscanf.com/s/354/\nComments URL: https://news.ycombinator.com/item?id=48275059\nPoints: 77\n# Comments: 43",
+      "author": "croes",
+      "published_at": "Tue, 26 May 2026 04:39:03 +0000",
+      "retrieved_at": "2026-05-26T07:33:37.554088+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://pscanf.com/s/354/ Comments URL: https://news.ycombinator.com/item?id=48275059 Points: 77 # Comments: 43",
+    "key_points": [
+      "Article URL: https://pscanf.com/s/354/ Comments URL: https://news.ycombinator.com/item?id=48275059 Points: 77 # Comments: 43"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "eeba7bb78381e048",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Motorola phones have started hijacking the Amazon app to insert affiliate codes",
+      "url": "https://9to5google.com/2026/05/25/motorola-amazon-app-hijacking-behavior/",
+      "text": "Article URL: https://9to5google.com/2026/05/25/motorola-amazon-app-hijacking-behavior/\nComments URL: https://news.ycombinator.com/item?id=48274794\nPoints: 91\n# Comments: 41",
+      "author": "Cider9986",
+      "published_at": "Tue, 26 May 2026 03:56:09 +0000",
+      "retrieved_at": "2026-05-26T07:33:37.554108+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://9to5google.com/2026/05/25/motorola-amazon-app-hijacking-behavior/ Comments URL: https://news.ycombinator.com/item?id=48274794 Points: 91 # Comments: 41",
+    "key_points": [
+      "Article URL: https://9to5google.com/2026/05/25/motorola-amazon-app-hijacking-behavior/ Comments URL: https://news.ycombinator.com/item?id=48274794 Points: 91 # Comments: 41"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "c209a18b4c3483dc",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Earthion: A New Mega Drive-Style Shoot-Em-Up",
+      "url": "https://earthiongame.com/",
+      "text": "Article URL: https://earthiongame.com/\nComments URL: https://news.ycombinator.com/item?id=48274711\nPoints: 43\n# Comments: 13",
+      "author": "MrBuddyCasino",
+      "published_at": "Tue, 26 May 2026 03:42:23 +0000",
+      "retrieved_at": "2026-05-26T07:33:37.554124+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://earthiongame.com/ Comments URL: https://news.ycombinator.com/item?id=48274711 Points: 43 # Comments: 13",
+    "key_points": [
+      "Article URL: https://earthiongame.com/ Comments URL: https://news.ycombinator.com/item?id=48274711 Points: 43 # Comments: 13"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "0bbf124578e3c908",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Does anybody like React?",
+      "url": "https://jsx.lol",
+      "text": "Article URL: https://jsx.lol\nComments URL: https://news.ycombinator.com/item?id=48274077\nPoints: 154\n# Comments: 193",
+      "author": "brazukadev",
+      "published_at": "Tue, 26 May 2026 01:55:15 +0000",
+      "retrieved_at": "2026-05-26T07:33:37.554139+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://jsx.lol Comments URL: https://news.ycombinator.com/item?id=48274077 Points: 154 # Comments: 193",
+    "key_points": [
+      "Article URL: https://jsx.lol Comments URL: https://news.ycombinator.com/item?id=48274077 Points: 154 # Comments: 193"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "a05ee50370185cc6",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Designing for and against the manufactured normalcy field (2012)",
+      "url": "https://www.urbanhonking.com/ideasfordozens/2012/06/24/designing-for-and-against-the-manufactured-normalcy-field/index.html",
+      "text": "Article URL: https://www.urbanhonking.com/ideasfordozens/2012/06/24/designing-for-and-against-the-manufactured-normalcy-field/index.html\nComments URL: https://news.ycombinator.com/item?id=48273597\nPoints: 17\n# Comments: 6",
+      "author": "nvader",
+      "published_at": "Tue, 26 May 2026 00:36:17 +0000",
+      "retrieved_at": "2026-05-26T07:33:37.554154+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://www.urbanhonking.com/ideasfordozens/2012/06/24/designing-for-and-against-the-manufactured-normalcy-field/index.html Comments URL: https://news.ycombinator.com/item?id=48273597 Points: 17 # Comments: 6",
+    "key_points": [
+      "Article URL: https://www.urbanhonking.com/ideasfordozens/2012/06/24/designing-for-and-against-the-manufactured-normalcy-field/index.html Comments URL: https://news.ycombinator.com/item?id=48273597 Points: 17 # Comments: 6"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "db94746506feee31",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "CVE-2026-28952: Apple macOS 26.5 Kernel Vuln found by Claude",
+      "url": "https://support.apple.com/en-us/127115",
+      "text": "Article URL: https://support.apple.com/en-us/127115\nComments URL: https://news.ycombinator.com/item?id=48273169\nPoints: 132\n# Comments: 61",
+      "author": "dragonsenseiguy",
+      "published_at": "Mon, 25 May 2026 23:40:40 +0000",
+      "retrieved_at": "2026-05-26T07:33:37.554191+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://support.apple.com/en-us/127115 Comments URL: https://news.ycombinator.com/item?id=48273169 Points: 132 # Comments: 61",
+    "key_points": [
+      "Article URL: https://support.apple.com/en-us/127115 Comments URL: https://news.ycombinator.com/item?id=48273169 Points: 132 # Comments: 61"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "257d5836d5f40a7e",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Performance of Rust Language [pdf]",
+      "url": "https://github.com/yugr/rust-slides/",
+      "text": "Article URL: https://github.com/yugr/rust-slides/\nComments URL: https://news.ycombinator.com/item?id=48273147\nPoints: 56\n# Comments: 32",
+      "author": "tanelpoder",
+      "published_at": "Mon, 25 May 2026 23:37:31 +0000",
+      "retrieved_at": "2026-05-26T07:33:37.554221+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://github.com/yugr/rust-slides/ Comments URL: https://news.ycombinator.com/item?id=48273147 Points: 56 # Comments: 32",
+    "key_points": [
+      "Article URL: https://github.com/yugr/rust-slides/ Comments URL: https://news.ycombinator.com/item?id=48273147 Points: 56 # Comments: 32"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "1bba8a4968c4fe36",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Nobody cracks open a programming book anymore",
+      "url": "https://unix.foo/posts/nobody-cracks-open-a-programming-book/",
+      "text": "Article URL: https://unix.foo/posts/nobody-cracks-open-a-programming-book/\nComments URL: https://news.ycombinator.com/item?id=48273030\nPoints: 163\n# Comments: 198",
+      "author": "zdw",
+      "published_at": "Mon, 25 May 2026 23:21:57 +0000",
+      "retrieved_at": "2026-05-26T07:33:37.554240+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://unix.foo/posts/nobody-cracks-open-a-programming-book/ Comments URL: https://news.ycombinator.com/item?id=48273030 Points: 163 # Comments: 198",
+    "key_points": [
+      "Article URL: https://unix.foo/posts/nobody-cracks-open-a-programming-book/ Comments URL: https://news.ycombinator.com/item?id=48273030 Points: 163 # Comments: 198"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "ef6760bc0efdc92a",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Using AI to write better code more slowly",
+      "url": "https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/",
+      "text": "Article URL: https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/\nComments URL: https://news.ycombinator.com/item?id=48272984\nPoints: 507\n# Comments: 195",
+      "author": "signa11",
+      "published_at": "Mon, 25 May 2026 23:16:59 +0000",
+      "retrieved_at": "2026-05-26T07:33:37.554256+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/ Comments URL: https://news.ycombinator.com/item?id=48272984 Points: 507 # Comments: 195",
+    "key_points": [
+      "Article URL: https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/ Comments URL: https://news.ycombinator.com/item?id=48272984 Points: 507 # Comments: 195"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "ac7d9007b7318e2d",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "How Shamir's Secret Sharing Works",
+      "url": "https://ente.com/blog/how-shamirs-secret-sharing-works/",
+      "text": "Article URL: https://ente.com/blog/how-shamirs-secret-sharing-works/\nComments URL: https://news.ycombinator.com/item?id=48272715\nPoints: 165\n# Comments: 21",
+      "author": "subract",
+      "published_at": "Mon, 25 May 2026 22:37:24 +0000",
+      "retrieved_at": "2026-05-26T07:33:37.554270+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://ente.com/blog/how-shamirs-secret-sharing-works/ Comments URL: https://news.ycombinator.com/item?id=48272715 Points: 165 # Comments: 21",
+    "key_points": [
+      "Article URL: https://ente.com/blog/how-shamirs-secret-sharing-works/ Comments URL: https://news.ycombinator.com/item?id=48272715 Points: 165 # Comments: 21"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "628f5186c0eda891",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Taking a walk may lead to more creativity than sitting, study finds (2014)",
+      "url": "https://www.apa.org/news/press/releases/2014/04/creativity-walk",
+      "text": "Article URL: https://www.apa.org/news/press/releases/2014/04/creativity-walk\nComments URL: https://news.ycombinator.com/item?id=48272670\nPoints: 227\n# Comments: 75",
+      "author": "bilsbie",
+      "published_at": "Mon, 25 May 2026 22:30:27 +0000",
+      "retrieved_at": "2026-05-26T07:33:37.554285+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://www.apa.org/news/press/releases/2014/04/creativity-walk Comments URL: https://news.ycombinator.com/item?id=48272670 Points: 227 # Comments: 75",
+    "key_points": [
+      "Article URL: https://www.apa.org/news/press/releases/2014/04/creativity-walk Comments URL: https://news.ycombinator.com/item?id=48272670 Points: 227 # Comments: 75"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "3e9297743cd7823a",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Show HN: OpenBrief \u2013 Local-first video downloader/summarizer",
+      "url": "https://github.com/tantara/openbrief",
+      "text": "OpenBrief is basically a GUI for yt-dlp with some AI on top \u2014 paste a link, it downloads locally, and transcription and voice generation run with local AI on your machine. Summaries and chat over the transcript use an LLM, which is bring-your-own-key for now. It's open source and free.\n\nComments URL: https://news.ycombinator.com/item?id=48272393\nPoints: 52\n# Comments: 7",
+      "author": "tantara",
+      "published_at": "Mon, 25 May 2026 21:50:03 +0000",
+      "retrieved_at": "2026-05-26T07:33:37.554304+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "OpenBrief is basically a GUI for yt-dlp with some AI on top \u2014 paste a link, it downloads locally, and transcription and voice generation run with local AI on your machine. Summaries and chat over the transcript use an LLM, which is bring-your-own-key for now.",
+    "key_points": [
+      "OpenBrief is basically a GUI for yt-dlp with some AI on top \u2014 paste a link, it downloads locally, and transcription and voice generation run with local AI on your machine.",
+      "Summaries and chat over the transcript use an LLM, which is bring-your-own-key for now.",
+      "It's open source and free.",
+      "Comments URL: https://news.ycombinator.com/item?id=48272393 Points: 52 # Comments: 7"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "095d0de107703421",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Ferrari Luce",
+      "url": "https://www.ferrari.com/en-EN/auto/ferrari-luce",
+      "text": "https://www.topgear.com/car-news/electric/its-finally-here-m...\n\nComments URL: https://news.ycombinator.com/item?id=48271629\nPoints: 196\n# Comments: 399",
+      "author": "jumploops",
+      "published_at": "Mon, 25 May 2026 21:00:38 +0000",
+      "retrieved_at": "2026-05-26T07:33:37.554318+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "https://www.topgear.com/car-news/electric/its-finally-here-m... Comments URL: https://news.ycombinator.com/item?id=48271629 Points: 196 # Comments: 399",
+    "key_points": [
+      "https://www.topgear.com/car-news/electric/its-finally-here-m...",
+      "Comments URL: https://news.ycombinator.com/item?id=48271629 Points: 196 # Comments: 399"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "a397d9f5ad55ec7e",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Hacker News front page as a site",
+      "url": "https://thefrontpage.dev/",
+      "text": "Article URL: https://thefrontpage.dev/\nComments URL: https://news.ycombinator.com/item?id=48271127\nPoints: 212\n# Comments: 64",
+      "author": "thatxliner",
+      "published_at": "Mon, 25 May 2026 20:12:29 +0000",
+      "retrieved_at": "2026-05-26T07:33:37.554332+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://thefrontpage.dev/ Comments URL: https://news.ycombinator.com/item?id=48271127 Points: 212 # Comments: 64",
+    "key_points": [
+      "Article URL: https://thefrontpage.dev/ Comments URL: https://news.ycombinator.com/item?id=48271127 Points: 212 # Comments: 64"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "bb60e1deeafbd958",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "A successful Japanese trial of a ramjet engine designed for Mach\u20115 aircraft",
+      "url": "https://www.bgr.com/2178211/japan-hypersonic-engine-ramjet-2-hour-flights-to-us/",
+      "text": "Article URL: https://www.bgr.com/2178211/japan-hypersonic-engine-ramjet-2-hour-flights-to-us/\nComments URL: https://news.ycombinator.com/item?id=48270812\nPoints: 126\n# Comments: 106",
+      "author": "rmason",
+      "published_at": "Mon, 25 May 2026 19:43:45 +0000",
+      "retrieved_at": "2026-05-26T07:33:37.554347+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://www.bgr.com/2178211/japan-hypersonic-engine-ramjet-2-hour-flights-to-us/ Comments URL: https://news.ycombinator.com/item?id=48270812 Points: 126 # Comments: 106",
+    "key_points": [
+      "Article URL: https://www.bgr.com/2178211/japan-hypersonic-engine-ramjet-2-hour-flights-to-us/ Comments URL: https://news.ycombinator.com/item?id=48270812 Points: 126 # Comments: 106"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "645fb8f6e79f4e0b",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Norway's 2 petabytes of Huawei flash storage and LLM training",
+      "url": "https://www.blocksandfiles.com/flash/2026/05/22/norways-2-petabytes-of-huawei-flash-storage-and-llm-training/5244910",
+      "text": "Article URL: https://www.blocksandfiles.com/flash/2026/05/22/norways-2-petabytes-of-huawei-flash-storage-and-llm-training/5244910\nComments URL: https://news.ycombinator.com/item?id=48270770\nPoints: 239\n# Comments: 148",
+      "author": "rbanffy",
+      "published_at": "Mon, 25 May 2026 19:37:57 +0000",
+      "retrieved_at": "2026-05-26T07:33:37.554361+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://www.blocksandfiles.com/flash/2026/05/22/norways-2-petabytes-of-huawei-flash-storage-and-llm-training/5244910 Comments URL: https://news.ycombinator.com/item?id=48270770 Points: 239 # Comments: 148",
+    "key_points": [
+      "Article URL: https://www.blocksandfiles.com/flash/2026/05/22/norways-2-petabytes-of-huawei-flash-storage-and-llm-training/5244910 Comments URL: https://news.ycombinator.com/item?id=48270770 Points: 239 # Comments: 148"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "a1562de466dc79e7",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "California moves to exempt Linux from its age-verification law after backlash",
+      "url": "https://www.tomshardware.com/software/linux/california-moves-to-exempt-linux-from-its-upcoming-age-verification-law-after-backlash-over-forcing-operating-systems-to-collect-users-ages-amendment-proposed-by-the-same-lawmaker-who-wrote-the-original-law",
+      "text": "Article URL: https://www.tomshardware.com/software/linux/california-moves-to-exempt-linux-from-its-upcoming-age-verification-law-after-backlash-over-forcing-operating-systems-to-collect-users-ages-amendment-proposed-by-the-same-lawmaker-who-wrote-the-original-law\nComments URL: https://news.ycombinator.com/item?id=48269961\nPoints: 819\n# Comments: 351",
+      "author": "rbanffy",
+      "published_at": "Mon, 25 May 2026 18:19:58 +0000",
+      "retrieved_at": "2026-05-26T07:33:37.554375+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://www.tomshardware.com/software/linux/california-moves-to-exempt-linux-from-its-upcoming-age-verification-law-after-backlash-over-forcing-operating-systems-to-collect-users-ages-amendment-proposed-by-the-same-lawmaker-who-wrote-the-original-law Comments URL: https://news.ycombinator.com/item?id=48269961 Points: 819 # Comments: 351",
+    "key_points": [
+      "Article URL: https://www.tomshardware.com/software/linux/california-moves-to-exempt-linux-from-its-upcoming-age-verification-law-after-backlash-over-forcing-operating-systems-to-collect-users-ages-amendment-proposed-by-the-same-lawmaker-who-wrote-the-original-law Comments URL: https://news.ycombinat"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "104c90b504fc4df8",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Weave (YC W25) is hiring ML, AI, product, & design engineers",
+      "url": "https://jobs.ashbyhq.com/workweave",
+      "text": "Article URL: https://jobs.ashbyhq.com/workweave\nComments URL: https://news.ycombinator.com/item?id=48269937\nPoints: 0\n# Comments: 0",
+      "author": "adchurch",
+      "published_at": "Mon, 25 May 2026 18:18:26 +0000",
+      "retrieved_at": "2026-05-26T07:33:37.554389+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://jobs.ashbyhq.com/workweave Comments URL: https://news.ycombinator.com/item?id=48269937 Points: 0 # Comments: 0",
+    "key_points": [
+      "Article URL: https://jobs.ashbyhq.com/workweave Comments URL: https://news.ycombinator.com/item?id=48269937 Points: 0 # Comments: 0"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "1e48cf1ee3f3c355",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Exit IP VPN servers mitigation rollout",
+      "url": "https://mullvad.net/en/help/exit-ip-vpn-servers-mitigation-rollout",
+      "text": "Article URL: https://mullvad.net/en/help/exit-ip-vpn-servers-mitigation-rollout\nComments URL: https://news.ycombinator.com/item?id=48269580\nPoints: 334\n# Comments: 61",
+      "author": "Cider9986",
+      "published_at": "Mon, 25 May 2026 17:45:11 +0000",
+      "retrieved_at": "2026-05-26T07:33:37.554403+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://mullvad.net/en/help/exit-ip-vpn-servers-mitigation-rollout Comments URL: https://news.ycombinator.com/item?id=48269580 Points: 334 # Comments: 61",
+    "key_points": [
+      "Article URL: https://mullvad.net/en/help/exit-ip-vpn-servers-mitigation-rollout Comments URL: https://news.ycombinator.com/item?id=48269580 Points: 334 # Comments: 61"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  }
+]
