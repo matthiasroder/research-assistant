@@ -1,0 +1,1089 @@
+{
+  "run_id": "2026-05-27-monitor-configured-research-sources",
+  "brief": {
+    "question": "Monitor configured research sources",
+    "mode": "monitor-sources",
+    "topics": [],
+    "constraints": {}
+  },
+  "sources": [
+    {
+      "id": "hacker-news-front-page",
+      "type": "rss",
+      "name": "Hacker News Front Page",
+      "url": "https://hnrss.org/frontpage",
+      "access": {
+        "method": "public"
+      },
+      "metadata": {}
+    },
+    {
+      "id": "openai-x-profile",
+      "type": "x_profile",
+      "name": "OpenAI on X",
+      "url": "https://x.com/openai",
+      "access": {
+        "method": "browser_session",
+        "store_full_text": false
+      },
+      "metadata": {}
+    }
+  ],
+  "items": [
+    {
+      "id": "af77870d1ad6e7dd",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Show HN: Posthorn, self-hosted mail without the mail server",
+      "url": "https://github.com/craigmccaskill/posthorn",
+      "text": "Introducing Posthorn, a self hosted email gateway. One docker container (or Go binary) between every self hosted app on your VPS and your transactional email provider. Set up Posthorn once, point your apps to it, done.I was trying to deploy Ghost on a DigitalOcean droplet and found that DO and many different VPS services have started to block the default SMTP ports to try to combat the various types of abuse they get. To actually configure my app, I had to hack together a Postfix relay.In another project, I had a static site which had a contact form, but my free Formspree account was occasionally hitting usage limits and I desperately wanted some of the anti-spam features they had gated behind their paid accounts so I put together a caddy module to catch HTTP POSTs and bounce them to my provider.I kept bumping into these same email issues. Many of the services I wanted to host (Gitea, Mastodon, Umami, Comentario) ran into the same limitations. This felt like a really common issue that had no good solution.Posthorn is what I built to solve this. It's a small Go binary (or 10 MB docker image) that sits between your self hosted apps and your transactional email provider of choice (shipping with support for Postmark, Resend, Mailgun, Amazon SES or an outbound SMTP relay). It also accepts POSTs from HTML forms to support static site needs while adding security layers such as honeypot fields, origin checks and IP rate limiting. There's also a JSON HTTP API that supports Bearer auth for backend scripts or cron jobs that just want a /send endpoint.I now use this personally in multiple scenarios and I've spent a lot of time beating this up and testing against what I can validate. I'd love to hear how this might be useful for you, what breaks and any feedback you might have. It's open source under Apache 2.0 and I'd love contributions. I'm planning to support and grow this for the long haul.Code: https://github.com/craigmccaskill/posthornDocs: https://posthorn.dev/Longer write up: https://craigmccaskill.com/introducing-posthorn/Previous HN discussion on the exact issue I'm trying to solve: https://news.ycombinator.com/item?id=43620318\n\nComments URL: https://news.ycombinator.com/item?id=48289624\nPoints: 10\n# Comments: 7",
+      "author": "craigmccaskill",
+      "published_at": "Wed, 27 May 2026 04:26:26 +0000",
+      "retrieved_at": "2026-05-27T07:54:03.804400+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "82987ec52e8efcd2",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Gear Commit: Dev gadget box personalized from GitHub activity",
+      "url": "https://gearcommit.nanocorp.app/",
+      "text": "Article URL: https://gearcommit.nanocorp.app/\nComments URL: https://news.ycombinator.com/item?id=48288761\nPoints: 5\n# Comments: 0",
+      "author": "silversharck",
+      "published_at": "Wed, 27 May 2026 02:29:24 +0000",
+      "retrieved_at": "2026-05-27T07:54:03.804438+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "0823922bb084e774",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "TSDuck: Open-source toolkit for MPEG-TS analysis and manipulation",
+      "url": "https://tsduck.io/",
+      "text": "Article URL: https://tsduck.io/\nComments URL: https://news.ycombinator.com/item?id=48288709\nPoints: 21\n# Comments: 1",
+      "author": "phantomathkg",
+      "published_at": "Wed, 27 May 2026 02:22:59 +0000",
+      "retrieved_at": "2026-05-27T07:54:03.804459+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "fa68e62d4f8b955f",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Tunecat: Simple Internet Radio",
+      "url": "https://codeberg.org/lindenii/tunecat/",
+      "text": "Article URL: https://codeberg.org/lindenii/tunecat/\nComments URL: https://news.ycombinator.com/item?id=48288174\nPoints: 46\n# Comments: 3",
+      "author": "croottree",
+      "published_at": "Wed, 27 May 2026 01:08:16 +0000",
+      "retrieved_at": "2026-05-27T07:54:03.804486+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "474acf044a19c2b0",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Stripe is friendly to \u201cfriendly fraud\u201d",
+      "url": "https://www.gingerlime.com/2026/stripe-seem-friendly-to-friendly-fraud/",
+      "text": "Article URL: https://www.gingerlime.com/2026/stripe-seem-friendly-to-friendly-fraud/\nComments URL: https://news.ycombinator.com/item?id=48287982\nPoints: 254\n# Comments: 162",
+      "author": "gingerlime",
+      "published_at": "Wed, 27 May 2026 00:40:05 +0000",
+      "retrieved_at": "2026-05-27T07:54:03.804504+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "322227781b706831",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Erin Brockovich made a map to track data centers around the country",
+      "url": "https://www.niemanlab.org/2026/05/erin-brockovich-made-a-map-to-track-data-centers-around-the-country/",
+      "text": "Article URL: https://www.niemanlab.org/2026/05/erin-brockovich-made-a-map-to-track-data-centers-around-the-country/\nComments URL: https://news.ycombinator.com/item?id=48287952\nPoints: 209\n# Comments: 197",
+      "author": "cratermoon",
+      "published_at": "Wed, 27 May 2026 00:36:03 +0000",
+      "retrieved_at": "2026-05-27T07:54:03.804521+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "3439ad58b3818e57",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Sonny Rollins, jazz saxophonist, has died",
+      "url": "https://www.rollingstone.com/music/music-news/sonny-rollins-jazz-legend-saxophone-colossus-dead-obit-1234715446/",
+      "text": "Article URL: https://www.rollingstone.com/music/music-news/sonny-rollins-jazz-legend-saxophone-colossus-dead-obit-1234715446/\nComments URL: https://news.ycombinator.com/item?id=48287678\nPoints: 104\n# Comments: 14",
+      "author": "boarsofcanada",
+      "published_at": "Wed, 27 May 2026 00:03:04 +0000",
+      "retrieved_at": "2026-05-27T07:54:03.804538+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "dd63e93da12d960a",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Cloudflare Flagship",
+      "url": "https://developers.cloudflare.com/flagship/",
+      "text": "Article URL: https://developers.cloudflare.com/flagship/\nComments URL: https://news.ycombinator.com/item?id=48287468\nPoints: 198\n# Comments: 94",
+      "author": "tjek",
+      "published_at": "Tue, 26 May 2026 23:36:06 +0000",
+      "retrieved_at": "2026-05-27T07:54:03.804561+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "fcf410a67bc83d43",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "The worst job interview I ever had",
+      "url": "https://www.oliverio.dev/blog/the-worst-job-interview-i-had",
+      "text": "Article URL: https://www.oliverio.dev/blog/the-worst-job-interview-i-had\nComments URL: https://news.ycombinator.com/item?id=48285344\nPoints: 231\n# Comments: 196",
+      "author": "oliverio",
+      "published_at": "Tue, 26 May 2026 20:11:49 +0000",
+      "retrieved_at": "2026-05-27T07:54:03.804579+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "aa2d02c7821c2c41",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "That Methyl Methacrylate Tank",
+      "url": "https://www.science.org/content/blog-post/methyl-methacrylate-tank",
+      "text": "Article URL: https://www.science.org/content/blog-post/methyl-methacrylate-tank\nComments URL: https://news.ycombinator.com/item?id=48284712\nPoints: 319\n# Comments: 120",
+      "author": "nooks",
+      "published_at": "Tue, 26 May 2026 19:25:16 +0000",
+      "retrieved_at": "2026-05-27T07:54:03.804597+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "07c63094b1513385",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "The Melancholy of Slaying Monsters",
+      "url": "https://thereader.mitpress.mit.edu/the-strange-melancholy-of-slaying-monsters/",
+      "text": "Article URL: https://thereader.mitpress.mit.edu/the-strange-melancholy-of-slaying-monsters/\nComments URL: https://news.ycombinator.com/item?id=48284711\nPoints: 20\n# Comments: 1",
+      "author": "prismatic",
+      "published_at": "Tue, 26 May 2026 19:25:13 +0000",
+      "retrieved_at": "2026-05-27T07:54:03.804614+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "bb7fd5a6fc01875c",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Sage Care (YC S24) Is Hiring Software Engineers",
+      "url": "https://www.ycombinator.com/companies/sagecare/jobs/xtloH8r-senior-software-engineer",
+      "text": "Article URL: https://www.ycombinator.com/companies/sagecare/jobs/xtloH8r-senior-software-engineer\nComments URL: https://news.ycombinator.com/item?id=48282478\nPoints: 0\n# Comments: 0",
+      "author": "ian-gillis",
+      "published_at": "Tue, 26 May 2026 17:00:40 +0000",
+      "retrieved_at": "2026-05-27T07:54:03.804631+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "4fe51c9194ab8ebc",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "What color is your function? (2015)",
+      "url": "https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/",
+      "text": "Article URL: https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/\nComments URL: https://news.ycombinator.com/item?id=48281515\nPoints: 118\n# Comments: 150",
+      "author": "tosh",
+      "published_at": "Tue, 26 May 2026 15:58:32 +0000",
+      "retrieved_at": "2026-05-27T07:54:03.804648+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "8141408b1def29f3",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Launch HN: Minicor (YC P26) \u2013 Windows desktop automations at scale",
+      "url": "https://www.minicor.com/",
+      "text": "Hey we\u2019re Faiz and Saheed and we built Minicor so AI companies who need to integrate to desktop systems with no API can quickly build scalable desktop RPAs. Demo: https://www.youtube.com/watch?v=MD0GHZIJ1cwEdit: RPA is an acronym for Robotic Process Automation - things like triggering mouse clicks and key strokes to perform tasks programmatically. Sorry if this wasn't clear!We were working on non-RPA integrations when a customer promised to sign a deal in 2 days if we could unblock a sale of theirs that involved integrating with a clinic\u2019s Windows based medical record system. We didn\u2019t know it at the time but it turns out that building desktop RPAs at scale is extremely difficult because scripting is hard (learning the system, defining the automation, UIs changing constantly), orchestration is hard (is the VM up? queuing, parallelizing) and debugging is hard (zero observability, false positives, cascading failures). 30%+ failure rates are not uncommon. At scale we\u2019ve seen cases of failed RPAs leading to thousands of support tickets a month.To solve the problems we were facing, we built an MCP that Claude Code/Codex can use to navigate a virtual machine running desktop software with Python to create RPA workflows. The RPA workflows run as Python scripts for speed, cost, and determinism. These workflows can be triggered by API following any input/output schema specified, with video replays and logs stored with each run. The MCP can debug RPAs and make changes to the underlying code, all of which are version controlled. We also built tools for cloning VMs for parallelizing RPAs, and handling 2FA/OTP challenges. Plus since workflows are code based: we were also able to add triggers for Slack notifications, human-in-the-loop steps, or call an LLM to verify the state of a VM by passing a screenshot.Would love to hear your feedback and if you have any RPA horror stories! (:\n\nComments URL: https://news.ycombinator.com/item?id=48280729\nPoints: 87\n# Comments: 54",
+      "author": "fchishtie",
+      "published_at": "Tue, 26 May 2026 14:57:27 +0000",
+      "retrieved_at": "2026-05-27T07:54:03.804670+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "828f446578789a60",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Dropbox CEO Drew Houston to step down",
+      "url": "https://www.cnbc.com/2026/05/26/dropbox-ceo-drew-houston-ashraf-alkarmi.html",
+      "text": "https://blog.dropbox.com/topics/company/dropbox-leadership-u...https://twitter.com/drewhouston/status/2059275240065425474?s...\n\nComments URL: https://news.ycombinator.com/item?id=48279453\nPoints: 337\n# Comments: 360",
+      "author": "aghuang",
+      "published_at": "Tue, 26 May 2026 13:18:33 +0000",
+      "retrieved_at": "2026-05-27T07:54:03.804687+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "db555d0f3d1e8af5",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Spain blocks prediction markets Polymarket, Kalshi over lack of gambling licence",
+      "url": "https://www.reuters.com/business/spain-blocks-prediction-markets-polymarket-kalshi-over-lack-gambling-licences-2026-05-26/",
+      "text": "Article URL: https://www.reuters.com/business/spain-blocks-prediction-markets-polymarket-kalshi-over-lack-gambling-licences-2026-05-26/\nComments URL: https://news.ycombinator.com/item?id=48279316\nPoints: 890\n# Comments: 409",
+      "author": "thm",
+      "published_at": "Tue, 26 May 2026 13:08:13 +0000",
+      "retrieved_at": "2026-05-27T07:54:03.804703+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "d961a314ef5b672f",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "BadHost \u2013 CVE-2026-48710: Starlette Host-Header Auth Bypass",
+      "url": "https://badhost.org/",
+      "text": "https://arstechnica.com/information-technology/2026/05/milli...\n\nComments URL: https://news.ycombinator.com/item?id=48277107\nPoints: 28\n# Comments: 5",
+      "author": "ylk",
+      "published_at": "Tue, 26 May 2026 09:07:18 +0000",
+      "retrieved_at": "2026-05-27T07:54:03.804719+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "6f687a4ce99e104e",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Prompt Politeness Affects LLM Accuracy",
+      "url": "https://arxiv.org/abs/2510.04950",
+      "text": "Article URL: https://arxiv.org/abs/2510.04950\nComments URL: https://news.ycombinator.com/item?id=48276429\nPoints: 5\n# Comments: 0",
+      "author": "KnuthIsGod",
+      "published_at": "Tue, 26 May 2026 07:43:22 +0000",
+      "retrieved_at": "2026-05-27T07:54:03.804742+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "cebac2258cd8222f",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "A portentous reunion",
+      "url": "https://bcantrill.dtrace.org/2026/05/25/a-portentous-reunion/",
+      "text": "Article URL: https://bcantrill.dtrace.org/2026/05/25/a-portentous-reunion/\nComments URL: https://news.ycombinator.com/item?id=48275564\nPoints: 95\n# Comments: 26",
+      "author": "cafkafk",
+      "published_at": "Tue, 26 May 2026 05:57:45 +0000",
+      "retrieved_at": "2026-05-27T07:54:03.804758+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "9f0705ae40b38cf1",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "A few interesting modern pixel fonts",
+      "url": "https://unsung.aresluna.org/a-few-interesting-modern-pixel-fonts/",
+      "text": "Article URL: https://unsung.aresluna.org/a-few-interesting-modern-pixel-fonts/\nComments URL: https://news.ycombinator.com/item?id=48271448\nPoints: 335\n# Comments: 69",
+      "author": "zdw",
+      "published_at": "Mon, 25 May 2026 20:41:49 +0000",
+      "retrieved_at": "2026-05-27T07:54:03.804773+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "b062f24b24377b7d",
+      "source_id": "openai-x-profile",
+      "source_type": "x_profile",
+      "title": "X profile @openai",
+      "url": "https://x.com/openai",
+      "text": "X/Twitter profile metadata placeholder. Configure an authenticated X API, browser-session, export, or list connector to retrieve timeline items.",
+      "author": "openai",
+      "published_at": null,
+      "retrieved_at": "2026-05-27T07:54:03.804804+00:00",
+      "metadata": {
+        "status_id": null,
+        "requires_authenticated_retrieval": true
+      },
+      "access_rights": {
+        "store_full_text": false,
+        "reason": "social/auth connector not configured"
+      },
+      "provenance": {
+        "connector": "x_profile",
+        "retrieval": "url_normalization"
+      }
+    }
+  ],
+  "evaluated_items": [
+    {
+      "item": {
+        "id": "af77870d1ad6e7dd",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Show HN: Posthorn, self-hosted mail without the mail server",
+        "url": "https://github.com/craigmccaskill/posthorn",
+        "text": "Introducing Posthorn, a self hosted email gateway. One docker container (or Go binary) between every self hosted app on your VPS and your transactional email provider. Set up Posthorn once, point your apps to it, done.I was trying to deploy Ghost on a DigitalOcean droplet and found that DO and many different VPS services have started to block the default SMTP ports to try to combat the various types of abuse they get. To actually configure my app, I had to hack together a Postfix relay.In another project, I had a static site which had a contact form, but my free Formspree account was occasionally hitting usage limits and I desperately wanted some of the anti-spam features they had gated behind their paid accounts so I put together a caddy module to catch HTTP POSTs and bounce them to my provider.I kept bumping into these same email issues. Many of the services I wanted to host (Gitea, Mastodon, Umami, Comentario) ran into the same limitations. This felt like a really common issue that had no good solution.Posthorn is what I built to solve this. It's a small Go binary (or 10 MB docker image) that sits between your self hosted apps and your transactional email provider of choice (shipping with support for Postmark, Resend, Mailgun, Amazon SES or an outbound SMTP relay). It also accepts POSTs from HTML forms to support static site needs while adding security layers such as honeypot fields, origin checks and IP rate limiting. There's also a JSON HTTP API that supports Bearer auth for backend scripts or cron jobs that just want a /send endpoint.I now use this personally in multiple scenarios and I've spent a lot of time beating this up and testing against what I can validate. I'd love to hear how this might be useful for you, what breaks and any feedback you might have. It's open source under Apache 2.0 and I'd love contributions. I'm planning to support and grow this for the long haul.Code: https://github.com/craigmccaskill/posthornDocs: https://posthorn.dev/Longer write up: https://craigmccaskill.com/introducing-posthorn/Previous HN discussion on the exact issue I'm trying to solve: https://news.ycombinator.com/item?id=43620318\n\nComments URL: https://news.ycombinator.com/item?id=48289624\nPoints: 10\n# Comments: 7",
+        "author": "craigmccaskill",
+        "published_at": "Wed, 27 May 2026 04:26:26 +0000",
+        "retrieved_at": "2026-05-27T07:54:03.804400+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Introducing Posthorn, a self hosted email gateway. One docker container (or Go binary) between every self hosted app on your VPS and your transactional email provider.",
+      "key_points": [
+        "Introducing Posthorn, a self hosted email gateway.",
+        "One docker container (or Go binary) between every self hosted app on your VPS and your transactional email provider.",
+        "Set up Posthorn once, point your apps to it, done.I was trying to deploy Ghost on a DigitalOcean droplet and found that DO and many different VPS services have started to block the default SMTP ports to try to combat the various types of abuse they get.",
+        "To actually configure my app, I had to hack together a Postfix relay.In another project, I had a static site which had a contact form, but my free Formspree account was occasionally hitting usage limits and I desperately wanted some of the anti-spam features they had gated behind their paid accounts"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "82987ec52e8efcd2",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Gear Commit: Dev gadget box personalized from GitHub activity",
+        "url": "https://gearcommit.nanocorp.app/",
+        "text": "Article URL: https://gearcommit.nanocorp.app/\nComments URL: https://news.ycombinator.com/item?id=48288761\nPoints: 5\n# Comments: 0",
+        "author": "silversharck",
+        "published_at": "Wed, 27 May 2026 02:29:24 +0000",
+        "retrieved_at": "2026-05-27T07:54:03.804438+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://gearcommit.nanocorp.app/ Comments URL: https://news.ycombinator.com/item?id=48288761 Points: 5 # Comments: 0",
+      "key_points": [
+        "Article URL: https://gearcommit.nanocorp.app/ Comments URL: https://news.ycombinator.com/item?id=48288761 Points: 5 # Comments: 0"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "0823922bb084e774",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "TSDuck: Open-source toolkit for MPEG-TS analysis and manipulation",
+        "url": "https://tsduck.io/",
+        "text": "Article URL: https://tsduck.io/\nComments URL: https://news.ycombinator.com/item?id=48288709\nPoints: 21\n# Comments: 1",
+        "author": "phantomathkg",
+        "published_at": "Wed, 27 May 2026 02:22:59 +0000",
+        "retrieved_at": "2026-05-27T07:54:03.804459+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://tsduck.io/ Comments URL: https://news.ycombinator.com/item?id=48288709 Points: 21 # Comments: 1",
+      "key_points": [
+        "Article URL: https://tsduck.io/ Comments URL: https://news.ycombinator.com/item?id=48288709 Points: 21 # Comments: 1"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "fa68e62d4f8b955f",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Tunecat: Simple Internet Radio",
+        "url": "https://codeberg.org/lindenii/tunecat/",
+        "text": "Article URL: https://codeberg.org/lindenii/tunecat/\nComments URL: https://news.ycombinator.com/item?id=48288174\nPoints: 46\n# Comments: 3",
+        "author": "croottree",
+        "published_at": "Wed, 27 May 2026 01:08:16 +0000",
+        "retrieved_at": "2026-05-27T07:54:03.804486+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://codeberg.org/lindenii/tunecat/ Comments URL: https://news.ycombinator.com/item?id=48288174 Points: 46 # Comments: 3",
+      "key_points": [
+        "Article URL: https://codeberg.org/lindenii/tunecat/ Comments URL: https://news.ycombinator.com/item?id=48288174 Points: 46 # Comments: 3"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "474acf044a19c2b0",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Stripe is friendly to \u201cfriendly fraud\u201d",
+        "url": "https://www.gingerlime.com/2026/stripe-seem-friendly-to-friendly-fraud/",
+        "text": "Article URL: https://www.gingerlime.com/2026/stripe-seem-friendly-to-friendly-fraud/\nComments URL: https://news.ycombinator.com/item?id=48287982\nPoints: 254\n# Comments: 162",
+        "author": "gingerlime",
+        "published_at": "Wed, 27 May 2026 00:40:05 +0000",
+        "retrieved_at": "2026-05-27T07:54:03.804504+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://www.gingerlime.com/2026/stripe-seem-friendly-to-friendly-fraud/ Comments URL: https://news.ycombinator.com/item?id=48287982 Points: 254 # Comments: 162",
+      "key_points": [
+        "Article URL: https://www.gingerlime.com/2026/stripe-seem-friendly-to-friendly-fraud/ Comments URL: https://news.ycombinator.com/item?id=48287982 Points: 254 # Comments: 162"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "322227781b706831",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Erin Brockovich made a map to track data centers around the country",
+        "url": "https://www.niemanlab.org/2026/05/erin-brockovich-made-a-map-to-track-data-centers-around-the-country/",
+        "text": "Article URL: https://www.niemanlab.org/2026/05/erin-brockovich-made-a-map-to-track-data-centers-around-the-country/\nComments URL: https://news.ycombinator.com/item?id=48287952\nPoints: 209\n# Comments: 197",
+        "author": "cratermoon",
+        "published_at": "Wed, 27 May 2026 00:36:03 +0000",
+        "retrieved_at": "2026-05-27T07:54:03.804521+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://www.niemanlab.org/2026/05/erin-brockovich-made-a-map-to-track-data-centers-around-the-country/ Comments URL: https://news.ycombinator.com/item?id=48287952 Points: 209 # Comments: 197",
+      "key_points": [
+        "Article URL: https://www.niemanlab.org/2026/05/erin-brockovich-made-a-map-to-track-data-centers-around-the-country/ Comments URL: https://news.ycombinator.com/item?id=48287952 Points: 209 # Comments: 197"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "3439ad58b3818e57",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Sonny Rollins, jazz saxophonist, has died",
+        "url": "https://www.rollingstone.com/music/music-news/sonny-rollins-jazz-legend-saxophone-colossus-dead-obit-1234715446/",
+        "text": "Article URL: https://www.rollingstone.com/music/music-news/sonny-rollins-jazz-legend-saxophone-colossus-dead-obit-1234715446/\nComments URL: https://news.ycombinator.com/item?id=48287678\nPoints: 104\n# Comments: 14",
+        "author": "boarsofcanada",
+        "published_at": "Wed, 27 May 2026 00:03:04 +0000",
+        "retrieved_at": "2026-05-27T07:54:03.804538+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://www.rollingstone.com/music/music-news/sonny-rollins-jazz-legend-saxophone-colossus-dead-obit-1234715446/ Comments URL: https://news.ycombinator.com/item?id=48287678 Points: 104 # Comments: 14",
+      "key_points": [
+        "Article URL: https://www.rollingstone.com/music/music-news/sonny-rollins-jazz-legend-saxophone-colossus-dead-obit-1234715446/ Comments URL: https://news.ycombinator.com/item?id=48287678 Points: 104 # Comments: 14"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "dd63e93da12d960a",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Cloudflare Flagship",
+        "url": "https://developers.cloudflare.com/flagship/",
+        "text": "Article URL: https://developers.cloudflare.com/flagship/\nComments URL: https://news.ycombinator.com/item?id=48287468\nPoints: 198\n# Comments: 94",
+        "author": "tjek",
+        "published_at": "Tue, 26 May 2026 23:36:06 +0000",
+        "retrieved_at": "2026-05-27T07:54:03.804561+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://developers.cloudflare.com/flagship/ Comments URL: https://news.ycombinator.com/item?id=48287468 Points: 198 # Comments: 94",
+      "key_points": [
+        "Article URL: https://developers.cloudflare.com/flagship/ Comments URL: https://news.ycombinator.com/item?id=48287468 Points: 198 # Comments: 94"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "fcf410a67bc83d43",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "The worst job interview I ever had",
+        "url": "https://www.oliverio.dev/blog/the-worst-job-interview-i-had",
+        "text": "Article URL: https://www.oliverio.dev/blog/the-worst-job-interview-i-had\nComments URL: https://news.ycombinator.com/item?id=48285344\nPoints: 231\n# Comments: 196",
+        "author": "oliverio",
+        "published_at": "Tue, 26 May 2026 20:11:49 +0000",
+        "retrieved_at": "2026-05-27T07:54:03.804579+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://www.oliverio.dev/blog/the-worst-job-interview-i-had Comments URL: https://news.ycombinator.com/item?id=48285344 Points: 231 # Comments: 196",
+      "key_points": [
+        "Article URL: https://www.oliverio.dev/blog/the-worst-job-interview-i-had Comments URL: https://news.ycombinator.com/item?id=48285344 Points: 231 # Comments: 196"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "aa2d02c7821c2c41",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "That Methyl Methacrylate Tank",
+        "url": "https://www.science.org/content/blog-post/methyl-methacrylate-tank",
+        "text": "Article URL: https://www.science.org/content/blog-post/methyl-methacrylate-tank\nComments URL: https://news.ycombinator.com/item?id=48284712\nPoints: 319\n# Comments: 120",
+        "author": "nooks",
+        "published_at": "Tue, 26 May 2026 19:25:16 +0000",
+        "retrieved_at": "2026-05-27T07:54:03.804597+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://www.science.org/content/blog-post/methyl-methacrylate-tank Comments URL: https://news.ycombinator.com/item?id=48284712 Points: 319 # Comments: 120",
+      "key_points": [
+        "Article URL: https://www.science.org/content/blog-post/methyl-methacrylate-tank Comments URL: https://news.ycombinator.com/item?id=48284712 Points: 319 # Comments: 120"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "07c63094b1513385",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "The Melancholy of Slaying Monsters",
+        "url": "https://thereader.mitpress.mit.edu/the-strange-melancholy-of-slaying-monsters/",
+        "text": "Article URL: https://thereader.mitpress.mit.edu/the-strange-melancholy-of-slaying-monsters/\nComments URL: https://news.ycombinator.com/item?id=48284711\nPoints: 20\n# Comments: 1",
+        "author": "prismatic",
+        "published_at": "Tue, 26 May 2026 19:25:13 +0000",
+        "retrieved_at": "2026-05-27T07:54:03.804614+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://thereader.mitpress.mit.edu/the-strange-melancholy-of-slaying-monsters/ Comments URL: https://news.ycombinator.com/item?id=48284711 Points: 20 # Comments: 1",
+      "key_points": [
+        "Article URL: https://thereader.mitpress.mit.edu/the-strange-melancholy-of-slaying-monsters/ Comments URL: https://news.ycombinator.com/item?id=48284711 Points: 20 # Comments: 1"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "bb7fd5a6fc01875c",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Sage Care (YC S24) Is Hiring Software Engineers",
+        "url": "https://www.ycombinator.com/companies/sagecare/jobs/xtloH8r-senior-software-engineer",
+        "text": "Article URL: https://www.ycombinator.com/companies/sagecare/jobs/xtloH8r-senior-software-engineer\nComments URL: https://news.ycombinator.com/item?id=48282478\nPoints: 0\n# Comments: 0",
+        "author": "ian-gillis",
+        "published_at": "Tue, 26 May 2026 17:00:40 +0000",
+        "retrieved_at": "2026-05-27T07:54:03.804631+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://www.ycombinator.com/companies/sagecare/jobs/xtloH8r-senior-software-engineer Comments URL: https://news.ycombinator.com/item?id=48282478 Points: 0 # Comments: 0",
+      "key_points": [
+        "Article URL: https://www.ycombinator.com/companies/sagecare/jobs/xtloH8r-senior-software-engineer Comments URL: https://news.ycombinator.com/item?id=48282478 Points: 0 # Comments: 0"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "4fe51c9194ab8ebc",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "What color is your function? (2015)",
+        "url": "https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/",
+        "text": "Article URL: https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/\nComments URL: https://news.ycombinator.com/item?id=48281515\nPoints: 118\n# Comments: 150",
+        "author": "tosh",
+        "published_at": "Tue, 26 May 2026 15:58:32 +0000",
+        "retrieved_at": "2026-05-27T07:54:03.804648+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/ Comments URL: https://news.ycombinator.com/item?id=48281515 Points: 118 # Comments: 150",
+      "key_points": [
+        "Article URL: https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/ Comments URL: https://news.ycombinator.com/item?id=48281515 Points: 118 # Comments: 150"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "8141408b1def29f3",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Launch HN: Minicor (YC P26) \u2013 Windows desktop automations at scale",
+        "url": "https://www.minicor.com/",
+        "text": "Hey we\u2019re Faiz and Saheed and we built Minicor so AI companies who need to integrate to desktop systems with no API can quickly build scalable desktop RPAs. Demo: https://www.youtube.com/watch?v=MD0GHZIJ1cwEdit: RPA is an acronym for Robotic Process Automation - things like triggering mouse clicks and key strokes to perform tasks programmatically. Sorry if this wasn't clear!We were working on non-RPA integrations when a customer promised to sign a deal in 2 days if we could unblock a sale of theirs that involved integrating with a clinic\u2019s Windows based medical record system. We didn\u2019t know it at the time but it turns out that building desktop RPAs at scale is extremely difficult because scripting is hard (learning the system, defining the automation, UIs changing constantly), orchestration is hard (is the VM up? queuing, parallelizing) and debugging is hard (zero observability, false positives, cascading failures). 30%+ failure rates are not uncommon. At scale we\u2019ve seen cases of failed RPAs leading to thousands of support tickets a month.To solve the problems we were facing, we built an MCP that Claude Code/Codex can use to navigate a virtual machine running desktop software with Python to create RPA workflows. The RPA workflows run as Python scripts for speed, cost, and determinism. These workflows can be triggered by API following any input/output schema specified, with video replays and logs stored with each run. The MCP can debug RPAs and make changes to the underlying code, all of which are version controlled. We also built tools for cloning VMs for parallelizing RPAs, and handling 2FA/OTP challenges. Plus since workflows are code based: we were also able to add triggers for Slack notifications, human-in-the-loop steps, or call an LLM to verify the state of a VM by passing a screenshot.Would love to hear your feedback and if you have any RPA horror stories! (:\n\nComments URL: https://news.ycombinator.com/item?id=48280729\nPoints: 87\n# Comments: 54",
+        "author": "fchishtie",
+        "published_at": "Tue, 26 May 2026 14:57:27 +0000",
+        "retrieved_at": "2026-05-27T07:54:03.804670+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Hey we\u2019re Faiz and Saheed and we built Minicor so AI companies who need to integrate to desktop systems with no API can quickly build scalable desktop RPAs. Demo: https://www.youtube.com/watch?v=MD0GHZIJ1cwEdit: RPA is an acronym for Robotic Process Automation - things like triggering mouse clicks and key strokes to perform tasks programmatically.",
+      "key_points": [
+        "Hey we\u2019re Faiz and Saheed and we built Minicor so AI companies who need to integrate to desktop systems with no API can quickly build scalable desktop RPAs.",
+        "Demo: https://www.youtube.com/watch?v=MD0GHZIJ1cwEdit: RPA is an acronym for Robotic Process Automation - things like triggering mouse clicks and key strokes to perform tasks programmatically.",
+        "Sorry if this wasn't clear!We were working on non-RPA integrations when a customer promised to sign a deal in 2 days if we could unblock a sale of theirs that involved integrating with a clinic\u2019s Windows based medical record system.",
+        "We didn\u2019t know it at the time but it turns out that building desktop RPAs at scale is extremely difficult because scripting is hard (learning the system, defining the automation, UIs changing constantly), orchestration is hard (is the VM up?"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "828f446578789a60",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Dropbox CEO Drew Houston to step down",
+        "url": "https://www.cnbc.com/2026/05/26/dropbox-ceo-drew-houston-ashraf-alkarmi.html",
+        "text": "https://blog.dropbox.com/topics/company/dropbox-leadership-u...https://twitter.com/drewhouston/status/2059275240065425474?s...\n\nComments URL: https://news.ycombinator.com/item?id=48279453\nPoints: 337\n# Comments: 360",
+        "author": "aghuang",
+        "published_at": "Tue, 26 May 2026 13:18:33 +0000",
+        "retrieved_at": "2026-05-27T07:54:03.804687+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "https://blog.dropbox.com/topics/company/dropbox-leadership-u...https://twitter.com/drewhouston/status/2059275240065425474?s... Comments URL: https://news.ycombinator.com/item?id=48279453 Points: 337 # Comments: 360",
+      "key_points": [
+        "https://blog.dropbox.com/topics/company/dropbox-leadership-u...https://twitter.com/drewhouston/status/2059275240065425474?s...",
+        "Comments URL: https://news.ycombinator.com/item?id=48279453 Points: 337 # Comments: 360"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "db555d0f3d1e8af5",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Spain blocks prediction markets Polymarket, Kalshi over lack of gambling licence",
+        "url": "https://www.reuters.com/business/spain-blocks-prediction-markets-polymarket-kalshi-over-lack-gambling-licences-2026-05-26/",
+        "text": "Article URL: https://www.reuters.com/business/spain-blocks-prediction-markets-polymarket-kalshi-over-lack-gambling-licences-2026-05-26/\nComments URL: https://news.ycombinator.com/item?id=48279316\nPoints: 890\n# Comments: 409",
+        "author": "thm",
+        "published_at": "Tue, 26 May 2026 13:08:13 +0000",
+        "retrieved_at": "2026-05-27T07:54:03.804703+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://www.reuters.com/business/spain-blocks-prediction-markets-polymarket-kalshi-over-lack-gambling-licences-2026-05-26/ Comments URL: https://news.ycombinator.com/item?id=48279316 Points: 890 # Comments: 409",
+      "key_points": [
+        "Article URL: https://www.reuters.com/business/spain-blocks-prediction-markets-polymarket-kalshi-over-lack-gambling-licences-2026-05-26/ Comments URL: https://news.ycombinator.com/item?id=48279316 Points: 890 # Comments: 409"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "d961a314ef5b672f",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "BadHost \u2013 CVE-2026-48710: Starlette Host-Header Auth Bypass",
+        "url": "https://badhost.org/",
+        "text": "https://arstechnica.com/information-technology/2026/05/milli...\n\nComments URL: https://news.ycombinator.com/item?id=48277107\nPoints: 28\n# Comments: 5",
+        "author": "ylk",
+        "published_at": "Tue, 26 May 2026 09:07:18 +0000",
+        "retrieved_at": "2026-05-27T07:54:03.804719+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "https://arstechnica.com/information-technology/2026/05/milli... Comments URL: https://news.ycombinator.com/item?id=48277107 Points: 28 # Comments: 5",
+      "key_points": [
+        "https://arstechnica.com/information-technology/2026/05/milli...",
+        "Comments URL: https://news.ycombinator.com/item?id=48277107 Points: 28 # Comments: 5"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "6f687a4ce99e104e",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Prompt Politeness Affects LLM Accuracy",
+        "url": "https://arxiv.org/abs/2510.04950",
+        "text": "Article URL: https://arxiv.org/abs/2510.04950\nComments URL: https://news.ycombinator.com/item?id=48276429\nPoints: 5\n# Comments: 0",
+        "author": "KnuthIsGod",
+        "published_at": "Tue, 26 May 2026 07:43:22 +0000",
+        "retrieved_at": "2026-05-27T07:54:03.804742+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://arxiv.org/abs/2510.04950 Comments URL: https://news.ycombinator.com/item?id=48276429 Points: 5 # Comments: 0",
+      "key_points": [
+        "Article URL: https://arxiv.org/abs/2510.04950 Comments URL: https://news.ycombinator.com/item?id=48276429 Points: 5 # Comments: 0"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "cebac2258cd8222f",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "A portentous reunion",
+        "url": "https://bcantrill.dtrace.org/2026/05/25/a-portentous-reunion/",
+        "text": "Article URL: https://bcantrill.dtrace.org/2026/05/25/a-portentous-reunion/\nComments URL: https://news.ycombinator.com/item?id=48275564\nPoints: 95\n# Comments: 26",
+        "author": "cafkafk",
+        "published_at": "Tue, 26 May 2026 05:57:45 +0000",
+        "retrieved_at": "2026-05-27T07:54:03.804758+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://bcantrill.dtrace.org/2026/05/25/a-portentous-reunion/ Comments URL: https://news.ycombinator.com/item?id=48275564 Points: 95 # Comments: 26",
+      "key_points": [
+        "Article URL: https://bcantrill.dtrace.org/2026/05/25/a-portentous-reunion/ Comments URL: https://news.ycombinator.com/item?id=48275564 Points: 95 # Comments: 26"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "9f0705ae40b38cf1",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "A few interesting modern pixel fonts",
+        "url": "https://unsung.aresluna.org/a-few-interesting-modern-pixel-fonts/",
+        "text": "Article URL: https://unsung.aresluna.org/a-few-interesting-modern-pixel-fonts/\nComments URL: https://news.ycombinator.com/item?id=48271448\nPoints: 335\n# Comments: 69",
+        "author": "zdw",
+        "published_at": "Mon, 25 May 2026 20:41:49 +0000",
+        "retrieved_at": "2026-05-27T07:54:03.804773+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://unsung.aresluna.org/a-few-interesting-modern-pixel-fonts/ Comments URL: https://news.ycombinator.com/item?id=48271448 Points: 335 # Comments: 69",
+      "key_points": [
+        "Article URL: https://unsung.aresluna.org/a-few-interesting-modern-pixel-fonts/ Comments URL: https://news.ycombinator.com/item?id=48271448 Points: 335 # Comments: 69"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    }
+  ],
+  "findings_markdown": "# Findings: Monitor configured research sources\n\n## Summary\n\nReviewed 20 item(s). Highest-scoring material is listed first.\n\n## Relevant Items\n\n### Show HN: Posthorn, self-hosted mail without the mail server\n- URL: https://github.com/craigmccaskill/posthorn\n- Source type: rss\n- Relevance: 1/5\n- Summary: Introducing Posthorn, a self hosted email gateway. One docker container (or Go binary) between every self hosted app on your VPS and your transactional email provider.\n- Key points:\n  - Introducing Posthorn, a self hosted email gateway.\n  - One docker container (or Go binary) between every self hosted app on your VPS and your transactional email provider.\n  - Set up Posthorn once, point your apps to it, done.I was trying to deploy Ghost on a DigitalOcean droplet and found that DO and many different VPS services have started to block the default SMTP ports to try to combat the various types of abuse they get.\n  - To actually configure my app, I had to hack together a Postfix relay.In another project, I had a static site which had a contact form, but my free Formspree account was occasionally hitting usage limits and I desperately wanted some of the anti-spam features they had gated behind their paid accounts\n- Rationale: No strong lexical overlap with the brief.\n\n### Gear Commit: Dev gadget box personalized from GitHub activity\n- URL: https://gearcommit.nanocorp.app/\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://gearcommit.nanocorp.app/ Comments URL: https://news.ycombinator.com/item?id=48288761 Points: 5 # Comments: 0\n- Key points:\n  - Article URL: https://gearcommit.nanocorp.app/ Comments URL: https://news.ycombinator.com/item?id=48288761 Points: 5 # Comments: 0\n- Rationale: No strong lexical overlap with the brief.\n\n### TSDuck: Open-source toolkit for MPEG-TS analysis and manipulation\n- URL: https://tsduck.io/\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://tsduck.io/ Comments URL: https://news.ycombinator.com/item?id=48288709 Points: 21 # Comments: 1\n- Key points:\n  - Article URL: https://tsduck.io/ Comments URL: https://news.ycombinator.com/item?id=48288709 Points: 21 # Comments: 1\n- Rationale: No strong lexical overlap with the brief.\n\n### Tunecat: Simple Internet Radio\n- URL: https://codeberg.org/lindenii/tunecat/\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://codeberg.org/lindenii/tunecat/ Comments URL: https://news.ycombinator.com/item?id=48288174 Points: 46 # Comments: 3\n- Key points:\n  - Article URL: https://codeberg.org/lindenii/tunecat/ Comments URL: https://news.ycombinator.com/item?id=48288174 Points: 46 # Comments: 3\n- Rationale: No strong lexical overlap with the brief.\n\n### Stripe is friendly to \u201cfriendly fraud\u201d\n- URL: https://www.gingerlime.com/2026/stripe-seem-friendly-to-friendly-fraud/\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://www.gingerlime.com/2026/stripe-seem-friendly-to-friendly-fraud/ Comments URL: https://news.ycombinator.com/item?id=48287982 Points: 254 # Comments: 162\n- Key points:\n  - Article URL: https://www.gingerlime.com/2026/stripe-seem-friendly-to-friendly-fraud/ Comments URL: https://news.ycombinator.com/item?id=48287982 Points: 254 # Comments: 162\n- Rationale: No strong lexical overlap with the brief.\n\n### Erin Brockovich made a map to track data centers around the country\n- URL: https://www.niemanlab.org/2026/05/erin-brockovich-made-a-map-to-track-data-centers-around-the-country/\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://www.niemanlab.org/2026/05/erin-brockovich-made-a-map-to-track-data-centers-around-the-country/ Comments URL: https://news.ycombinator.com/item?id=48287952 Points: 209 # Comments: 197\n- Key points:\n  - Article URL: https://www.niemanlab.org/2026/05/erin-brockovich-made-a-map-to-track-data-centers-around-the-country/ Comments URL: https://news.ycombinator.com/item?id=48287952 Points: 209 # Comments: 197\n- Rationale: No strong lexical overlap with the brief.\n\n### Sonny Rollins, jazz saxophonist, has died\n- URL: https://www.rollingstone.com/music/music-news/sonny-rollins-jazz-legend-saxophone-colossus-dead-obit-1234715446/\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://www.rollingstone.com/music/music-news/sonny-rollins-jazz-legend-saxophone-colossus-dead-obit-1234715446/ Comments URL: https://news.ycombinator.com/item?id=48287678 Points: 104 # Comments: 14\n- Key points:\n  - Article URL: https://www.rollingstone.com/music/music-news/sonny-rollins-jazz-legend-saxophone-colossus-dead-obit-1234715446/ Comments URL: https://news.ycombinator.com/item?id=48287678 Points: 104 # Comments: 14\n- Rationale: No strong lexical overlap with the brief.\n\n### Cloudflare Flagship\n- URL: https://developers.cloudflare.com/flagship/\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://developers.cloudflare.com/flagship/ Comments URL: https://news.ycombinator.com/item?id=48287468 Points: 198 # Comments: 94\n- Key points:\n  - Article URL: https://developers.cloudflare.com/flagship/ Comments URL: https://news.ycombinator.com/item?id=48287468 Points: 198 # Comments: 94\n- Rationale: No strong lexical overlap with the brief.\n\n### The worst job interview I ever had\n- URL: https://www.oliverio.dev/blog/the-worst-job-interview-i-had\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://www.oliverio.dev/blog/the-worst-job-interview-i-had Comments URL: https://news.ycombinator.com/item?id=48285344 Points: 231 # Comments: 196\n- Key points:\n  - Article URL: https://www.oliverio.dev/blog/the-worst-job-interview-i-had Comments URL: https://news.ycombinator.com/item?id=48285344 Points: 231 # Comments: 196\n- Rationale: No strong lexical overlap with the brief.\n\n### That Methyl Methacrylate Tank\n- URL: https://www.science.org/content/blog-post/methyl-methacrylate-tank\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://www.science.org/content/blog-post/methyl-methacrylate-tank Comments URL: https://news.ycombinator.com/item?id=48284712 Points: 319 # Comments: 120\n- Key points:\n  - Article URL: https://www.science.org/content/blog-post/methyl-methacrylate-tank Comments URL: https://news.ycombinator.com/item?id=48284712 Points: 319 # Comments: 120\n- Rationale: No strong lexical overlap with the brief.\n\n### The Melancholy of Slaying Monsters\n- URL: https://thereader.mitpress.mit.edu/the-strange-melancholy-of-slaying-monsters/\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://thereader.mitpress.mit.edu/the-strange-melancholy-of-slaying-monsters/ Comments URL: https://news.ycombinator.com/item?id=48284711 Points: 20 # Comments: 1\n- Key points:\n  - Article URL: https://thereader.mitpress.mit.edu/the-strange-melancholy-of-slaying-monsters/ Comments URL: https://news.ycombinator.com/item?id=48284711 Points: 20 # Comments: 1\n- Rationale: No strong lexical overlap with the brief.\n\n### Sage Care (YC S24) Is Hiring Software Engineers\n- URL: https://www.ycombinator.com/companies/sagecare/jobs/xtloH8r-senior-software-engineer\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://www.ycombinator.com/companies/sagecare/jobs/xtloH8r-senior-software-engineer Comments URL: https://news.ycombinator.com/item?id=48282478 Points: 0 # Comments: 0\n- Key points:\n  - Article URL: https://www.ycombinator.com/companies/sagecare/jobs/xtloH8r-senior-software-engineer Comments URL: https://news.ycombinator.com/item?id=48282478 Points: 0 # Comments: 0\n- Rationale: No strong lexical overlap with the brief.\n\n### What color is your function? (2015)\n- URL: https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/ Comments URL: https://news.ycombinator.com/item?id=48281515 Points: 118 # Comments: 150\n- Key points:\n  - Article URL: https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/ Comments URL: https://news.ycombinator.com/item?id=48281515 Points: 118 # Comments: 150\n- Rationale: No strong lexical overlap with the brief.\n\n### Launch HN: Minicor (YC P26) \u2013 Windows desktop automations at scale\n- URL: https://www.minicor.com/\n- Source type: rss\n- Relevance: 1/5\n- Summary: Hey we\u2019re Faiz and Saheed and we built Minicor so AI companies who need to integrate to desktop systems with no API can quickly build scalable desktop RPAs. Demo: https://www.youtube.com/watch?v=MD0GHZIJ1cwEdit: RPA is an acronym for Robotic Process Automation - things like triggering mouse clicks and key strokes to perform tasks programmatically.\n- Key points:\n  - Hey we\u2019re Faiz and Saheed and we built Minicor so AI companies who need to integrate to desktop systems with no API can quickly build scalable desktop RPAs.\n  - Demo: https://www.youtube.com/watch?v=MD0GHZIJ1cwEdit: RPA is an acronym for Robotic Process Automation - things like triggering mouse clicks and key strokes to perform tasks programmatically.\n  - Sorry if this wasn't clear!We were working on non-RPA integrations when a customer promised to sign a deal in 2 days if we could unblock a sale of theirs that involved integrating with a clinic\u2019s Windows based medical record system.\n  - We didn\u2019t know it at the time but it turns out that building desktop RPAs at scale is extremely difficult because scripting is hard (learning the system, defining the automation, UIs changing constantly), orchestration is hard (is the VM up?\n- Rationale: No strong lexical overlap with the brief.\n\n### Dropbox CEO Drew Houston to step down\n- URL: https://www.cnbc.com/2026/05/26/dropbox-ceo-drew-houston-ashraf-alkarmi.html\n- Source type: rss\n- Relevance: 1/5\n- Summary: https://blog.dropbox.com/topics/company/dropbox-leadership-u...https://twitter.com/drewhouston/status/2059275240065425474?s... Comments URL: https://news.ycombinator.com/item?id=48279453 Points: 337 # Comments: 360\n- Key points:\n  - https://blog.dropbox.com/topics/company/dropbox-leadership-u...https://twitter.com/drewhouston/status/2059275240065425474?s...\n  - Comments URL: https://news.ycombinator.com/item?id=48279453 Points: 337 # Comments: 360\n- Rationale: No strong lexical overlap with the brief.\n\n### Spain blocks prediction markets Polymarket, Kalshi over lack of gambling licence\n- URL: https://www.reuters.com/business/spain-blocks-prediction-markets-polymarket-kalshi-over-lack-gambling-licences-2026-05-26/\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://www.reuters.com/business/spain-blocks-prediction-markets-polymarket-kalshi-over-lack-gambling-licences-2026-05-26/ Comments URL: https://news.ycombinator.com/item?id=48279316 Points: 890 # Comments: 409\n- Key points:\n  - Article URL: https://www.reuters.com/business/spain-blocks-prediction-markets-polymarket-kalshi-over-lack-gambling-licences-2026-05-26/ Comments URL: https://news.ycombinator.com/item?id=48279316 Points: 890 # Comments: 409\n- Rationale: No strong lexical overlap with the brief.\n\n### BadHost \u2013 CVE-2026-48710: Starlette Host-Header Auth Bypass\n- URL: https://badhost.org/\n- Source type: rss\n- Relevance: 1/5\n- Summary: https://arstechnica.com/information-technology/2026/05/milli... Comments URL: https://news.ycombinator.com/item?id=48277107 Points: 28 # Comments: 5\n- Key points:\n  - https://arstechnica.com/information-technology/2026/05/milli...\n  - Comments URL: https://news.ycombinator.com/item?id=48277107 Points: 28 # Comments: 5\n- Rationale: No strong lexical overlap with the brief.\n\n### Prompt Politeness Affects LLM Accuracy\n- URL: https://arxiv.org/abs/2510.04950\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://arxiv.org/abs/2510.04950 Comments URL: https://news.ycombinator.com/item?id=48276429 Points: 5 # Comments: 0\n- Key points:\n  - Article URL: https://arxiv.org/abs/2510.04950 Comments URL: https://news.ycombinator.com/item?id=48276429 Points: 5 # Comments: 0\n- Rationale: No strong lexical overlap with the brief.\n\n### A portentous reunion\n- URL: https://bcantrill.dtrace.org/2026/05/25/a-portentous-reunion/\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://bcantrill.dtrace.org/2026/05/25/a-portentous-reunion/ Comments URL: https://news.ycombinator.com/item?id=48275564 Points: 95 # Comments: 26\n- Key points:\n  - Article URL: https://bcantrill.dtrace.org/2026/05/25/a-portentous-reunion/ Comments URL: https://news.ycombinator.com/item?id=48275564 Points: 95 # Comments: 26\n- Rationale: No strong lexical overlap with the brief.\n\n### A few interesting modern pixel fonts\n- URL: https://unsung.aresluna.org/a-few-interesting-modern-pixel-fonts/\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://unsung.aresluna.org/a-few-interesting-modern-pixel-fonts/ Comments URL: https://news.ycombinator.com/item?id=48271448 Points: 335 # Comments: 69\n- Key points:\n  - Article URL: https://unsung.aresluna.org/a-few-interesting-modern-pixel-fonts/ Comments URL: https://news.ycombinator.com/item?id=48271448 Points: 335 # Comments: 69\n- Rationale: No strong lexical overlap with the brief.\n",
+  "created_at": "2026-05-27T07:54:03.806204+00:00"
+}
