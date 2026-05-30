@@ -1,0 +1,605 @@
+[
+  {
+    "item": {
+      "id": "1e7c78ef2e8f69fd",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Company accidentally blows $500M on Claude AI in one month",
+      "url": "https://www.msn.com/en-us/news/technology/company-accidentally-blows-500-000-000-on-claude-ai-in-one-month/ar-AA24nahv",
+      "text": "Article URL: https://www.msn.com/en-us/news/technology/company-accidentally-blows-500-000-000-on-claude-ai-in-one-month/ar-AA24nahv\nComments URL: https://news.ycombinator.com/item?id=48333177\nPoints: 5\n# Comments: 0",
+      "author": "galaxyLogic",
+      "published_at": "Sat, 30 May 2026 06:15:11 +0000",
+      "retrieved_at": "2026-05-30T06:38:35.331250+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://www.msn.com/en-us/news/technology/company-accidentally-blows-500-000-000-on-claude-ai-in-one-month/ar-AA24nahv Comments URL: https://news.ycombinator.com/item?id=48333177 Points: 5 # Comments: 0",
+    "key_points": [
+      "Article URL: https://www.msn.com/en-us/news/technology/company-accidentally-blows-500-000-000-on-claude-ai-in-one-month/ar-AA24nahv Comments URL: https://news.ycombinator.com/item?id=48333177 Points: 5 # Comments: 0"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "0686fe47b5a51956",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Perry Compiles TypeScript directly to executables using SWC and LLVM",
+      "url": "https://www.perryts.com/",
+      "text": "Article URL: https://www.perryts.com/\nComments URL: https://news.ycombinator.com/item?id=48332151\nPoints: 44\n# Comments: 26",
+      "author": "0x1997",
+      "published_at": "Sat, 30 May 2026 03:14:25 +0000",
+      "retrieved_at": "2026-05-30T06:38:35.331288+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://www.perryts.com/ Comments URL: https://news.ycombinator.com/item?id=48332151 Points: 44 # Comments: 26",
+    "key_points": [
+      "Article URL: https://www.perryts.com/ Comments URL: https://news.ycombinator.com/item?id=48332151 Points: 44 # Comments: 26"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "04d3f121be35a6d9",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Show HN: VT Code \u2013 open-source terminal coding agent in Rust",
+      "url": "https://github.com/vinhnx/VTCode",
+      "text": "Article URL: https://github.com/vinhnx/VTCode\nComments URL: https://news.ycombinator.com/item?id=48332098\nPoints: 10\n# Comments: 4",
+      "author": "vinhnx",
+      "published_at": "Sat, 30 May 2026 03:07:25 +0000",
+      "retrieved_at": "2026-05-30T06:38:35.331311+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://github.com/vinhnx/VTCode Comments URL: https://news.ycombinator.com/item?id=48332098 Points: 10 # Comments: 4",
+    "key_points": [
+      "Article URL: https://github.com/vinhnx/VTCode Comments URL: https://news.ycombinator.com/item?id=48332098 Points: 10 # Comments: 4"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "c51057af0fce4a9f",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Naphtha shortages in Japan",
+      "url": "https://www.nippon.com/en/japan-data/h02783/",
+      "text": "Article URL: https://www.nippon.com/en/japan-data/h02783/\nComments URL: https://news.ycombinator.com/item?id=48331786\nPoints: 85\n# Comments: 43",
+      "author": "takakaze",
+      "published_at": "Sat, 30 May 2026 02:20:40 +0000",
+      "retrieved_at": "2026-05-30T06:38:35.331331+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://www.nippon.com/en/japan-data/h02783/ Comments URL: https://news.ycombinator.com/item?id=48331786 Points: 85 # Comments: 43",
+    "key_points": [
+      "Article URL: https://www.nippon.com/en/japan-data/h02783/ Comments URL: https://news.ycombinator.com/item?id=48331786 Points: 85 # Comments: 43"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "1dd81ae754fc9320",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "WH proposes rules giving political appointees final approval on research grants",
+      "url": "https://www.scientificamerican.com/article/white-house-proposes-new-rules-giving-political-appointees-final-say-on-research-grants/",
+      "text": "Article URL: https://www.scientificamerican.com/article/white-house-proposes-new-rules-giving-political-appointees-final-say-on-research-grants/\nComments URL: https://news.ycombinator.com/item?id=48331511\nPoints: 128\n# Comments: 94",
+      "author": "jordanpg",
+      "published_at": "Sat, 30 May 2026 01:39:52 +0000",
+      "retrieved_at": "2026-05-30T06:38:35.331348+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://www.scientificamerican.com/article/white-house-proposes-new-rules-giving-political-appointees-final-say-on-research-grants/ Comments URL: https://news.ycombinator.com/item?id=48331511 Points: 128 # Comments: 94",
+    "key_points": [
+      "Article URL: https://www.scientificamerican.com/article/white-house-proposes-new-rules-giving-political-appointees-final-say-on-research-grants/ Comments URL: https://news.ycombinator.com/item?id=48331511 Points: 128 # Comments: 94"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "800751581494ff6b",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Ember.js 7.0",
+      "url": "https://blog.emberjs.com/ember-released-7-0/",
+      "text": "Article URL: https://blog.emberjs.com/ember-released-7-0/\nComments URL: https://news.ycombinator.com/item?id=48330902\nPoints: 49\n# Comments: 7",
+      "author": "satvikpendem",
+      "published_at": "Fri, 29 May 2026 23:57:45 +0000",
+      "retrieved_at": "2026-05-30T06:38:35.331367+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://blog.emberjs.com/ember-released-7-0/ Comments URL: https://news.ycombinator.com/item?id=48330902 Points: 49 # Comments: 7",
+    "key_points": [
+      "Article URL: https://blog.emberjs.com/ember-released-7-0/ Comments URL: https://news.ycombinator.com/item?id=48330902 Points: 49 # Comments: 7"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "0aef713249dbeffa",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "What Is a Dickover?",
+      "url": "https://daringfireball.net/2026/05/what_is_a_dickover",
+      "text": "Article URL: https://daringfireball.net/2026/05/what_is_a_dickover\nComments URL: https://news.ycombinator.com/item?id=48330882\nPoints: 248\n# Comments: 107",
+      "author": "tambourine_man",
+      "published_at": "Fri, 29 May 2026 23:54:22 +0000",
+      "retrieved_at": "2026-05-30T06:38:35.331384+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://daringfireball.net/2026/05/what_is_a_dickover Comments URL: https://news.ycombinator.com/item?id=48330882 Points: 248 # Comments: 107",
+    "key_points": [
+      "Article URL: https://daringfireball.net/2026/05/what_is_a_dickover Comments URL: https://news.ycombinator.com/item?id=48330882 Points: 248 # Comments: 107"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "7963181e91e9d0eb",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "MCP is dead?",
+      "url": "https://www.quandri.io/engineering-blog/mcp-is-dead",
+      "text": "Article URL: https://www.quandri.io/engineering-blog/mcp-is-dead\nComments URL: https://news.ycombinator.com/item?id=48330436\nPoints: 156\n# Comments: 151",
+      "author": "nadis",
+      "published_at": "Fri, 29 May 2026 22:56:49 +0000",
+      "retrieved_at": "2026-05-30T06:38:35.331407+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://www.quandri.io/engineering-blog/mcp-is-dead Comments URL: https://news.ycombinator.com/item?id=48330436 Points: 156 # Comments: 151",
+    "key_points": [
+      "Article URL: https://www.quandri.io/engineering-blog/mcp-is-dead Comments URL: https://news.ycombinator.com/item?id=48330436 Points: 156 # Comments: 151"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "b7bd0579eddc2973",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Show HN: Open-source private home security camera system (end-to-end encryption)",
+      "url": "https://github.com/secluso/core",
+      "text": "Hey everyone,I previously introduced an open source private home security camera in 2024, which uses OpenMLS for end-to-end encryption: https://news.ycombinator.com/item?id=42284412.It was called Privastead then and it's now renamed to Secluso.John Kaczman found my project from here and has been working on it with me over the last year and half. We've made a lot of improvements to the software, which we would like to share with you:- You can now set this up on your Raspberry Pi in less than 5 minutes with no technical expertise using our easy-to-use GUI deploy tool. We've put together a comprehensive build-your-own guide that walks you through the required steps (you can find a link at the top of the repository README).- We use a customized, minimal OS based on the Yocto project for the camera.- Every part of our stack except for the iOS app has reproducible builds. This includes our Android app, camera/server binaries, deploy tool, and the aforementioned OS.- We've re-designed our mobile app, which is now on the iOS App Store and Google Play store.- We now support UnifiedPush for more privacy-preserving push notifications.Looking forward to seeing what you all think!\n\nComments URL: https://news.ycombinator.com/item?id=48330192\nPoints: 42\n# Comments: 9",
+      "author": "arrdalan",
+      "published_at": "Fri, 29 May 2026 22:32:29 +0000",
+      "retrieved_at": "2026-05-30T06:38:35.331429+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Hey everyone,I previously introduced an open source private home security camera in 2024, which uses OpenMLS for end-to-end encryption: https://news.ycombinator.com/item?id=42284412.It was called Privastead then and it's now renamed to Secluso.John Kaczman found my project from here and has been working on it with me over the last year and half. We've made a lot of improvements to the software, which we would like to share with you:- You can now set this up on your Raspberry Pi in less than 5 minutes with no technical expertise using our easy-to-use GUI deploy tool.",
+    "key_points": [
+      "Hey everyone,I previously introduced an open source private home security camera in 2024, which uses OpenMLS for end-to-end encryption: https://news.ycombinator.com/item?id=42284412.It was called Privastead then and it's now renamed to Secluso.John Kaczman found my project from here and has been wor",
+      "We've made a lot of improvements to the software, which we would like to share with you:- You can now set this up on your Raspberry Pi in less than 5 minutes with no technical expertise using our easy-to-use GUI deploy tool.",
+      "We've put together a comprehensive build-your-own guide that walks you through the required steps (you can find a link at the top of the repository README).- We use a customized, minimal OS based on the Yocto project for the camera.- Every part of our stack except for the iOS app has reproducible bu",
+      "This includes our Android app, camera/server binaries, deploy tool, and the aforementioned OS.- We've re-designed our mobile app, which is now on the iOS App Store and Google Play store.- We now support UnifiedPush for more privacy-preserving push notifications.Looking forward to seeing what you all"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "a1fe84377ccaa42a",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Free full BGP feed. IPv4 and IPv6 (2020)",
+      "url": "https://lukasz.bromirski.net/post/bgp-w-labie-3/",
+      "text": "Article URL: https://lukasz.bromirski.net/post/bgp-w-labie-3/\nComments URL: https://news.ycombinator.com/item?id=48330088\nPoints: 34\n# Comments: 22",
+      "author": "pm2222",
+      "published_at": "Fri, 29 May 2026 22:21:58 +0000",
+      "retrieved_at": "2026-05-30T06:38:35.331447+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://lukasz.bromirski.net/post/bgp-w-labie-3/ Comments URL: https://news.ycombinator.com/item?id=48330088 Points: 34 # Comments: 22",
+    "key_points": [
+      "Article URL: https://lukasz.bromirski.net/post/bgp-w-labie-3/ Comments URL: https://news.ycombinator.com/item?id=48330088 Points: 34 # Comments: 22"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "c0933c6d6fc0404b",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "The Last Technical Interview",
+      "url": "https://steve-yegge.medium.com/the-last-technical-interview-bc13ddcf4564",
+      "text": "Article URL: https://steve-yegge.medium.com/the-last-technical-interview-bc13ddcf4564\nComments URL: https://news.ycombinator.com/item?id=48328405\nPoints: 87\n# Comments: 59",
+      "author": "headalgorithm",
+      "published_at": "Fri, 29 May 2026 19:58:56 +0000",
+      "retrieved_at": "2026-05-30T06:38:35.331463+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://steve-yegge.medium.com/the-last-technical-interview-bc13ddcf4564 Comments URL: https://news.ycombinator.com/item?id=48328405 Points: 87 # Comments: 59",
+    "key_points": [
+      "Article URL: https://steve-yegge.medium.com/the-last-technical-interview-bc13ddcf4564 Comments URL: https://news.ycombinator.com/item?id=48328405 Points: 87 # Comments: 59"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "c8064959deae85e9",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Show HN: Tiny-vLLM \u2013 high performance LLM inference engine in C++ and CUDA",
+      "url": "https://github.com/jmaczan/tiny-vllm",
+      "text": "Article URL: https://github.com/jmaczan/tiny-vllm\nComments URL: https://news.ycombinator.com/item?id=48328184\nPoints: 126\n# Comments: 10",
+      "author": "yu3zhou4",
+      "published_at": "Fri, 29 May 2026 19:38:27 +0000",
+      "retrieved_at": "2026-05-30T06:38:35.331480+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://github.com/jmaczan/tiny-vllm Comments URL: https://news.ycombinator.com/item?id=48328184 Points: 126 # Comments: 10",
+    "key_points": [
+      "Article URL: https://github.com/jmaczan/tiny-vllm Comments URL: https://news.ycombinator.com/item?id=48328184 Points: 126 # Comments: 10"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "32635a8b7b70eac2",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Shift will clean homes for free to train future robots",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/939765/ai-training-data-startup-shift-free-cleaning",
+      "text": "Article URL: https://www.theverge.com/ai-artificial-intelligence/939765/ai-training-data-startup-shift-free-cleaning\nComments URL: https://news.ycombinator.com/item?id=48327962\nPoints: 114\n# Comments: 172",
+      "author": "evilsimon",
+      "published_at": "Fri, 29 May 2026 19:16:32 +0000",
+      "retrieved_at": "2026-05-30T06:38:35.331496+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://www.theverge.com/ai-artificial-intelligence/939765/ai-training-data-startup-shift-free-cleaning Comments URL: https://news.ycombinator.com/item?id=48327962 Points: 114 # Comments: 172",
+    "key_points": [
+      "Article URL: https://www.theverge.com/ai-artificial-intelligence/939765/ai-training-data-startup-shift-free-cleaning Comments URL: https://news.ycombinator.com/item?id=48327962 Points: 114 # Comments: 172"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "c60cb792ab22eda3",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "On Rendering Diffs",
+      "url": "https://pierre.computer/writing/on-rendering-diffs",
+      "text": "Article URL: https://pierre.computer/writing/on-rendering-diffs\nComments URL: https://news.ycombinator.com/item?id=48327809\nPoints: 161\n# Comments: 51",
+      "author": "amadeus",
+      "published_at": "Fri, 29 May 2026 19:04:54 +0000",
+      "retrieved_at": "2026-05-30T06:38:35.331512+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://pierre.computer/writing/on-rendering-diffs Comments URL: https://news.ycombinator.com/item?id=48327809 Points: 161 # Comments: 51",
+    "key_points": [
+      "Article URL: https://pierre.computer/writing/on-rendering-diffs Comments URL: https://news.ycombinator.com/item?id=48327809 Points: 161 # Comments: 51"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "c26d579a4d4e6086",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "SQLite is all you need for durable workflows",
+      "url": "https://obeli.sk/blog/sqlite-is-all-you-need-for-durable-workflows/",
+      "text": "Article URL: https://obeli.sk/blog/sqlite-is-all-you-need-for-durable-workflows/\nComments URL: https://news.ycombinator.com/item?id=48326802\nPoints: 464\n# Comments: 235",
+      "author": "tomasol",
+      "published_at": "Fri, 29 May 2026 17:54:50 +0000",
+      "retrieved_at": "2026-05-30T06:38:35.331528+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://obeli.sk/blog/sqlite-is-all-you-need-for-durable-workflows/ Comments URL: https://news.ycombinator.com/item?id=48326802 Points: 464 # Comments: 235",
+    "key_points": [
+      "Article URL: https://obeli.sk/blog/sqlite-is-all-you-need-for-durable-workflows/ Comments URL: https://news.ycombinator.com/item?id=48326802 Points: 464 # Comments: 235"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "b3bab84d3ba3d182",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Show HN: TV Explorer. Adding advanced UI to free online TV",
+      "url": "https://tvexplorer.live",
+      "text": "Article URL: https://tvexplorer.live\nComments URL: https://news.ycombinator.com/item?id=48325624\nPoints: 137\n# Comments: 39",
+      "author": "dtagames",
+      "published_at": "Fri, 29 May 2026 16:39:09 +0000",
+      "retrieved_at": "2026-05-30T06:38:35.331543+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://tvexplorer.live Comments URL: https://news.ycombinator.com/item?id=48325624 Points: 137 # Comments: 39",
+    "key_points": [
+      "Article URL: https://tvexplorer.live Comments URL: https://news.ycombinator.com/item?id=48325624 Points: 137 # Comments: 39"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "6619184b05bcdfbf",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Notes from the Mistral AI Now Summit",
+      "url": "https://koenvangilst.nl/lab/mistral-ai-now-summit",
+      "text": "Article URL: https://koenvangilst.nl/lab/mistral-ai-now-summit\nComments URL: https://news.ycombinator.com/item?id=48325340\nPoints: 334\n# Comments: 127",
+      "author": "vnglst",
+      "published_at": "Fri, 29 May 2026 16:22:01 +0000",
+      "retrieved_at": "2026-05-30T06:38:35.331557+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://koenvangilst.nl/lab/mistral-ai-now-summit Comments URL: https://news.ycombinator.com/item?id=48325340 Points: 334 # Comments: 127",
+    "key_points": [
+      "Article URL: https://koenvangilst.nl/lab/mistral-ai-now-summit Comments URL: https://news.ycombinator.com/item?id=48325340 Points: 334 # Comments: 127"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "65756a91680a239a",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Liquid AI reveals 8B-A1B MoE trained on 38T",
+      "url": "https://www.liquid.ai/blog/lfm2-5-8b-a1b",
+      "text": "Article URL: https://www.liquid.ai/blog/lfm2-5-8b-a1b\nComments URL: https://news.ycombinator.com/item?id=48325306\nPoints: 173\n# Comments: 64",
+      "author": "simjnd",
+      "published_at": "Fri, 29 May 2026 16:19:54 +0000",
+      "retrieved_at": "2026-05-30T06:38:35.331572+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://www.liquid.ai/blog/lfm2-5-8b-a1b Comments URL: https://news.ycombinator.com/item?id=48325306 Points: 173 # Comments: 64",
+    "key_points": [
+      "Article URL: https://www.liquid.ai/blog/lfm2-5-8b-a1b Comments URL: https://news.ycombinator.com/item?id=48325306 Points: 173 # Comments: 64"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "8205b87bc6e937a4",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "You can just say it",
+      "url": "https://noperator.dev/posts/you-can-just-say-it/",
+      "text": "Article URL: https://noperator.dev/posts/you-can-just-say-it/\nComments URL: https://news.ycombinator.com/item?id=48324853\nPoints: 297\n# Comments: 142",
+      "author": "antirez",
+      "published_at": "Fri, 29 May 2026 15:54:28 +0000",
+      "retrieved_at": "2026-05-30T06:38:35.331587+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://noperator.dev/posts/you-can-just-say-it/ Comments URL: https://news.ycombinator.com/item?id=48324853 Points: 297 # Comments: 142",
+    "key_points": [
+      "Article URL: https://noperator.dev/posts/you-can-just-say-it/ Comments URL: https://news.ycombinator.com/item?id=48324853 Points: 297 # Comments: 142"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "f38480a840a6ce93",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "The dead economy theory",
+      "url": "https://www.owenmcgrann.com/p/the-dead-economy-theory",
+      "text": "Article URL: https://www.owenmcgrann.com/p/the-dead-economy-theory\nComments URL: https://news.ycombinator.com/item?id=48324712\nPoints: 892\n# Comments: 1054",
+      "author": "WillDaSilva",
+      "published_at": "Fri, 29 May 2026 15:46:24 +0000",
+      "retrieved_at": "2026-05-30T06:38:35.331601+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://www.owenmcgrann.com/p/the-dead-economy-theory Comments URL: https://news.ycombinator.com/item?id=48324712 Points: 892 # Comments: 1054",
+    "key_points": [
+      "Article URL: https://www.owenmcgrann.com/p/the-dead-economy-theory Comments URL: https://news.ycombinator.com/item?id=48324712 Points: 892 # Comments: 1054"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  }
+]
