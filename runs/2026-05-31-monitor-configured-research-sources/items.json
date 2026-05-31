@@ -1,0 +1,445 @@
+[
+  {
+    "id": "794baed73f740591",
+    "source_id": "hacker-news-front-page",
+    "source_type": "rss",
+    "title": "The Website Specification",
+    "url": "https://specification.website/",
+    "text": "Article URL: https://specification.website/\nComments URL: https://news.ycombinator.com/item?id=48343683\nPoints: 15\n# Comments: 1",
+    "author": "k1m",
+    "published_at": "Sun, 31 May 2026 07:09:50 +0000",
+    "retrieved_at": "2026-05-31T07:36:34.110692+00:00",
+    "metadata": {
+      "feed_title": "Hacker News: Front Page"
+    },
+    "access_rights": {
+      "store_full_text": true
+    },
+    "provenance": {
+      "connector": "rss",
+      "retrieval": "feedparser"
+    }
+  },
+  {
+    "id": "56986d9beadf3723",
+    "source_id": "hacker-news-front-page",
+    "source_type": "rss",
+    "title": "Telli (YC F24) is hiring in engineering, design, and GTM [Berlin, on-site]",
+    "url": "https://hi.telli.com/join-us",
+    "text": "Article URL: https://hi.telli.com/join-us\nComments URL: https://news.ycombinator.com/item?id=48343635\nPoints: 0\n# Comments: 0",
+    "author": "sebselassie",
+    "published_at": "Sun, 31 May 2026 07:00:50 +0000",
+    "retrieved_at": "2026-05-31T07:36:34.110726+00:00",
+    "metadata": {
+      "feed_title": "Hacker News: Front Page"
+    },
+    "access_rights": {
+      "store_full_text": true
+    },
+    "provenance": {
+      "connector": "rss",
+      "retrieval": "feedparser"
+    }
+  },
+  {
+    "id": "8ce9d28cd52620d6",
+    "source_id": "hacker-news-front-page",
+    "source_type": "rss",
+    "title": "Avian Visitors",
+    "url": "https://theodore.net/projects/AvianVisitors/",
+    "text": "Article URL: https://theodore.net/projects/AvianVisitors/\nComments URL: https://news.ycombinator.com/item?id=48343424\nPoints: 13\n# Comments: 0",
+    "author": "fdb",
+    "published_at": "Sun, 31 May 2026 06:13:59 +0000",
+    "retrieved_at": "2026-05-31T07:36:34.110747+00:00",
+    "metadata": {
+      "feed_title": "Hacker News: Front Page"
+    },
+    "access_rights": {
+      "store_full_text": true
+    },
+    "provenance": {
+      "connector": "rss",
+      "retrieval": "feedparser"
+    }
+  },
+  {
+    "id": "76bdb0a6c2c1095c",
+    "source_id": "hacker-news-front-page",
+    "source_type": "rss",
+    "title": "A pictorial introduction to differential geometry (2017)",
+    "url": "https://arxiv.org/abs/1709.08492",
+    "text": "Article URL: https://arxiv.org/abs/1709.08492\nComments URL: https://news.ycombinator.com/item?id=48343287\nPoints: 11\n# Comments: 0",
+    "author": "ricudis",
+    "published_at": "Sun, 31 May 2026 05:30:18 +0000",
+    "retrieved_at": "2026-05-31T07:36:34.110766+00:00",
+    "metadata": {
+      "feed_title": "Hacker News: Front Page"
+    },
+    "access_rights": {
+      "store_full_text": true
+    },
+    "provenance": {
+      "connector": "rss",
+      "retrieval": "feedparser"
+    }
+  },
+  {
+    "id": "0f6eb1b60712a3fc",
+    "source_id": "hacker-news-front-page",
+    "source_type": "rss",
+    "title": "Ahoy, DECmate II the little PDP-8 that could",
+    "url": "http://oldvcr.blogspot.com/2026/05/ahoy-decmate-ii-little-pdp-8-that-could.html",
+    "text": "Article URL: http://oldvcr.blogspot.com/2026/05/ahoy-decmate-ii-little-pdp-8-that-could.html\nComments URL: https://news.ycombinator.com/item?id=48343078\nPoints: 25\n# Comments: 1",
+    "author": "TMWNN",
+    "published_at": "Sun, 31 May 2026 04:42:14 +0000",
+    "retrieved_at": "2026-05-31T07:36:34.110783+00:00",
+    "metadata": {
+      "feed_title": "Hacker News: Front Page"
+    },
+    "access_rights": {
+      "store_full_text": true
+    },
+    "provenance": {
+      "connector": "rss",
+      "retrieval": "feedparser"
+    }
+  },
+  {
+    "id": "eaf6e409e3d1b5f1",
+    "source_id": "hacker-news-front-page",
+    "source_type": "rss",
+    "title": "Building a LangGraph pipeline for production data engineering",
+    "url": "https://labyrinthanalyticsconsulting.com/blog/building-first-langgraph-pipeline",
+    "text": "Article URL: https://labyrinthanalyticsconsulting.com/blog/building-first-langgraph-pipeline\nComments URL: https://news.ycombinator.com/item?id=48343061\nPoints: 11\n# Comments: 0",
+    "author": "labyrinthAC",
+    "published_at": "Sun, 31 May 2026 04:38:25 +0000",
+    "retrieved_at": "2026-05-31T07:36:34.110799+00:00",
+    "metadata": {
+      "feed_title": "Hacker News: Front Page"
+    },
+    "access_rights": {
+      "store_full_text": true
+    },
+    "provenance": {
+      "connector": "rss",
+      "retrieval": "feedparser"
+    }
+  },
+  {
+    "id": "284854f3ff70e36a",
+    "source_id": "hacker-news-front-page",
+    "source_type": "rss",
+    "title": "Mechanical Pencil: An illustrated celebration of the engineering around us",
+    "url": "https://mechanical-pencil.com/",
+    "text": "Article URL: https://mechanical-pencil.com/\nComments URL: https://news.ycombinator.com/item?id=48341932\nPoints: 48\n# Comments: 6",
+    "author": "Muhammad523",
+    "published_at": "Sun, 31 May 2026 00:25:12 +0000",
+    "retrieved_at": "2026-05-31T07:36:34.110816+00:00",
+    "metadata": {
+      "feed_title": "Hacker News: Front Page"
+    },
+    "access_rights": {
+      "store_full_text": true
+    },
+    "provenance": {
+      "connector": "rss",
+      "retrieval": "feedparser"
+    }
+  },
+  {
+    "id": "7feda3c6993892b9",
+    "source_id": "hacker-news-front-page",
+    "source_type": "rss",
+    "title": "Microsoft Office 2019 and 2021 for Mac view-only conversion",
+    "url": "https://consumerrights.wiki/w/Microsoft_Office_2019_and_2021_for_Mac_view-only_conversion_(2026)",
+    "text": "Article URL: https://consumerrights.wiki/w/Microsoft_Office_2019_and_2021_for_Mac_view-only_conversion_(2026)\nComments URL: https://news.ycombinator.com/item?id=48341578\nPoints: 803\n# Comments: 281",
+    "author": "antipurist",
+    "published_at": "Sat, 30 May 2026 23:26:13 +0000",
+    "retrieved_at": "2026-05-31T07:36:34.110840+00:00",
+    "metadata": {
+      "feed_title": "Hacker News: Front Page"
+    },
+    "access_rights": {
+      "store_full_text": true
+    },
+    "provenance": {
+      "connector": "rss",
+      "retrieval": "feedparser"
+    }
+  },
+  {
+    "id": "04adc0cd7b1553c9",
+    "source_id": "hacker-news-front-page",
+    "source_type": "rss",
+    "title": "Cheese Paper: a text editor specifically designed for writing",
+    "url": "https://brie.gay/cheese-paper/",
+    "text": "Article URL: https://brie.gay/cheese-paper/\nComments URL: https://news.ycombinator.com/item?id=48341407\nPoints: 97\n# Comments: 22",
+    "author": "sohkamyung",
+    "published_at": "Sat, 30 May 2026 22:58:41 +0000",
+    "retrieved_at": "2026-05-31T07:36:34.110858+00:00",
+    "metadata": {
+      "feed_title": "Hacker News: Front Page"
+    },
+    "access_rights": {
+      "store_full_text": true
+    },
+    "provenance": {
+      "connector": "rss",
+      "retrieval": "feedparser"
+    }
+  },
+  {
+    "id": "94f84d71102929d3",
+    "source_id": "hacker-news-front-page",
+    "source_type": "rss",
+    "title": "Shantell Sans (2023)",
+    "url": "https://shantellsans.com/process",
+    "text": "Article URL: https://shantellsans.com/process\nComments URL: https://news.ycombinator.com/item?id=48341062\nPoints: 204\n# Comments: 16",
+    "author": "aleda145",
+    "published_at": "Sat, 30 May 2026 22:06:38 +0000",
+    "retrieved_at": "2026-05-31T07:36:34.110875+00:00",
+    "metadata": {
+      "feed_title": "Hacker News: Front Page"
+    },
+    "access_rights": {
+      "store_full_text": true
+    },
+    "provenance": {
+      "connector": "rss",
+      "retrieval": "feedparser"
+    }
+  },
+  {
+    "id": "8c758acc3fbc79d7",
+    "source_id": "hacker-news-front-page",
+    "source_type": "rss",
+    "title": "The AV2 Video Standard Has Released (Final v1.0 Specification)",
+    "url": "https://av2.aomedia.org",
+    "text": "Article URL: https://av2.aomedia.org\nComments URL: https://news.ycombinator.com/item?id=48340910\nPoints: 155\n# Comments: 51",
+    "author": "ksec",
+    "published_at": "Sat, 30 May 2026 21:46:18 +0000",
+    "retrieved_at": "2026-05-31T07:36:34.110891+00:00",
+    "metadata": {
+      "feed_title": "Hacker News: Front Page"
+    },
+    "access_rights": {
+      "store_full_text": true
+    },
+    "provenance": {
+      "connector": "rss",
+      "retrieval": "feedparser"
+    }
+  },
+  {
+    "id": "7af14b2eb23498f4",
+    "source_id": "hacker-news-front-page",
+    "source_type": "rss",
+    "title": "wolfSSL releases a new product; wolfCOSE a zero alloc C embbedded COSE stack",
+    "url": "https://github.com/wolfSSL/wolfCOSE",
+    "text": "Article URL: https://github.com/wolfSSL/wolfCOSE\nComments URL: https://news.ycombinator.com/item?id=48340422\nPoints: 86\n# Comments: 16",
+    "author": "aidangarske",
+    "published_at": "Sat, 30 May 2026 20:42:28 +0000",
+    "retrieved_at": "2026-05-31T07:36:34.110907+00:00",
+    "metadata": {
+      "feed_title": "Hacker News: Front Page"
+    },
+    "access_rights": {
+      "store_full_text": true
+    },
+    "provenance": {
+      "connector": "rss",
+      "retrieval": "feedparser"
+    }
+  },
+  {
+    "id": "a78bdf8a88c42955",
+    "source_id": "hacker-news-front-page",
+    "source_type": "rss",
+    "title": "Domain expertise has always been the real moat",
+    "url": "https://www.brethorsting.com/blog/2026/05/domain-expertise-has-always-been-the-real-moat/",
+    "text": "Article URL: https://www.brethorsting.com/blog/2026/05/domain-expertise-has-always-been-the-real-moat/\nComments URL: https://news.ycombinator.com/item?id=48340411\nPoints: 502\n# Comments: 307",
+    "author": "aaronbrethorst",
+    "published_at": "Sat, 30 May 2026 20:40:57 +0000",
+    "retrieved_at": "2026-05-31T07:36:34.110922+00:00",
+    "metadata": {
+      "feed_title": "Hacker News: Front Page"
+    },
+    "access_rights": {
+      "store_full_text": true
+    },
+    "provenance": {
+      "connector": "rss",
+      "retrieval": "feedparser"
+    }
+  },
+  {
+    "id": "9bfe8d41ae1aaffd",
+    "source_id": "hacker-news-front-page",
+    "source_type": "rss",
+    "title": "Dusklight \u2013 GC Twilight Princess Decompiled",
+    "url": "https://twilitrealm.dev/",
+    "text": "Article URL: https://twilitrealm.dev/\nComments URL: https://news.ycombinator.com/item?id=48340262\nPoints: 92\n# Comments: 11",
+    "author": "shepherdjerred",
+    "published_at": "Sat, 30 May 2026 20:24:26 +0000",
+    "retrieved_at": "2026-05-31T07:36:34.110937+00:00",
+    "metadata": {
+      "feed_title": "Hacker News: Front Page"
+    },
+    "access_rights": {
+      "store_full_text": true
+    },
+    "provenance": {
+      "connector": "rss",
+      "retrieval": "feedparser"
+    }
+  },
+  {
+    "id": "33f664f6a5d6a7a3",
+    "source_id": "hacker-news-front-page",
+    "source_type": "rss",
+    "title": "Parallel Reconstruction of Lawful TLS Wiretapping",
+    "url": "https://remyhax.xyz/posts/reproducing-lawful-tls-wiretapping/",
+    "text": "Article URL: https://remyhax.xyz/posts/reproducing-lawful-tls-wiretapping/\nComments URL: https://news.ycombinator.com/item?id=48339943\nPoints: 89\n# Comments: 40",
+    "author": "jerrythegerbil",
+    "published_at": "Sat, 30 May 2026 19:47:36 +0000",
+    "retrieved_at": "2026-05-31T07:36:34.110952+00:00",
+    "metadata": {
+      "feed_title": "Hacker News: Front Page"
+    },
+    "access_rights": {
+      "store_full_text": true
+    },
+    "provenance": {
+      "connector": "rss",
+      "retrieval": "feedparser"
+    }
+  },
+  {
+    "id": "f402b51cc0473103",
+    "source_id": "hacker-news-front-page",
+    "source_type": "rss",
+    "title": "Jef Raskin, the Visionary Behind the Mac (2013)",
+    "url": "https://lowendmac.com/2013/jef-raskin-the-visionary-behind-the-mac/",
+    "text": "Article URL: https://lowendmac.com/2013/jef-raskin-the-visionary-behind-the-mac/\nComments URL: https://news.ycombinator.com/item?id=48339894\nPoints: 99\n# Comments: 42",
+    "author": "tylerdane",
+    "published_at": "Sat, 30 May 2026 19:42:33 +0000",
+    "retrieved_at": "2026-05-31T07:36:34.110967+00:00",
+    "metadata": {
+      "feed_title": "Hacker News: Front Page"
+    },
+    "access_rights": {
+      "store_full_text": true
+    },
+    "provenance": {
+      "connector": "rss",
+      "retrieval": "feedparser"
+    }
+  },
+  {
+    "id": "bd9dd79cceace3bc",
+    "source_id": "hacker-news-front-page",
+    "source_type": "rss",
+    "title": "Show HN: 500 years of Joseon court omens as an observability dashboard",
+    "url": "https://ajin.im/is/building/omen.ops/",
+    "text": "Article URL: https://ajin.im/is/building/omen.ops/\nComments URL: https://news.ycombinator.com/item?id=48339753\nPoints: 114\n# Comments: 17",
+    "author": "poppypetalmask",
+    "published_at": "Sat, 30 May 2026 19:23:36 +0000",
+    "retrieved_at": "2026-05-31T07:36:34.110981+00:00",
+    "metadata": {
+      "feed_title": "Hacker News: Front Page"
+    },
+    "access_rights": {
+      "store_full_text": true
+    },
+    "provenance": {
+      "connector": "rss",
+      "retrieval": "feedparser"
+    }
+  },
+  {
+    "id": "2e039bf807323d4b",
+    "source_id": "hacker-news-front-page",
+    "source_type": "rss",
+    "title": "Zig ELF Linker Improvements Devlog",
+    "url": "https://ziglang.org/devlog/2026/#2026-05-30",
+    "text": "Article URL: https://ziglang.org/devlog/2026/#2026-05-30\nComments URL: https://news.ycombinator.com/item?id=48338673\nPoints: 198\n# Comments: 61",
+    "author": "kristoff_it",
+    "published_at": "Sat, 30 May 2026 17:29:22 +0000",
+    "retrieved_at": "2026-05-31T07:36:34.110995+00:00",
+    "metadata": {
+      "feed_title": "Hacker News: Front Page"
+    },
+    "access_rights": {
+      "store_full_text": true
+    },
+    "provenance": {
+      "connector": "rss",
+      "retrieval": "feedparser"
+    }
+  },
+  {
+    "id": "2ea49da39580f450",
+    "source_id": "hacker-news-front-page",
+    "source_type": "rss",
+    "title": "OpenRouter raises $113M Series B",
+    "url": "https://openrouter.ai/announcements/series-b",
+    "text": "Article URL: https://openrouter.ai/announcements/series-b\nComments URL: https://news.ycombinator.com/item?id=48338660\nPoints: 406\n# Comments: 198",
+    "author": "freeCandy",
+    "published_at": "Sat, 30 May 2026 17:27:28 +0000",
+    "retrieved_at": "2026-05-31T07:36:34.111010+00:00",
+    "metadata": {
+      "feed_title": "Hacker News: Front Page"
+    },
+    "access_rights": {
+      "store_full_text": true
+    },
+    "provenance": {
+      "connector": "rss",
+      "retrieval": "feedparser"
+    }
+  },
+  {
+    "id": "e29112e48bdf15ed",
+    "source_id": "hacker-news-front-page",
+    "source_type": "rss",
+    "title": "Microcode inside the Intel 8087 floating-point chip: register exchange",
+    "url": "https://www.righto.com/2026/05/microcode-inside-intel-8087-floating.html",
+    "text": "Article URL: https://www.righto.com/2026/05/microcode-inside-intel-8087-floating.html\nComments URL: https://news.ycombinator.com/item?id=48338656\nPoints: 110\n# Comments: 18",
+    "author": "pwg",
+    "published_at": "Sat, 30 May 2026 17:27:13 +0000",
+    "retrieved_at": "2026-05-31T07:36:34.111024+00:00",
+    "metadata": {
+      "feed_title": "Hacker News: Front Page"
+    },
+    "access_rights": {
+      "store_full_text": true
+    },
+    "provenance": {
+      "connector": "rss",
+      "retrieval": "feedparser"
+    }
+  },
+  {
+    "id": "b062f24b24377b7d",
+    "source_id": "openai-x-profile",
+    "source_type": "x_profile",
+    "title": "X profile @openai",
+    "url": "https://x.com/openai",
+    "text": "X/Twitter profile metadata placeholder. Configure an authenticated X API, browser-session, export, or list connector to retrieve timeline items.",
+    "author": "openai",
+    "published_at": null,
+    "retrieved_at": "2026-05-31T07:36:34.111053+00:00",
+    "metadata": {
+      "status_id": null,
+      "requires_authenticated_retrieval": true
+    },
+    "access_rights": {
+      "store_full_text": false,
+      "reason": "social/auth connector not configured"
+    },
+    "provenance": {
+      "connector": "x_profile",
+      "retrieval": "url_normalization"
+    }
+  }
+]
