@@ -1,0 +1,1087 @@
+{
+  "run_id": "2026-06-03-monitor-configured-research-sources",
+  "brief": {
+    "question": "Monitor configured research sources",
+    "mode": "monitor-sources",
+    "topics": [],
+    "constraints": {}
+  },
+  "sources": [
+    {
+      "id": "hacker-news-front-page",
+      "type": "rss",
+      "name": "Hacker News Front Page",
+      "url": "https://hnrss.org/frontpage",
+      "access": {
+        "method": "public"
+      },
+      "metadata": {}
+    },
+    {
+      "id": "openai-x-profile",
+      "type": "x_profile",
+      "name": "OpenAI on X",
+      "url": "https://x.com/openai",
+      "access": {
+        "method": "browser_session",
+        "store_full_text": false
+      },
+      "metadata": {}
+    }
+  ],
+  "items": [
+    {
+      "id": "fd067e3b94e60cc6",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "AI Engineers aren't safe from being replaced by AI",
+      "url": "https://dmanco.dev/2025/08/17/fear-not-even-ai-engineers-will-be-replaced-by-ai.html",
+      "text": "Article URL: https://dmanco.dev/2025/08/17/fear-not-even-ai-engineers-will-be-replaced-by-ai.html\nComments URL: https://news.ycombinator.com/item?id=48380987\nPoints: 9\n# Comments: 7",
+      "author": "Doch88",
+      "published_at": "Wed, 03 Jun 2026 07:27:20 +0000",
+      "retrieved_at": "2026-06-03T08:45:15.282128+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "966baeb554d68131",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Microsoft Doubles Down on Controversial Quantum Computing Claims",
+      "url": "https://www.science.org/content/article/doubling-down-controversial-claims-microsoft-accelerates-quantum-computing-plans",
+      "text": "Article URL: https://www.science.org/content/article/doubling-down-controversial-claims-microsoft-accelerates-quantum-computing-plans\nComments URL: https://news.ycombinator.com/item?id=48380516\nPoints: 21\n# Comments: 17",
+      "author": "igortru",
+      "published_at": "Wed, 03 Jun 2026 06:04:36 +0000",
+      "retrieved_at": "2026-06-03T08:45:15.282163+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "bb719b076bbe04d9",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "The Unreasonable Redundancy of Nature's Protein Folds",
+      "url": "https://research.ligo.bio/posts/unreasonable-redundancy-of-natural-protein-folds/",
+      "text": "Article URL: https://research.ligo.bio/posts/unreasonable-redundancy-of-natural-protein-folds/\nComments URL: https://news.ycombinator.com/item?id=48379669\nPoints: 82\n# Comments: 17",
+      "author": "ray__",
+      "published_at": "Wed, 03 Jun 2026 03:47:56 +0000",
+      "retrieved_at": "2026-06-03T08:45:15.282181+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "87db7598c8a5875d",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "U of T researchers demonstrate AI worm could target any online device",
+      "url": "https://www.utoronto.ca/news/u-t-researchers-demonstrate-ai-worm-could-target-any-online-device",
+      "text": "Article URL: https://www.utoronto.ca/news/u-t-researchers-demonstrate-ai-worm-could-target-any-online-device\nComments URL: https://news.ycombinator.com/item?id=48379664\nPoints: 23\n# Comments: 7",
+      "author": "shscs911",
+      "published_at": "Wed, 03 Jun 2026 03:47:21 +0000",
+      "retrieved_at": "2026-06-03T08:45:15.282199+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "6dc84c44038ff47f",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Capstone \u2013 multi-platform, multi-architecture disassembly framework",
+      "url": "https://www.capstone-engine.org/",
+      "text": "Article URL: https://www.capstone-engine.org/\nComments URL: https://news.ycombinator.com/item?id=48378925\nPoints: 48\n# Comments: 1",
+      "author": "gregsadetsky",
+      "published_at": "Wed, 03 Jun 2026 01:59:46 +0000",
+      "retrieved_at": "2026-06-03T08:45:15.282216+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "8f3b464fcb6f8a33",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Roku LT Operating System open source distribution",
+      "url": "https://blog.roku.com/developer/roku-lt-os",
+      "text": "Article URL: https://blog.roku.com/developer/roku-lt-os\nComments URL: https://news.ycombinator.com/item?id=48378495\nPoints: 71\n# Comments: 23",
+      "author": "dpmdpm",
+      "published_at": "Wed, 03 Jun 2026 01:13:38 +0000",
+      "retrieved_at": "2026-06-03T08:45:15.282233+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "94266205f0485e37",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "AI outperforms law professors in Stanford Law study",
+      "url": "https://law.stanford.edu/press/ai-outperforms-law-professors-in-stanford-law-study/",
+      "text": "https://law.stanford.edu/wp-content/uploads/2026/06/salinas_...\n\nComments URL: https://news.ycombinator.com/item?id=48377761\nPoints: 214\n# Comments: 170",
+      "author": "berlianta",
+      "published_at": "Tue, 02 Jun 2026 23:43:12 +0000",
+      "retrieved_at": "2026-06-03T08:45:15.282249+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "cebe6aa295d76e97",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Pluto.jl 1.0 release \u2013 reactive notebook for Julia",
+      "url": "https://discourse.julialang.org/t/pluto-1-0-release/137296",
+      "text": "Article URL: https://discourse.julialang.org/t/pluto-1-0-release/137296\nComments URL: https://news.ycombinator.com/item?id=48377496\nPoints: 112\n# Comments: 10",
+      "author": "fons-p",
+      "published_at": "Tue, 02 Jun 2026 23:09:09 +0000",
+      "retrieved_at": "2026-06-03T08:45:15.282271+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "656bad6e7c2d4b78",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Use your Nvidia GPU's VRAM as swap space on Linux",
+      "url": "https://github.com/c0dejedi/nbd-vram",
+      "text": "Article URL: https://github.com/c0dejedi/nbd-vram\nComments URL: https://news.ycombinator.com/item?id=48377404\nPoints: 286\n# Comments: 77",
+      "author": "tanelpoder",
+      "published_at": "Tue, 02 Jun 2026 22:55:33 +0000",
+      "retrieved_at": "2026-06-03T08:45:15.282288+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "c8c358555ed5d7a2",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "4K years ago, Mohenjo-daro grew more equal over time",
+      "url": "https://archaeologymag.com/2026/05/mohenjo-daro-grew-more-equal-over-time/",
+      "text": "Article URL: https://archaeologymag.com/2026/05/mohenjo-daro-grew-more-equal-over-time/\nComments URL: https://news.ycombinator.com/item?id=48377140\nPoints: 94\n# Comments: 43",
+      "author": "marojejian",
+      "published_at": "Tue, 02 Jun 2026 22:22:34 +0000",
+      "retrieved_at": "2026-06-03T08:45:15.282304+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "f370bdac676f5f61",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "CT scans of BYD car parts",
+      "url": "https://www.lumafield.com/scan-of-the-month/byd",
+      "text": "Article URL: https://www.lumafield.com/scan-of-the-month/byd\nComments URL: https://news.ycombinator.com/item?id=48375824\nPoints: 369\n# Comments: 190",
+      "author": "viasfo",
+      "published_at": "Tue, 02 Jun 2026 20:30:08 +0000",
+      "retrieved_at": "2026-06-03T08:45:15.282318+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "abbe857c2e0ef92b",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "My thoughts after using Clojure for about a month",
+      "url": "https://www.acdw.net/clojure/",
+      "text": "Article URL: https://www.acdw.net/clojure/\nComments URL: https://news.ycombinator.com/item?id=48375393\nPoints: 205\n# Comments: 103",
+      "author": "speckx",
+      "published_at": "Tue, 02 Jun 2026 19:56:46 +0000",
+      "retrieved_at": "2026-06-03T08:45:15.282332+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "37fa7328711abecf",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Open Repair Data Standard",
+      "url": "https://openrepair.org/open-data/open-standard/",
+      "text": "Article URL: https://openrepair.org/open-data/open-standard/\nComments URL: https://news.ycombinator.com/item?id=48375150\nPoints: 129\n# Comments: 6",
+      "author": "cassepipe",
+      "published_at": "Tue, 02 Jun 2026 19:37:10 +0000",
+      "retrieved_at": "2026-06-03T08:45:15.282346+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "51ff99c86ab2e344",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Gmail thinks I'm stupid, so I left",
+      "url": "https://moddedbear.com/gmail-thinks-im-stupid-so-i-left",
+      "text": "Article URL: https://moddedbear.com/gmail-thinks-im-stupid-so-i-left\nComments URL: https://news.ycombinator.com/item?id=48375016\nPoints: 905\n# Comments: 575",
+      "author": "speckx",
+      "published_at": "Tue, 02 Jun 2026 19:27:40 +0000",
+      "retrieved_at": "2026-06-03T08:45:15.282361+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "edcd4cfd0bcc28a6",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "HP re-releases classic computer science calculator: The HP-16C",
+      "url": "https://hpcalcs.com/product/hp-16c-collectors-edition/",
+      "text": "Article URL: https://hpcalcs.com/product/hp-16c-collectors-edition/\nComments URL: https://news.ycombinator.com/item?id=48374685\nPoints: 161\n# Comments: 103",
+      "author": "dm319",
+      "published_at": "Tue, 02 Jun 2026 19:02:40 +0000",
+      "retrieved_at": "2026-06-03T08:45:15.282375+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "4d2a877d455b81ef",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "MAI-Code-1-Flash",
+      "url": "https://microsoft.ai/news/introducingmai-code-1-flash/",
+      "text": "https://microsoft.ai/models/mai-code-1-flash/https://microsoft.ai/pdf/MAI-Code-1-Flash-Model-Card.PDFLaunching seven new MAI models: https://microsoft.ai/news/building-a-hillclimbing-machine-la...\n\nComments URL: https://news.ycombinator.com/item?id=48374466\nPoints: 460\n# Comments: 206",
+      "author": "EvanZhouDev",
+      "published_at": "Tue, 02 Jun 2026 18:47:07 +0000",
+      "retrieved_at": "2026-06-03T08:45:15.282390+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "41964d98cce30d42",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Trump signs downsized AI order after weeks of reversals",
+      "url": "https://www.politico.com/news/2026/06/02/trump-signs-downsized-ai-order-00946389",
+      "text": "https://www.whitehouse.gov/presidential-actions/2026/06/prom...https://www.nytimes.com/2026/06/02/technology/trump-executiv...\n\nComments URL: https://news.ycombinator.com/item?id=48372628\nPoints: 206\n# Comments: 152",
+      "author": "_alternator_",
+      "published_at": "Tue, 02 Jun 2026 16:40:16 +0000",
+      "retrieved_at": "2026-06-03T08:45:15.282404+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "1b1b39d1bc17e7d7",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "How we index images for RAG",
+      "url": "https://www.kapa.ai/blog/how-we-index-images-for-rag",
+      "text": "Article URL: https://www.kapa.ai/blog/how-we-index-images-for-rag\nComments URL: https://news.ycombinator.com/item?id=48372239\nPoints: 127\n# Comments: 18",
+      "author": "mooreds",
+      "published_at": "Tue, 02 Jun 2026 16:13:41 +0000",
+      "retrieved_at": "2026-06-03T08:45:15.282419+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "d85e0c60f9d14d47",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Show HN: Live breath detection and biofeedback from a phone microphone",
+      "url": "https://github.com/shiihaa-app/shiihaa-breath-detection",
+      "text": "Hi everyone, I am Felix, a famliy doctor from ZH, Switzerland. \nA couple of month ago I started this little project called \nshii \u2022 haa, a breathing app that uses the phone`s microphone \nfor live biofeedbackMy prior work in emergency medicine and intensive care was \nclosesly linked to breathing, mostly in critical situations...\nand let me to reevaluate my own way of breathing. over time \none question popped into my mind: can medical knowledge and \nbiofeedback make an app actually promote self-awareness instead \nof attaching your goals to the award system of the app.it combines signal processing, a breathing state machine and ML. \nThe state machine follows inhale, exhale and transitions in the \nmic signal. A quality layer rejects noisy or ambiguous windows \nbefore signals are used for feedback. All processing is done \non-device, no speech or raw audio is uploaded.What I'm trying to avoid is turning breathing into another score \nor game. The app gives feedback on rhythm, depth and regularity, \nbut the point is more \"notice what you are doing\" than \"perform \nwell\".I'd be interested in feedback, especially from people who have \nworked on signal processing, health UX, or Android/iOS audio \nissues.\n\nComments URL: https://news.ycombinator.com/item?id=48372036\nPoints: 46\n# Comments: 15",
+      "author": "felixzeller",
+      "published_at": "Tue, 02 Jun 2026 16:02:47 +0000",
+      "retrieved_at": "2026-06-03T08:45:15.282438+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "10f7df8bffdcaeaf",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "1-Click GitHub Token Stealing via a VSCode Bug",
+      "url": "https://blog.ammaraskar.com/github-token-stealing/",
+      "text": "Article URL: https://blog.ammaraskar.com/github-token-stealing/\nComments URL: https://news.ycombinator.com/item?id=48371562\nPoints: 358\n# Comments: 55",
+      "author": "ammar2",
+      "published_at": "Tue, 02 Jun 2026 15:29:05 +0000",
+      "retrieved_at": "2026-06-03T08:45:15.282452+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "b062f24b24377b7d",
+      "source_id": "openai-x-profile",
+      "source_type": "x_profile",
+      "title": "X profile @openai",
+      "url": "https://x.com/openai",
+      "text": "X/Twitter profile metadata placeholder. Configure an authenticated X API, browser-session, export, or list connector to retrieve timeline items.",
+      "author": "openai",
+      "published_at": null,
+      "retrieved_at": "2026-06-03T08:45:15.282482+00:00",
+      "metadata": {
+        "status_id": null,
+        "requires_authenticated_retrieval": true
+      },
+      "access_rights": {
+        "store_full_text": false,
+        "reason": "social/auth connector not configured"
+      },
+      "provenance": {
+        "connector": "x_profile",
+        "retrieval": "url_normalization"
+      }
+    }
+  ],
+  "evaluated_items": [
+    {
+      "item": {
+        "id": "fd067e3b94e60cc6",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "AI Engineers aren't safe from being replaced by AI",
+        "url": "https://dmanco.dev/2025/08/17/fear-not-even-ai-engineers-will-be-replaced-by-ai.html",
+        "text": "Article URL: https://dmanco.dev/2025/08/17/fear-not-even-ai-engineers-will-be-replaced-by-ai.html\nComments URL: https://news.ycombinator.com/item?id=48380987\nPoints: 9\n# Comments: 7",
+        "author": "Doch88",
+        "published_at": "Wed, 03 Jun 2026 07:27:20 +0000",
+        "retrieved_at": "2026-06-03T08:45:15.282128+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://dmanco.dev/2025/08/17/fear-not-even-ai-engineers-will-be-replaced-by-ai.html Comments URL: https://news.ycombinator.com/item?id=48380987 Points: 9 # Comments: 7",
+      "key_points": [
+        "Article URL: https://dmanco.dev/2025/08/17/fear-not-even-ai-engineers-will-be-replaced-by-ai.html Comments URL: https://news.ycombinator.com/item?id=48380987 Points: 9 # Comments: 7"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "966baeb554d68131",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Microsoft Doubles Down on Controversial Quantum Computing Claims",
+        "url": "https://www.science.org/content/article/doubling-down-controversial-claims-microsoft-accelerates-quantum-computing-plans",
+        "text": "Article URL: https://www.science.org/content/article/doubling-down-controversial-claims-microsoft-accelerates-quantum-computing-plans\nComments URL: https://news.ycombinator.com/item?id=48380516\nPoints: 21\n# Comments: 17",
+        "author": "igortru",
+        "published_at": "Wed, 03 Jun 2026 06:04:36 +0000",
+        "retrieved_at": "2026-06-03T08:45:15.282163+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://www.science.org/content/article/doubling-down-controversial-claims-microsoft-accelerates-quantum-computing-plans Comments URL: https://news.ycombinator.com/item?id=48380516 Points: 21 # Comments: 17",
+      "key_points": [
+        "Article URL: https://www.science.org/content/article/doubling-down-controversial-claims-microsoft-accelerates-quantum-computing-plans Comments URL: https://news.ycombinator.com/item?id=48380516 Points: 21 # Comments: 17"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "bb719b076bbe04d9",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "The Unreasonable Redundancy of Nature's Protein Folds",
+        "url": "https://research.ligo.bio/posts/unreasonable-redundancy-of-natural-protein-folds/",
+        "text": "Article URL: https://research.ligo.bio/posts/unreasonable-redundancy-of-natural-protein-folds/\nComments URL: https://news.ycombinator.com/item?id=48379669\nPoints: 82\n# Comments: 17",
+        "author": "ray__",
+        "published_at": "Wed, 03 Jun 2026 03:47:56 +0000",
+        "retrieved_at": "2026-06-03T08:45:15.282181+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://research.ligo.bio/posts/unreasonable-redundancy-of-natural-protein-folds/ Comments URL: https://news.ycombinator.com/item?id=48379669 Points: 82 # Comments: 17",
+      "key_points": [
+        "Article URL: https://research.ligo.bio/posts/unreasonable-redundancy-of-natural-protein-folds/ Comments URL: https://news.ycombinator.com/item?id=48379669 Points: 82 # Comments: 17"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "87db7598c8a5875d",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "U of T researchers demonstrate AI worm could target any online device",
+        "url": "https://www.utoronto.ca/news/u-t-researchers-demonstrate-ai-worm-could-target-any-online-device",
+        "text": "Article URL: https://www.utoronto.ca/news/u-t-researchers-demonstrate-ai-worm-could-target-any-online-device\nComments URL: https://news.ycombinator.com/item?id=48379664\nPoints: 23\n# Comments: 7",
+        "author": "shscs911",
+        "published_at": "Wed, 03 Jun 2026 03:47:21 +0000",
+        "retrieved_at": "2026-06-03T08:45:15.282199+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://www.utoronto.ca/news/u-t-researchers-demonstrate-ai-worm-could-target-any-online-device Comments URL: https://news.ycombinator.com/item?id=48379664 Points: 23 # Comments: 7",
+      "key_points": [
+        "Article URL: https://www.utoronto.ca/news/u-t-researchers-demonstrate-ai-worm-could-target-any-online-device Comments URL: https://news.ycombinator.com/item?id=48379664 Points: 23 # Comments: 7"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "6dc84c44038ff47f",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Capstone \u2013 multi-platform, multi-architecture disassembly framework",
+        "url": "https://www.capstone-engine.org/",
+        "text": "Article URL: https://www.capstone-engine.org/\nComments URL: https://news.ycombinator.com/item?id=48378925\nPoints: 48\n# Comments: 1",
+        "author": "gregsadetsky",
+        "published_at": "Wed, 03 Jun 2026 01:59:46 +0000",
+        "retrieved_at": "2026-06-03T08:45:15.282216+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://www.capstone-engine.org/ Comments URL: https://news.ycombinator.com/item?id=48378925 Points: 48 # Comments: 1",
+      "key_points": [
+        "Article URL: https://www.capstone-engine.org/ Comments URL: https://news.ycombinator.com/item?id=48378925 Points: 48 # Comments: 1"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "8f3b464fcb6f8a33",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Roku LT Operating System open source distribution",
+        "url": "https://blog.roku.com/developer/roku-lt-os",
+        "text": "Article URL: https://blog.roku.com/developer/roku-lt-os\nComments URL: https://news.ycombinator.com/item?id=48378495\nPoints: 71\n# Comments: 23",
+        "author": "dpmdpm",
+        "published_at": "Wed, 03 Jun 2026 01:13:38 +0000",
+        "retrieved_at": "2026-06-03T08:45:15.282233+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://blog.roku.com/developer/roku-lt-os Comments URL: https://news.ycombinator.com/item?id=48378495 Points: 71 # Comments: 23",
+      "key_points": [
+        "Article URL: https://blog.roku.com/developer/roku-lt-os Comments URL: https://news.ycombinator.com/item?id=48378495 Points: 71 # Comments: 23"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "94266205f0485e37",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "AI outperforms law professors in Stanford Law study",
+        "url": "https://law.stanford.edu/press/ai-outperforms-law-professors-in-stanford-law-study/",
+        "text": "https://law.stanford.edu/wp-content/uploads/2026/06/salinas_...\n\nComments URL: https://news.ycombinator.com/item?id=48377761\nPoints: 214\n# Comments: 170",
+        "author": "berlianta",
+        "published_at": "Tue, 02 Jun 2026 23:43:12 +0000",
+        "retrieved_at": "2026-06-03T08:45:15.282249+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "https://law.stanford.edu/wp-content/uploads/2026/06/salinas_... Comments URL: https://news.ycombinator.com/item?id=48377761 Points: 214 # Comments: 170",
+      "key_points": [
+        "https://law.stanford.edu/wp-content/uploads/2026/06/salinas_...",
+        "Comments URL: https://news.ycombinator.com/item?id=48377761 Points: 214 # Comments: 170"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "cebe6aa295d76e97",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Pluto.jl 1.0 release \u2013 reactive notebook for Julia",
+        "url": "https://discourse.julialang.org/t/pluto-1-0-release/137296",
+        "text": "Article URL: https://discourse.julialang.org/t/pluto-1-0-release/137296\nComments URL: https://news.ycombinator.com/item?id=48377496\nPoints: 112\n# Comments: 10",
+        "author": "fons-p",
+        "published_at": "Tue, 02 Jun 2026 23:09:09 +0000",
+        "retrieved_at": "2026-06-03T08:45:15.282271+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://discourse.julialang.org/t/pluto-1-0-release/137296 Comments URL: https://news.ycombinator.com/item?id=48377496 Points: 112 # Comments: 10",
+      "key_points": [
+        "Article URL: https://discourse.julialang.org/t/pluto-1-0-release/137296 Comments URL: https://news.ycombinator.com/item?id=48377496 Points: 112 # Comments: 10"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "656bad6e7c2d4b78",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Use your Nvidia GPU's VRAM as swap space on Linux",
+        "url": "https://github.com/c0dejedi/nbd-vram",
+        "text": "Article URL: https://github.com/c0dejedi/nbd-vram\nComments URL: https://news.ycombinator.com/item?id=48377404\nPoints: 286\n# Comments: 77",
+        "author": "tanelpoder",
+        "published_at": "Tue, 02 Jun 2026 22:55:33 +0000",
+        "retrieved_at": "2026-06-03T08:45:15.282288+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://github.com/c0dejedi/nbd-vram Comments URL: https://news.ycombinator.com/item?id=48377404 Points: 286 # Comments: 77",
+      "key_points": [
+        "Article URL: https://github.com/c0dejedi/nbd-vram Comments URL: https://news.ycombinator.com/item?id=48377404 Points: 286 # Comments: 77"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "c8c358555ed5d7a2",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "4K years ago, Mohenjo-daro grew more equal over time",
+        "url": "https://archaeologymag.com/2026/05/mohenjo-daro-grew-more-equal-over-time/",
+        "text": "Article URL: https://archaeologymag.com/2026/05/mohenjo-daro-grew-more-equal-over-time/\nComments URL: https://news.ycombinator.com/item?id=48377140\nPoints: 94\n# Comments: 43",
+        "author": "marojejian",
+        "published_at": "Tue, 02 Jun 2026 22:22:34 +0000",
+        "retrieved_at": "2026-06-03T08:45:15.282304+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://archaeologymag.com/2026/05/mohenjo-daro-grew-more-equal-over-time/ Comments URL: https://news.ycombinator.com/item?id=48377140 Points: 94 # Comments: 43",
+      "key_points": [
+        "Article URL: https://archaeologymag.com/2026/05/mohenjo-daro-grew-more-equal-over-time/ Comments URL: https://news.ycombinator.com/item?id=48377140 Points: 94 # Comments: 43"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "f370bdac676f5f61",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "CT scans of BYD car parts",
+        "url": "https://www.lumafield.com/scan-of-the-month/byd",
+        "text": "Article URL: https://www.lumafield.com/scan-of-the-month/byd\nComments URL: https://news.ycombinator.com/item?id=48375824\nPoints: 369\n# Comments: 190",
+        "author": "viasfo",
+        "published_at": "Tue, 02 Jun 2026 20:30:08 +0000",
+        "retrieved_at": "2026-06-03T08:45:15.282318+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://www.lumafield.com/scan-of-the-month/byd Comments URL: https://news.ycombinator.com/item?id=48375824 Points: 369 # Comments: 190",
+      "key_points": [
+        "Article URL: https://www.lumafield.com/scan-of-the-month/byd Comments URL: https://news.ycombinator.com/item?id=48375824 Points: 369 # Comments: 190"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "abbe857c2e0ef92b",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "My thoughts after using Clojure for about a month",
+        "url": "https://www.acdw.net/clojure/",
+        "text": "Article URL: https://www.acdw.net/clojure/\nComments URL: https://news.ycombinator.com/item?id=48375393\nPoints: 205\n# Comments: 103",
+        "author": "speckx",
+        "published_at": "Tue, 02 Jun 2026 19:56:46 +0000",
+        "retrieved_at": "2026-06-03T08:45:15.282332+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://www.acdw.net/clojure/ Comments URL: https://news.ycombinator.com/item?id=48375393 Points: 205 # Comments: 103",
+      "key_points": [
+        "Article URL: https://www.acdw.net/clojure/ Comments URL: https://news.ycombinator.com/item?id=48375393 Points: 205 # Comments: 103"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "37fa7328711abecf",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Open Repair Data Standard",
+        "url": "https://openrepair.org/open-data/open-standard/",
+        "text": "Article URL: https://openrepair.org/open-data/open-standard/\nComments URL: https://news.ycombinator.com/item?id=48375150\nPoints: 129\n# Comments: 6",
+        "author": "cassepipe",
+        "published_at": "Tue, 02 Jun 2026 19:37:10 +0000",
+        "retrieved_at": "2026-06-03T08:45:15.282346+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://openrepair.org/open-data/open-standard/ Comments URL: https://news.ycombinator.com/item?id=48375150 Points: 129 # Comments: 6",
+      "key_points": [
+        "Article URL: https://openrepair.org/open-data/open-standard/ Comments URL: https://news.ycombinator.com/item?id=48375150 Points: 129 # Comments: 6"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "51ff99c86ab2e344",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Gmail thinks I'm stupid, so I left",
+        "url": "https://moddedbear.com/gmail-thinks-im-stupid-so-i-left",
+        "text": "Article URL: https://moddedbear.com/gmail-thinks-im-stupid-so-i-left\nComments URL: https://news.ycombinator.com/item?id=48375016\nPoints: 905\n# Comments: 575",
+        "author": "speckx",
+        "published_at": "Tue, 02 Jun 2026 19:27:40 +0000",
+        "retrieved_at": "2026-06-03T08:45:15.282361+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://moddedbear.com/gmail-thinks-im-stupid-so-i-left Comments URL: https://news.ycombinator.com/item?id=48375016 Points: 905 # Comments: 575",
+      "key_points": [
+        "Article URL: https://moddedbear.com/gmail-thinks-im-stupid-so-i-left Comments URL: https://news.ycombinator.com/item?id=48375016 Points: 905 # Comments: 575"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "edcd4cfd0bcc28a6",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "HP re-releases classic computer science calculator: The HP-16C",
+        "url": "https://hpcalcs.com/product/hp-16c-collectors-edition/",
+        "text": "Article URL: https://hpcalcs.com/product/hp-16c-collectors-edition/\nComments URL: https://news.ycombinator.com/item?id=48374685\nPoints: 161\n# Comments: 103",
+        "author": "dm319",
+        "published_at": "Tue, 02 Jun 2026 19:02:40 +0000",
+        "retrieved_at": "2026-06-03T08:45:15.282375+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://hpcalcs.com/product/hp-16c-collectors-edition/ Comments URL: https://news.ycombinator.com/item?id=48374685 Points: 161 # Comments: 103",
+      "key_points": [
+        "Article URL: https://hpcalcs.com/product/hp-16c-collectors-edition/ Comments URL: https://news.ycombinator.com/item?id=48374685 Points: 161 # Comments: 103"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "4d2a877d455b81ef",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "MAI-Code-1-Flash",
+        "url": "https://microsoft.ai/news/introducingmai-code-1-flash/",
+        "text": "https://microsoft.ai/models/mai-code-1-flash/https://microsoft.ai/pdf/MAI-Code-1-Flash-Model-Card.PDFLaunching seven new MAI models: https://microsoft.ai/news/building-a-hillclimbing-machine-la...\n\nComments URL: https://news.ycombinator.com/item?id=48374466\nPoints: 460\n# Comments: 206",
+        "author": "EvanZhouDev",
+        "published_at": "Tue, 02 Jun 2026 18:47:07 +0000",
+        "retrieved_at": "2026-06-03T08:45:15.282390+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "https://microsoft.ai/models/mai-code-1-flash/https://microsoft.ai/pdf/MAI-Code-1-Flash-Model-Card.PDFLaunching seven new MAI models: https://microsoft.ai/news/building-a-hillclimbing-machine-la... Comments URL: https://news.ycombinator.com/item?id=48374466 Points: 460 # Comments: 206",
+      "key_points": [
+        "https://microsoft.ai/models/mai-code-1-flash/https://microsoft.ai/pdf/MAI-Code-1-Flash-Model-Card.PDFLaunching seven new MAI models: https://microsoft.ai/news/building-a-hillclimbing-machine-la...",
+        "Comments URL: https://news.ycombinator.com/item?id=48374466 Points: 460 # Comments: 206"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "41964d98cce30d42",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Trump signs downsized AI order after weeks of reversals",
+        "url": "https://www.politico.com/news/2026/06/02/trump-signs-downsized-ai-order-00946389",
+        "text": "https://www.whitehouse.gov/presidential-actions/2026/06/prom...https://www.nytimes.com/2026/06/02/technology/trump-executiv...\n\nComments URL: https://news.ycombinator.com/item?id=48372628\nPoints: 206\n# Comments: 152",
+        "author": "_alternator_",
+        "published_at": "Tue, 02 Jun 2026 16:40:16 +0000",
+        "retrieved_at": "2026-06-03T08:45:15.282404+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "https://www.whitehouse.gov/presidential-actions/2026/06/prom...https://www.nytimes.com/2026/06/02/technology/trump-executiv... Comments URL: https://news.ycombinator.com/item?id=48372628 Points: 206 # Comments: 152",
+      "key_points": [
+        "https://www.whitehouse.gov/presidential-actions/2026/06/prom...https://www.nytimes.com/2026/06/02/technology/trump-executiv...",
+        "Comments URL: https://news.ycombinator.com/item?id=48372628 Points: 206 # Comments: 152"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "1b1b39d1bc17e7d7",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "How we index images for RAG",
+        "url": "https://www.kapa.ai/blog/how-we-index-images-for-rag",
+        "text": "Article URL: https://www.kapa.ai/blog/how-we-index-images-for-rag\nComments URL: https://news.ycombinator.com/item?id=48372239\nPoints: 127\n# Comments: 18",
+        "author": "mooreds",
+        "published_at": "Tue, 02 Jun 2026 16:13:41 +0000",
+        "retrieved_at": "2026-06-03T08:45:15.282419+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://www.kapa.ai/blog/how-we-index-images-for-rag Comments URL: https://news.ycombinator.com/item?id=48372239 Points: 127 # Comments: 18",
+      "key_points": [
+        "Article URL: https://www.kapa.ai/blog/how-we-index-images-for-rag Comments URL: https://news.ycombinator.com/item?id=48372239 Points: 127 # Comments: 18"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "d85e0c60f9d14d47",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Show HN: Live breath detection and biofeedback from a phone microphone",
+        "url": "https://github.com/shiihaa-app/shiihaa-breath-detection",
+        "text": "Hi everyone, I am Felix, a famliy doctor from ZH, Switzerland. \nA couple of month ago I started this little project called \nshii \u2022 haa, a breathing app that uses the phone`s microphone \nfor live biofeedbackMy prior work in emergency medicine and intensive care was \nclosesly linked to breathing, mostly in critical situations...\nand let me to reevaluate my own way of breathing. over time \none question popped into my mind: can medical knowledge and \nbiofeedback make an app actually promote self-awareness instead \nof attaching your goals to the award system of the app.it combines signal processing, a breathing state machine and ML. \nThe state machine follows inhale, exhale and transitions in the \nmic signal. A quality layer rejects noisy or ambiguous windows \nbefore signals are used for feedback. All processing is done \non-device, no speech or raw audio is uploaded.What I'm trying to avoid is turning breathing into another score \nor game. The app gives feedback on rhythm, depth and regularity, \nbut the point is more \"notice what you are doing\" than \"perform \nwell\".I'd be interested in feedback, especially from people who have \nworked on signal processing, health UX, or Android/iOS audio \nissues.\n\nComments URL: https://news.ycombinator.com/item?id=48372036\nPoints: 46\n# Comments: 15",
+        "author": "felixzeller",
+        "published_at": "Tue, 02 Jun 2026 16:02:47 +0000",
+        "retrieved_at": "2026-06-03T08:45:15.282438+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Hi everyone, I am Felix, a famliy doctor from ZH, Switzerland. A couple of month ago I started this little project called shii \u2022 haa, a breathing app that uses the phone`s microphone for live biofeedbackMy prior work in emergency medicine and intensive care was closesly linked to breathing, mostly in critical situations...",
+      "key_points": [
+        "Hi everyone, I am Felix, a famliy doctor from ZH, Switzerland.",
+        "A couple of month ago I started this little project called shii \u2022 haa, a breathing app that uses the phone`s microphone for live biofeedbackMy prior work in emergency medicine and intensive care was closesly linked to breathing, mostly in critical situations...",
+        "and let me to reevaluate my own way of breathing.",
+        "over time one question popped into my mind: can medical knowledge and biofeedback make an app actually promote self-awareness instead of attaching your goals to the award system of the app.it combines signal processing, a breathing state machine and ML."
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "10f7df8bffdcaeaf",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "1-Click GitHub Token Stealing via a VSCode Bug",
+        "url": "https://blog.ammaraskar.com/github-token-stealing/",
+        "text": "Article URL: https://blog.ammaraskar.com/github-token-stealing/\nComments URL: https://news.ycombinator.com/item?id=48371562\nPoints: 358\n# Comments: 55",
+        "author": "ammar2",
+        "published_at": "Tue, 02 Jun 2026 15:29:05 +0000",
+        "retrieved_at": "2026-06-03T08:45:15.282452+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://blog.ammaraskar.com/github-token-stealing/ Comments URL: https://news.ycombinator.com/item?id=48371562 Points: 358 # Comments: 55",
+      "key_points": [
+        "Article URL: https://blog.ammaraskar.com/github-token-stealing/ Comments URL: https://news.ycombinator.com/item?id=48371562 Points: 358 # Comments: 55"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    }
+  ],
+  "findings_markdown": "# Findings: Monitor configured research sources\n\n## Summary\n\nReviewed 20 item(s). Highest-scoring material is listed first.\n\n## Relevant Items\n\n### AI Engineers aren't safe from being replaced by AI\n- URL: https://dmanco.dev/2025/08/17/fear-not-even-ai-engineers-will-be-replaced-by-ai.html\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://dmanco.dev/2025/08/17/fear-not-even-ai-engineers-will-be-replaced-by-ai.html Comments URL: https://news.ycombinator.com/item?id=48380987 Points: 9 # Comments: 7\n- Key points:\n  - Article URL: https://dmanco.dev/2025/08/17/fear-not-even-ai-engineers-will-be-replaced-by-ai.html Comments URL: https://news.ycombinator.com/item?id=48380987 Points: 9 # Comments: 7\n- Rationale: No strong lexical overlap with the brief.\n\n### Microsoft Doubles Down on Controversial Quantum Computing Claims\n- URL: https://www.science.org/content/article/doubling-down-controversial-claims-microsoft-accelerates-quantum-computing-plans\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://www.science.org/content/article/doubling-down-controversial-claims-microsoft-accelerates-quantum-computing-plans Comments URL: https://news.ycombinator.com/item?id=48380516 Points: 21 # Comments: 17\n- Key points:\n  - Article URL: https://www.science.org/content/article/doubling-down-controversial-claims-microsoft-accelerates-quantum-computing-plans Comments URL: https://news.ycombinator.com/item?id=48380516 Points: 21 # Comments: 17\n- Rationale: No strong lexical overlap with the brief.\n\n### The Unreasonable Redundancy of Nature's Protein Folds\n- URL: https://research.ligo.bio/posts/unreasonable-redundancy-of-natural-protein-folds/\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://research.ligo.bio/posts/unreasonable-redundancy-of-natural-protein-folds/ Comments URL: https://news.ycombinator.com/item?id=48379669 Points: 82 # Comments: 17\n- Key points:\n  - Article URL: https://research.ligo.bio/posts/unreasonable-redundancy-of-natural-protein-folds/ Comments URL: https://news.ycombinator.com/item?id=48379669 Points: 82 # Comments: 17\n- Rationale: No strong lexical overlap with the brief.\n\n### U of T researchers demonstrate AI worm could target any online device\n- URL: https://www.utoronto.ca/news/u-t-researchers-demonstrate-ai-worm-could-target-any-online-device\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://www.utoronto.ca/news/u-t-researchers-demonstrate-ai-worm-could-target-any-online-device Comments URL: https://news.ycombinator.com/item?id=48379664 Points: 23 # Comments: 7\n- Key points:\n  - Article URL: https://www.utoronto.ca/news/u-t-researchers-demonstrate-ai-worm-could-target-any-online-device Comments URL: https://news.ycombinator.com/item?id=48379664 Points: 23 # Comments: 7\n- Rationale: No strong lexical overlap with the brief.\n\n### Capstone \u2013 multi-platform, multi-architecture disassembly framework\n- URL: https://www.capstone-engine.org/\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://www.capstone-engine.org/ Comments URL: https://news.ycombinator.com/item?id=48378925 Points: 48 # Comments: 1\n- Key points:\n  - Article URL: https://www.capstone-engine.org/ Comments URL: https://news.ycombinator.com/item?id=48378925 Points: 48 # Comments: 1\n- Rationale: No strong lexical overlap with the brief.\n\n### Roku LT Operating System open source distribution\n- URL: https://blog.roku.com/developer/roku-lt-os\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://blog.roku.com/developer/roku-lt-os Comments URL: https://news.ycombinator.com/item?id=48378495 Points: 71 # Comments: 23\n- Key points:\n  - Article URL: https://blog.roku.com/developer/roku-lt-os Comments URL: https://news.ycombinator.com/item?id=48378495 Points: 71 # Comments: 23\n- Rationale: No strong lexical overlap with the brief.\n\n### AI outperforms law professors in Stanford Law study\n- URL: https://law.stanford.edu/press/ai-outperforms-law-professors-in-stanford-law-study/\n- Source type: rss\n- Relevance: 1/5\n- Summary: https://law.stanford.edu/wp-content/uploads/2026/06/salinas_... Comments URL: https://news.ycombinator.com/item?id=48377761 Points: 214 # Comments: 170\n- Key points:\n  - https://law.stanford.edu/wp-content/uploads/2026/06/salinas_...\n  - Comments URL: https://news.ycombinator.com/item?id=48377761 Points: 214 # Comments: 170\n- Rationale: No strong lexical overlap with the brief.\n\n### Pluto.jl 1.0 release \u2013 reactive notebook for Julia\n- URL: https://discourse.julialang.org/t/pluto-1-0-release/137296\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://discourse.julialang.org/t/pluto-1-0-release/137296 Comments URL: https://news.ycombinator.com/item?id=48377496 Points: 112 # Comments: 10\n- Key points:\n  - Article URL: https://discourse.julialang.org/t/pluto-1-0-release/137296 Comments URL: https://news.ycombinator.com/item?id=48377496 Points: 112 # Comments: 10\n- Rationale: No strong lexical overlap with the brief.\n\n### Use your Nvidia GPU's VRAM as swap space on Linux\n- URL: https://github.com/c0dejedi/nbd-vram\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://github.com/c0dejedi/nbd-vram Comments URL: https://news.ycombinator.com/item?id=48377404 Points: 286 # Comments: 77\n- Key points:\n  - Article URL: https://github.com/c0dejedi/nbd-vram Comments URL: https://news.ycombinator.com/item?id=48377404 Points: 286 # Comments: 77\n- Rationale: No strong lexical overlap with the brief.\n\n### 4K years ago, Mohenjo-daro grew more equal over time\n- URL: https://archaeologymag.com/2026/05/mohenjo-daro-grew-more-equal-over-time/\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://archaeologymag.com/2026/05/mohenjo-daro-grew-more-equal-over-time/ Comments URL: https://news.ycombinator.com/item?id=48377140 Points: 94 # Comments: 43\n- Key points:\n  - Article URL: https://archaeologymag.com/2026/05/mohenjo-daro-grew-more-equal-over-time/ Comments URL: https://news.ycombinator.com/item?id=48377140 Points: 94 # Comments: 43\n- Rationale: No strong lexical overlap with the brief.\n\n### CT scans of BYD car parts\n- URL: https://www.lumafield.com/scan-of-the-month/byd\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://www.lumafield.com/scan-of-the-month/byd Comments URL: https://news.ycombinator.com/item?id=48375824 Points: 369 # Comments: 190\n- Key points:\n  - Article URL: https://www.lumafield.com/scan-of-the-month/byd Comments URL: https://news.ycombinator.com/item?id=48375824 Points: 369 # Comments: 190\n- Rationale: No strong lexical overlap with the brief.\n\n### My thoughts after using Clojure for about a month\n- URL: https://www.acdw.net/clojure/\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://www.acdw.net/clojure/ Comments URL: https://news.ycombinator.com/item?id=48375393 Points: 205 # Comments: 103\n- Key points:\n  - Article URL: https://www.acdw.net/clojure/ Comments URL: https://news.ycombinator.com/item?id=48375393 Points: 205 # Comments: 103\n- Rationale: No strong lexical overlap with the brief.\n\n### Open Repair Data Standard\n- URL: https://openrepair.org/open-data/open-standard/\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://openrepair.org/open-data/open-standard/ Comments URL: https://news.ycombinator.com/item?id=48375150 Points: 129 # Comments: 6\n- Key points:\n  - Article URL: https://openrepair.org/open-data/open-standard/ Comments URL: https://news.ycombinator.com/item?id=48375150 Points: 129 # Comments: 6\n- Rationale: No strong lexical overlap with the brief.\n\n### Gmail thinks I'm stupid, so I left\n- URL: https://moddedbear.com/gmail-thinks-im-stupid-so-i-left\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://moddedbear.com/gmail-thinks-im-stupid-so-i-left Comments URL: https://news.ycombinator.com/item?id=48375016 Points: 905 # Comments: 575\n- Key points:\n  - Article URL: https://moddedbear.com/gmail-thinks-im-stupid-so-i-left Comments URL: https://news.ycombinator.com/item?id=48375016 Points: 905 # Comments: 575\n- Rationale: No strong lexical overlap with the brief.\n\n### HP re-releases classic computer science calculator: The HP-16C\n- URL: https://hpcalcs.com/product/hp-16c-collectors-edition/\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://hpcalcs.com/product/hp-16c-collectors-edition/ Comments URL: https://news.ycombinator.com/item?id=48374685 Points: 161 # Comments: 103\n- Key points:\n  - Article URL: https://hpcalcs.com/product/hp-16c-collectors-edition/ Comments URL: https://news.ycombinator.com/item?id=48374685 Points: 161 # Comments: 103\n- Rationale: No strong lexical overlap with the brief.\n\n### MAI-Code-1-Flash\n- URL: https://microsoft.ai/news/introducingmai-code-1-flash/\n- Source type: rss\n- Relevance: 1/5\n- Summary: https://microsoft.ai/models/mai-code-1-flash/https://microsoft.ai/pdf/MAI-Code-1-Flash-Model-Card.PDFLaunching seven new MAI models: https://microsoft.ai/news/building-a-hillclimbing-machine-la... Comments URL: https://news.ycombinator.com/item?id=48374466 Points: 460 # Comments: 206\n- Key points:\n  - https://microsoft.ai/models/mai-code-1-flash/https://microsoft.ai/pdf/MAI-Code-1-Flash-Model-Card.PDFLaunching seven new MAI models: https://microsoft.ai/news/building-a-hillclimbing-machine-la...\n  - Comments URL: https://news.ycombinator.com/item?id=48374466 Points: 460 # Comments: 206\n- Rationale: No strong lexical overlap with the brief.\n\n### Trump signs downsized AI order after weeks of reversals\n- URL: https://www.politico.com/news/2026/06/02/trump-signs-downsized-ai-order-00946389\n- Source type: rss\n- Relevance: 1/5\n- Summary: https://www.whitehouse.gov/presidential-actions/2026/06/prom...https://www.nytimes.com/2026/06/02/technology/trump-executiv... Comments URL: https://news.ycombinator.com/item?id=48372628 Points: 206 # Comments: 152\n- Key points:\n  - https://www.whitehouse.gov/presidential-actions/2026/06/prom...https://www.nytimes.com/2026/06/02/technology/trump-executiv...\n  - Comments URL: https://news.ycombinator.com/item?id=48372628 Points: 206 # Comments: 152\n- Rationale: No strong lexical overlap with the brief.\n\n### How we index images for RAG\n- URL: https://www.kapa.ai/blog/how-we-index-images-for-rag\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://www.kapa.ai/blog/how-we-index-images-for-rag Comments URL: https://news.ycombinator.com/item?id=48372239 Points: 127 # Comments: 18\n- Key points:\n  - Article URL: https://www.kapa.ai/blog/how-we-index-images-for-rag Comments URL: https://news.ycombinator.com/item?id=48372239 Points: 127 # Comments: 18\n- Rationale: No strong lexical overlap with the brief.\n\n### Show HN: Live breath detection and biofeedback from a phone microphone\n- URL: https://github.com/shiihaa-app/shiihaa-breath-detection\n- Source type: rss\n- Relevance: 1/5\n- Summary: Hi everyone, I am Felix, a famliy doctor from ZH, Switzerland. A couple of month ago I started this little project called shii \u2022 haa, a breathing app that uses the phone`s microphone for live biofeedbackMy prior work in emergency medicine and intensive care was closesly linked to breathing, mostly in critical situations...\n- Key points:\n  - Hi everyone, I am Felix, a famliy doctor from ZH, Switzerland.\n  - A couple of month ago I started this little project called shii \u2022 haa, a breathing app that uses the phone`s microphone for live biofeedbackMy prior work in emergency medicine and intensive care was closesly linked to breathing, mostly in critical situations...\n  - and let me to reevaluate my own way of breathing.\n  - over time one question popped into my mind: can medical knowledge and biofeedback make an app actually promote self-awareness instead of attaching your goals to the award system of the app.it combines signal processing, a breathing state machine and ML.\n- Rationale: No strong lexical overlap with the brief.\n\n### 1-Click GitHub Token Stealing via a VSCode Bug\n- URL: https://blog.ammaraskar.com/github-token-stealing/\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://blog.ammaraskar.com/github-token-stealing/ Comments URL: https://news.ycombinator.com/item?id=48371562 Points: 358 # Comments: 55\n- Key points:\n  - Article URL: https://blog.ammaraskar.com/github-token-stealing/ Comments URL: https://news.ycombinator.com/item?id=48371562 Points: 358 # Comments: 55\n- Rationale: No strong lexical overlap with the brief.\n",
+  "created_at": "2026-06-03T08:45:15.283746+00:00"
+}
