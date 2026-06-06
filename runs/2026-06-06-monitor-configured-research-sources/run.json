@@ -1,0 +1,1091 @@
+{
+  "run_id": "2026-06-06-monitor-configured-research-sources",
+  "brief": {
+    "question": "Monitor configured research sources",
+    "mode": "monitor-sources",
+    "topics": [],
+    "constraints": {}
+  },
+  "sources": [
+    {
+      "id": "hacker-news-front-page",
+      "type": "rss",
+      "name": "Hacker News Front Page",
+      "url": "https://hnrss.org/frontpage",
+      "access": {
+        "method": "public"
+      },
+      "metadata": {}
+    },
+    {
+      "id": "openai-x-profile",
+      "type": "x_profile",
+      "name": "OpenAI on X",
+      "url": "https://x.com/openai",
+      "access": {
+        "method": "browser_session",
+        "store_full_text": false
+      },
+      "metadata": {}
+    }
+  ],
+  "items": [
+    {
+      "id": "6e5d0890839e4ce7",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "S&P 500 rejects SpaceX, also blocking entry for OpenAI and Anthropic",
+      "url": "https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/",
+      "text": "Article URL: https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/\nComments URL: https://news.ycombinator.com/item?id=48421442\nPoints: 151\n# Comments: 22",
+      "author": "maltalex",
+      "published_at": "Sat, 06 Jun 2026 04:38:36 +0000",
+      "retrieved_at": "2026-06-06T06:45:09.176883+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "25e3328e8bb2d3d6",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Pre-Modern Armies for Worldbuilders, Part I: Why They Fight",
+      "url": "https://acoup.blog/2026/06/05/collections-pre-modern-armies-for-worldbuilders-part-i-why-they-fight/",
+      "text": "Article URL: https://acoup.blog/2026/06/05/collections-pre-modern-armies-for-worldbuilders-part-i-why-they-fight/\nComments URL: https://news.ycombinator.com/item?id=48421171\nPoints: 37\n# Comments: 4",
+      "author": "gostsamo",
+      "published_at": "Sat, 06 Jun 2026 03:41:32 +0000",
+      "retrieved_at": "2026-06-06T06:45:09.176933+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "7750fe71a8eca1f9",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Lockdown Mode",
+      "url": "https://help.openai.com/en/articles/20001061-lockdown-mode",
+      "text": "Article URL: https://help.openai.com/en/articles/20001061-lockdown-mode\nComments URL: https://news.ycombinator.com/item?id=48421145\nPoints: 40\n# Comments: 17",
+      "author": "berlianta",
+      "published_at": "Sat, 06 Jun 2026 03:36:15 +0000",
+      "retrieved_at": "2026-06-06T06:45:09.176953+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "2dacd6fa8783532a",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "The back cover of C++: The Language raises questions not answered by front cover",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260605-01/?p=112391",
+      "text": "Article URL: https://devblogs.microsoft.com/oldnewthing/20260605-01/?p=112391\nComments URL: https://news.ycombinator.com/item?id=48421079\nPoints: 66\n# Comments: 10",
+      "author": "paulmooreparks",
+      "published_at": "Sat, 06 Jun 2026 03:23:47 +0000",
+      "retrieved_at": "2026-06-06T06:45:09.176969+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "bc2f23b6613a388b",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Ask HN: Why is the HN crowd so anti-AI?",
+      "url": "https://news.ycombinator.com/item?id=48420827",
+      "text": "Genuine question.Over the past six months, there hasn\u2019t been a single day where I\u2019ve checked the HN Best RSS feed without seeing a post about how AI \u201cwrites bad code,\u201d \u201cintroduces bugs,\u201d \u201ccreates technical debt,\u201d or something along those lines.I\u2019ll probably make a lot of enemies by saying this, but do people realize that code is just a means to an end?Users don\u2019t care whether the code was written by AI or by hand, or which framework you used. They care that the product works.I say this as someone who has spent more than 20 years honing their craft as a software engineer.Let\u2019s face it: by the time I manually ship version 1.0 of a product, the AI-assisted version could have been deployed 10x faster. By then, enough real-world feedback would have surfaced to identify the major issues, and tools like Claude Code would make it possible to fix and ship version 2.0 at an incredible pace.At some point, execution speed starts to matter more than the elegance of the code.\n\nComments URL: https://news.ycombinator.com/item?id=48420827\nPoints: 89\n# Comments: 176",
+      "author": "Ekami",
+      "published_at": "Sat, 06 Jun 2026 02:31:51 +0000",
+      "retrieved_at": "2026-06-06T06:45:09.176992+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "e2a931ff1d73dfa7",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Show HN: ABC Classic 100 Rankings visualised",
+      "url": "https://classic100.gotski.workers.dev/",
+      "text": "This weekend is the ABC Classic FM countdown, which prompted me to dust off an old un-published data visualisation of rankings from previous years.I've considered adding a search function, but I also kind of like that it requires a bit of exploration in the current form.Some of the code is a bit clunky and I wouldn't mind refactoring it. I'm also not sure about browser compatibility - I've only got access to a couple of devices to test it on.\n\nComments URL: https://news.ycombinator.com/item?id=48420494\nPoints: 26\n# Comments: 17",
+      "author": "gotski",
+      "published_at": "Sat, 06 Jun 2026 01:32:09 +0000",
+      "retrieved_at": "2026-06-06T06:45:09.177009+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "2c838a02ecd174ae",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "The intracies of modern camera lens repair (2024)",
+      "url": "https://salvagedcircuitry.com/sigma-45mm.html",
+      "text": "Article URL: https://salvagedcircuitry.com/sigma-45mm.html\nComments URL: https://news.ycombinator.com/item?id=48420148\nPoints: 137\n# Comments: 43",
+      "author": "transistor-man",
+      "published_at": "Sat, 06 Jun 2026 00:33:26 +0000",
+      "retrieved_at": "2026-06-06T06:45:09.177025+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "5437da63fc8693ee",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Nordstjernen 1.0",
+      "url": "https://github.com/nordstjernen-web/nordstjernen/releases/tag/1.0.0",
+      "text": "Article URL: https://github.com/nordstjernen-web/nordstjernen/releases/tag/1.0.0\nComments URL: https://news.ycombinator.com/item?id=48419821\nPoints: 38\n# Comments: 14",
+      "author": "andreasrosdal",
+      "published_at": "Fri, 05 Jun 2026 23:42:54 +0000",
+      "retrieved_at": "2026-06-06T06:45:09.177048+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "2b2b07655ae79e01",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "The perils of UUID primary keys in SQLite",
+      "url": "https://andersmurphy.com/2026/06/05/the-perils-of-uuid-primary-keys-in-sqlite.html",
+      "text": "Article URL: https://andersmurphy.com/2026/06/05/the-perils-of-uuid-primary-keys-in-sqlite.html\nComments URL: https://news.ycombinator.com/item?id=48419571\nPoints: 60\n# Comments: 29",
+      "author": "emschwartz",
+      "published_at": "Fri, 05 Jun 2026 23:13:12 +0000",
+      "retrieved_at": "2026-06-06T06:45:09.177065+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "dd1d38e6f611e71d",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Three of our worst VC stories",
+      "url": "https://twitter.com/eastdakota/status/2062860530360959273",
+      "text": "https://xcancel.com/eastdakota/status/2062860530360959273More of these (via https://news.ycombinator.com/item?id=48418641 below):https://xcancel.com/gregisenberg/status/2061794787825479818 (https://xcancel.com/dunkhippo33/status/2062768969560510486https://xcancel.com/typesfast/status/2062791307094048937https://xcancel.com/awxjack/status/2062605286683336757https://xcancel.com/travisk/status/2062224472426365045https://xcancel.com/mark_cummins/status/2062293061426663612\n\nComments URL: https://news.ycombinator.com/item?id=48416845\nPoints: 215\n# Comments: 108",
+      "author": "orgonon",
+      "published_at": "Fri, 05 Jun 2026 19:08:12 +0000",
+      "retrieved_at": "2026-06-06T06:45:09.177085+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "e9f859fbe734e34e",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Transformers are inherently succinct",
+      "url": "https://openreview.net/pdf?id=Yxz92UuPLQ",
+      "text": "This paper is being published at ICLR 2026 (top AI conference), and was selected as one of three outstanding papers.\n\nComments URL: https://news.ycombinator.com/item?id=48416635\nPoints: 111\n# Comments: 32",
+      "author": "brandonb",
+      "published_at": "Fri, 05 Jun 2026 18:50:26 +0000",
+      "retrieved_at": "2026-06-06T06:45:09.177100+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "0d4b8fdeedd5aac9",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Gov.uk has replaced Stripe with Dutch provider Adyen",
+      "url": "https://www.theregister.com/public-sector/2026/06/04/govuk-goes-dutch-on-payments-as-it-dumps-stripe/5250763",
+      "text": "https://gds.blog.gov.uk/2026/06/02/building-for-the-future-m...https://www.adyen.com/press-and-media/adyen-payments-gov-uk\n\nComments URL: https://news.ycombinator.com/item?id=48415217\nPoints: 407\n# Comments: 140",
+      "author": "toomuchtodo",
+      "published_at": "Fri, 05 Jun 2026 16:55:30 +0000",
+      "retrieved_at": "2026-06-06T06:45:09.177116+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "372657686dd70377",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Gemma 4 QAT models: Optimizing compression for mobile and laptop efficiency",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/",
+      "text": "Article URL: https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/\nComments URL: https://news.ycombinator.com/item?id=48414653\nPoints: 324\n# Comments: 99",
+      "author": "theanonymousone",
+      "published_at": "Fri, 05 Jun 2026 16:18:48 +0000",
+      "retrieved_at": "2026-06-06T06:45:09.177131+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "b5e875121df8fe3e",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "pg_durable: Microsoft open sources in-database durable execution",
+      "url": "https://github.com/microsoft/pg_durable",
+      "text": "Article URL: https://github.com/microsoft/pg_durable\nComments URL: https://news.ycombinator.com/item?id=48414367\nPoints: 377\n# Comments: 85",
+      "author": "coffeemug",
+      "published_at": "Fri, 05 Jun 2026 15:59:57 +0000",
+      "retrieved_at": "2026-06-06T06:45:09.177145+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "f332ec8809b7b111",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Conventional Commits encourages focus on the wrong things",
+      "url": "https://sumnerevans.com/posts/software-engineering/stop-using-conventional-commits/",
+      "text": "Article URL: https://sumnerevans.com/posts/software-engineering/stop-using-conventional-commits/\nComments URL: https://news.ycombinator.com/item?id=48414027\nPoints: 295\n# Comments: 227",
+      "author": "jsve",
+      "published_at": "Fri, 05 Jun 2026 15:39:38 +0000",
+      "retrieved_at": "2026-06-06T06:45:09.177160+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "961162abdbc1158d",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "New method turns ocean water into drinking water, without waste",
+      "url": "https://www.rochester.edu/newscenter/what-is-desalination-definition-ocean-water-704732/",
+      "text": "Article URL: https://www.rochester.edu/newscenter/what-is-desalination-definition-ocean-water-704732/\nComments URL: https://news.ycombinator.com/item?id=48413500\nPoints: 326\n# Comments: 141",
+      "author": "speckx",
+      "published_at": "Fri, 05 Jun 2026 15:04:03 +0000",
+      "retrieved_at": "2026-06-06T06:45:09.177174+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "16331993b400eac3",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Astronauts told to return to ISS after sheltering over air leak repairs",
+      "url": "https://www.bbc.com/news/live/c4g44ew3g1kt",
+      "text": "Article URL: https://www.bbc.com/news/live/c4g44ew3g1kt\nComments URL: https://news.ycombinator.com/item?id=48413464\nPoints: 378\n# Comments: 243",
+      "author": "janpot",
+      "published_at": "Fri, 05 Jun 2026 15:00:31 +0000",
+      "retrieved_at": "2026-06-06T06:45:09.177189+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "b07eff714d30f2d7",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "India's surprise baby bust",
+      "url": "https://www.economist.com/leaders/2026/06/04/indias-surprise-baby-bust-is-a-warning-to-the-world",
+      "text": "https://archive.ph/ZDxIe\n\nComments URL: https://news.ycombinator.com/item?id=48413254\nPoints: 163\n# Comments: 715",
+      "author": "hakonbogen",
+      "published_at": "Fri, 05 Jun 2026 14:44:44 +0000",
+      "retrieved_at": "2026-06-06T06:45:09.177203+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "549fc39966e36424",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "The Quiet Numbers Station: Decoding Nineteen Years of GPS Cryptography",
+      "url": "https://www.benthamsgaze.org/2026/06/02/the-quiet-numbers-station-decoding-nineteen-years-of-gps-cryptography/",
+      "text": "https://lsc-pagepro.mydigitalpublication.com/publication/?i=...PDF: https://cdn.coverstand.com/61061/865273/2c88ea662e2b57478723... (article is on page 62)Related: https://www.404media.co/the-u-s-military-quietly-turned-gps-...\n\nComments URL: https://news.ycombinator.com/item?id=48411799\nPoints: 80\n# Comments: 69",
+      "author": "lordgilman",
+      "published_at": "Fri, 05 Jun 2026 12:56:44 +0000",
+      "retrieved_at": "2026-06-06T06:45:09.177219+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "8b17e4861cd5788f",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Did Claude increase bugs in rsync?",
+      "url": "https://alexispurslane.github.io/rsync-analysis/",
+      "text": "Article URL: https://alexispurslane.github.io/rsync-analysis/\nComments URL: https://news.ycombinator.com/item?id=48411635\nPoints: 375\n# Comments: 375",
+      "author": "logicprog",
+      "published_at": "Fri, 05 Jun 2026 12:43:33 +0000",
+      "retrieved_at": "2026-06-06T06:45:09.177233+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    {
+      "id": "b062f24b24377b7d",
+      "source_id": "openai-x-profile",
+      "source_type": "x_profile",
+      "title": "X profile @openai",
+      "url": "https://x.com/openai",
+      "text": "X/Twitter profile metadata placeholder. Configure an authenticated X API, browser-session, export, or list connector to retrieve timeline items.",
+      "author": "openai",
+      "published_at": null,
+      "retrieved_at": "2026-06-06T06:45:09.177268+00:00",
+      "metadata": {
+        "status_id": null,
+        "requires_authenticated_retrieval": true
+      },
+      "access_rights": {
+        "store_full_text": false,
+        "reason": "social/auth connector not configured"
+      },
+      "provenance": {
+        "connector": "x_profile",
+        "retrieval": "url_normalization"
+      }
+    }
+  ],
+  "evaluated_items": [
+    {
+      "item": {
+        "id": "6e5d0890839e4ce7",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "S&P 500 rejects SpaceX, also blocking entry for OpenAI and Anthropic",
+        "url": "https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/",
+        "text": "Article URL: https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/\nComments URL: https://news.ycombinator.com/item?id=48421442\nPoints: 151\n# Comments: 22",
+        "author": "maltalex",
+        "published_at": "Sat, 06 Jun 2026 04:38:36 +0000",
+        "retrieved_at": "2026-06-06T06:45:09.176883+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/ Comments URL: https://news.ycombinator.com/item?id=48421442 Points: 151 # Comments: 22",
+      "key_points": [
+        "Article URL: https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/ Comments URL: https://news.ycombinator.com/item?id=48421442 Points: 151 # Comments: 22"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "25e3328e8bb2d3d6",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Pre-Modern Armies for Worldbuilders, Part I: Why They Fight",
+        "url": "https://acoup.blog/2026/06/05/collections-pre-modern-armies-for-worldbuilders-part-i-why-they-fight/",
+        "text": "Article URL: https://acoup.blog/2026/06/05/collections-pre-modern-armies-for-worldbuilders-part-i-why-they-fight/\nComments URL: https://news.ycombinator.com/item?id=48421171\nPoints: 37\n# Comments: 4",
+        "author": "gostsamo",
+        "published_at": "Sat, 06 Jun 2026 03:41:32 +0000",
+        "retrieved_at": "2026-06-06T06:45:09.176933+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://acoup.blog/2026/06/05/collections-pre-modern-armies-for-worldbuilders-part-i-why-they-fight/ Comments URL: https://news.ycombinator.com/item?id=48421171 Points: 37 # Comments: 4",
+      "key_points": [
+        "Article URL: https://acoup.blog/2026/06/05/collections-pre-modern-armies-for-worldbuilders-part-i-why-they-fight/ Comments URL: https://news.ycombinator.com/item?id=48421171 Points: 37 # Comments: 4"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "7750fe71a8eca1f9",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Lockdown Mode",
+        "url": "https://help.openai.com/en/articles/20001061-lockdown-mode",
+        "text": "Article URL: https://help.openai.com/en/articles/20001061-lockdown-mode\nComments URL: https://news.ycombinator.com/item?id=48421145\nPoints: 40\n# Comments: 17",
+        "author": "berlianta",
+        "published_at": "Sat, 06 Jun 2026 03:36:15 +0000",
+        "retrieved_at": "2026-06-06T06:45:09.176953+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://help.openai.com/en/articles/20001061-lockdown-mode Comments URL: https://news.ycombinator.com/item?id=48421145 Points: 40 # Comments: 17",
+      "key_points": [
+        "Article URL: https://help.openai.com/en/articles/20001061-lockdown-mode Comments URL: https://news.ycombinator.com/item?id=48421145 Points: 40 # Comments: 17"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "2dacd6fa8783532a",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "The back cover of C++: The Language raises questions not answered by front cover",
+        "url": "https://devblogs.microsoft.com/oldnewthing/20260605-01/?p=112391",
+        "text": "Article URL: https://devblogs.microsoft.com/oldnewthing/20260605-01/?p=112391\nComments URL: https://news.ycombinator.com/item?id=48421079\nPoints: 66\n# Comments: 10",
+        "author": "paulmooreparks",
+        "published_at": "Sat, 06 Jun 2026 03:23:47 +0000",
+        "retrieved_at": "2026-06-06T06:45:09.176969+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://devblogs.microsoft.com/oldnewthing/20260605-01/?p=112391 Comments URL: https://news.ycombinator.com/item?id=48421079 Points: 66 # Comments: 10",
+      "key_points": [
+        "Article URL: https://devblogs.microsoft.com/oldnewthing/20260605-01/?p=112391 Comments URL: https://news.ycombinator.com/item?id=48421079 Points: 66 # Comments: 10"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "bc2f23b6613a388b",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Ask HN: Why is the HN crowd so anti-AI?",
+        "url": "https://news.ycombinator.com/item?id=48420827",
+        "text": "Genuine question.Over the past six months, there hasn\u2019t been a single day where I\u2019ve checked the HN Best RSS feed without seeing a post about how AI \u201cwrites bad code,\u201d \u201cintroduces bugs,\u201d \u201ccreates technical debt,\u201d or something along those lines.I\u2019ll probably make a lot of enemies by saying this, but do people realize that code is just a means to an end?Users don\u2019t care whether the code was written by AI or by hand, or which framework you used. They care that the product works.I say this as someone who has spent more than 20 years honing their craft as a software engineer.Let\u2019s face it: by the time I manually ship version 1.0 of a product, the AI-assisted version could have been deployed 10x faster. By then, enough real-world feedback would have surfaced to identify the major issues, and tools like Claude Code would make it possible to fix and ship version 2.0 at an incredible pace.At some point, execution speed starts to matter more than the elegance of the code.\n\nComments URL: https://news.ycombinator.com/item?id=48420827\nPoints: 89\n# Comments: 176",
+        "author": "Ekami",
+        "published_at": "Sat, 06 Jun 2026 02:31:51 +0000",
+        "retrieved_at": "2026-06-06T06:45:09.176992+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Genuine question.Over the past six months, there hasn\u2019t been a single day where I\u2019ve checked the HN Best RSS feed without seeing a post about how AI \u201cwrites bad code,\u201d \u201cintroduces bugs,\u201d \u201ccreates technical debt,\u201d or something along those lines.I\u2019ll probably make a lot of enemies by saying this, but do people realize that code is just a means to an end?Users don\u2019t care whether the code was written by AI or by hand, or which framework you used. They care that the product works.I say this as someone who has spent more than 20 years honing their craft as a software engineer.Let\u2019s face it: by the time I manually ship version 1.0 of a product, the AI-assisted version could have been deployed 10x f",
+      "key_points": [
+        "Genuine question.Over the past six months, there hasn\u2019t been a single day where I\u2019ve checked the HN Best RSS feed without seeing a post about how AI \u201cwrites bad code,\u201d \u201cintroduces bugs,\u201d \u201ccreates technical debt,\u201d or something along those lines.I\u2019ll probably make a lot of enemies by saying this, but ",
+        "They care that the product works.I say this as someone who has spent more than 20 years honing their craft as a software engineer.Let\u2019s face it: by the time I manually ship version 1.0 of a product, the AI-assisted version could have been deployed 10x faster.",
+        "By then, enough real-world feedback would have surfaced to identify the major issues, and tools like Claude Code would make it possible to fix and ship version 2.0 at an incredible pace.At some point, execution speed starts to matter more than the elegance of the code.",
+        "Comments URL: https://news.ycombinator.com/item?id=48420827 Points: 89 # Comments: 176"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "e2a931ff1d73dfa7",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Show HN: ABC Classic 100 Rankings visualised",
+        "url": "https://classic100.gotski.workers.dev/",
+        "text": "This weekend is the ABC Classic FM countdown, which prompted me to dust off an old un-published data visualisation of rankings from previous years.I've considered adding a search function, but I also kind of like that it requires a bit of exploration in the current form.Some of the code is a bit clunky and I wouldn't mind refactoring it. I'm also not sure about browser compatibility - I've only got access to a couple of devices to test it on.\n\nComments URL: https://news.ycombinator.com/item?id=48420494\nPoints: 26\n# Comments: 17",
+        "author": "gotski",
+        "published_at": "Sat, 06 Jun 2026 01:32:09 +0000",
+        "retrieved_at": "2026-06-06T06:45:09.177009+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "This weekend is the ABC Classic FM countdown, which prompted me to dust off an old un-published data visualisation of rankings from previous years.I've considered adding a search function, but I also kind of like that it requires a bit of exploration in the current form.Some of the code is a bit clunky and I wouldn't mind refactoring it. I'm also not sure about browser compatibility - I've only got access to a couple of devices to test it on.",
+      "key_points": [
+        "This weekend is the ABC Classic FM countdown, which prompted me to dust off an old un-published data visualisation of rankings from previous years.I've considered adding a search function, but I also kind of like that it requires a bit of exploration in the current form.Some of the code is a bit clu",
+        "I'm also not sure about browser compatibility - I've only got access to a couple of devices to test it on.",
+        "Comments URL: https://news.ycombinator.com/item?id=48420494 Points: 26 # Comments: 17"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "2c838a02ecd174ae",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "The intracies of modern camera lens repair (2024)",
+        "url": "https://salvagedcircuitry.com/sigma-45mm.html",
+        "text": "Article URL: https://salvagedcircuitry.com/sigma-45mm.html\nComments URL: https://news.ycombinator.com/item?id=48420148\nPoints: 137\n# Comments: 43",
+        "author": "transistor-man",
+        "published_at": "Sat, 06 Jun 2026 00:33:26 +0000",
+        "retrieved_at": "2026-06-06T06:45:09.177025+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://salvagedcircuitry.com/sigma-45mm.html Comments URL: https://news.ycombinator.com/item?id=48420148 Points: 137 # Comments: 43",
+      "key_points": [
+        "Article URL: https://salvagedcircuitry.com/sigma-45mm.html Comments URL: https://news.ycombinator.com/item?id=48420148 Points: 137 # Comments: 43"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "5437da63fc8693ee",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Nordstjernen 1.0",
+        "url": "https://github.com/nordstjernen-web/nordstjernen/releases/tag/1.0.0",
+        "text": "Article URL: https://github.com/nordstjernen-web/nordstjernen/releases/tag/1.0.0\nComments URL: https://news.ycombinator.com/item?id=48419821\nPoints: 38\n# Comments: 14",
+        "author": "andreasrosdal",
+        "published_at": "Fri, 05 Jun 2026 23:42:54 +0000",
+        "retrieved_at": "2026-06-06T06:45:09.177048+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://github.com/nordstjernen-web/nordstjernen/releases/tag/1.0.0 Comments URL: https://news.ycombinator.com/item?id=48419821 Points: 38 # Comments: 14",
+      "key_points": [
+        "Article URL: https://github.com/nordstjernen-web/nordstjernen/releases/tag/1.0.0 Comments URL: https://news.ycombinator.com/item?id=48419821 Points: 38 # Comments: 14"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "2b2b07655ae79e01",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "The perils of UUID primary keys in SQLite",
+        "url": "https://andersmurphy.com/2026/06/05/the-perils-of-uuid-primary-keys-in-sqlite.html",
+        "text": "Article URL: https://andersmurphy.com/2026/06/05/the-perils-of-uuid-primary-keys-in-sqlite.html\nComments URL: https://news.ycombinator.com/item?id=48419571\nPoints: 60\n# Comments: 29",
+        "author": "emschwartz",
+        "published_at": "Fri, 05 Jun 2026 23:13:12 +0000",
+        "retrieved_at": "2026-06-06T06:45:09.177065+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://andersmurphy.com/2026/06/05/the-perils-of-uuid-primary-keys-in-sqlite.html Comments URL: https://news.ycombinator.com/item?id=48419571 Points: 60 # Comments: 29",
+      "key_points": [
+        "Article URL: https://andersmurphy.com/2026/06/05/the-perils-of-uuid-primary-keys-in-sqlite.html Comments URL: https://news.ycombinator.com/item?id=48419571 Points: 60 # Comments: 29"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "dd1d38e6f611e71d",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Three of our worst VC stories",
+        "url": "https://twitter.com/eastdakota/status/2062860530360959273",
+        "text": "https://xcancel.com/eastdakota/status/2062860530360959273More of these (via https://news.ycombinator.com/item?id=48418641 below):https://xcancel.com/gregisenberg/status/2061794787825479818 (https://xcancel.com/dunkhippo33/status/2062768969560510486https://xcancel.com/typesfast/status/2062791307094048937https://xcancel.com/awxjack/status/2062605286683336757https://xcancel.com/travisk/status/2062224472426365045https://xcancel.com/mark_cummins/status/2062293061426663612\n\nComments URL: https://news.ycombinator.com/item?id=48416845\nPoints: 215\n# Comments: 108",
+        "author": "orgonon",
+        "published_at": "Fri, 05 Jun 2026 19:08:12 +0000",
+        "retrieved_at": "2026-06-06T06:45:09.177085+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "https://xcancel.com/eastdakota/status/2062860530360959273More of these (via https://news.ycombinator.com/item?id=48418641 below):https://xcancel.com/gregisenberg/status/2061794787825479818 (https://xcancel.com/dunkhippo33/status/2062768969560510486https://xcancel.com/typesfast/status/2062791307094048937https://xcancel.com/awxjack/status/2062605286683336757https://xcancel.com/travisk/status/2062224472426365045https://xcancel.com/mark_cummins/status/2062293061426663612 Comments URL: https://news.ycombinator.com/item?id=48416845 Points: 215 # Comments: 108",
+      "key_points": [
+        "https://xcancel.com/eastdakota/status/2062860530360959273More of these (via https://news.ycombinator.com/item?id=48418641 below):https://xcancel.com/gregisenberg/status/2061794787825479818 (https://xcancel.com/dunkhippo33/status/2062768969560510486https://xcancel.com/typesfast/status/206279130709404"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "e9f859fbe734e34e",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Transformers are inherently succinct",
+        "url": "https://openreview.net/pdf?id=Yxz92UuPLQ",
+        "text": "This paper is being published at ICLR 2026 (top AI conference), and was selected as one of three outstanding papers.\n\nComments URL: https://news.ycombinator.com/item?id=48416635\nPoints: 111\n# Comments: 32",
+        "author": "brandonb",
+        "published_at": "Fri, 05 Jun 2026 18:50:26 +0000",
+        "retrieved_at": "2026-06-06T06:45:09.177100+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "This paper is being published at ICLR 2026 (top AI conference), and was selected as one of three outstanding papers. Comments URL: https://news.ycombinator.com/item?id=48416635 Points: 111 # Comments: 32",
+      "key_points": [
+        "This paper is being published at ICLR 2026 (top AI conference), and was selected as one of three outstanding papers.",
+        "Comments URL: https://news.ycombinator.com/item?id=48416635 Points: 111 # Comments: 32"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "0d4b8fdeedd5aac9",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Gov.uk has replaced Stripe with Dutch provider Adyen",
+        "url": "https://www.theregister.com/public-sector/2026/06/04/govuk-goes-dutch-on-payments-as-it-dumps-stripe/5250763",
+        "text": "https://gds.blog.gov.uk/2026/06/02/building-for-the-future-m...https://www.adyen.com/press-and-media/adyen-payments-gov-uk\n\nComments URL: https://news.ycombinator.com/item?id=48415217\nPoints: 407\n# Comments: 140",
+        "author": "toomuchtodo",
+        "published_at": "Fri, 05 Jun 2026 16:55:30 +0000",
+        "retrieved_at": "2026-06-06T06:45:09.177116+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "https://gds.blog.gov.uk/2026/06/02/building-for-the-future-m...https://www.adyen.com/press-and-media/adyen-payments-gov-uk Comments URL: https://news.ycombinator.com/item?id=48415217 Points: 407 # Comments: 140",
+      "key_points": [
+        "https://gds.blog.gov.uk/2026/06/02/building-for-the-future-m...https://www.adyen.com/press-and-media/adyen-payments-gov-uk Comments URL: https://news.ycombinator.com/item?id=48415217 Points: 407 # Comments: 140"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "372657686dd70377",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Gemma 4 QAT models: Optimizing compression for mobile and laptop efficiency",
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/",
+        "text": "Article URL: https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/\nComments URL: https://news.ycombinator.com/item?id=48414653\nPoints: 324\n# Comments: 99",
+        "author": "theanonymousone",
+        "published_at": "Fri, 05 Jun 2026 16:18:48 +0000",
+        "retrieved_at": "2026-06-06T06:45:09.177131+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/ Comments URL: https://news.ycombinator.com/item?id=48414653 Points: 324 # Comments: 99",
+      "key_points": [
+        "Article URL: https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/ Comments URL: https://news.ycombinator.com/item?id=48414653 Points: 324 # Comments: 99"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "b5e875121df8fe3e",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "pg_durable: Microsoft open sources in-database durable execution",
+        "url": "https://github.com/microsoft/pg_durable",
+        "text": "Article URL: https://github.com/microsoft/pg_durable\nComments URL: https://news.ycombinator.com/item?id=48414367\nPoints: 377\n# Comments: 85",
+        "author": "coffeemug",
+        "published_at": "Fri, 05 Jun 2026 15:59:57 +0000",
+        "retrieved_at": "2026-06-06T06:45:09.177145+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 2,
+      "summary": "Article URL: https://github.com/microsoft/pg_durable Comments URL: https://news.ycombinator.com/item?id=48414367 Points: 377 # Comments: 85",
+      "key_points": [
+        "Article URL: https://github.com/microsoft/pg_durable Comments URL: https://news.ycombinator.com/item?id=48414367 Points: 377 # Comments: 85"
+      ],
+      "tags": [
+        "sources"
+      ],
+      "rationale": "Matched query terms: sources"
+    },
+    {
+      "item": {
+        "id": "f332ec8809b7b111",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Conventional Commits encourages focus on the wrong things",
+        "url": "https://sumnerevans.com/posts/software-engineering/stop-using-conventional-commits/",
+        "text": "Article URL: https://sumnerevans.com/posts/software-engineering/stop-using-conventional-commits/\nComments URL: https://news.ycombinator.com/item?id=48414027\nPoints: 295\n# Comments: 227",
+        "author": "jsve",
+        "published_at": "Fri, 05 Jun 2026 15:39:38 +0000",
+        "retrieved_at": "2026-06-06T06:45:09.177160+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://sumnerevans.com/posts/software-engineering/stop-using-conventional-commits/ Comments URL: https://news.ycombinator.com/item?id=48414027 Points: 295 # Comments: 227",
+      "key_points": [
+        "Article URL: https://sumnerevans.com/posts/software-engineering/stop-using-conventional-commits/ Comments URL: https://news.ycombinator.com/item?id=48414027 Points: 295 # Comments: 227"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "961162abdbc1158d",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "New method turns ocean water into drinking water, without waste",
+        "url": "https://www.rochester.edu/newscenter/what-is-desalination-definition-ocean-water-704732/",
+        "text": "Article URL: https://www.rochester.edu/newscenter/what-is-desalination-definition-ocean-water-704732/\nComments URL: https://news.ycombinator.com/item?id=48413500\nPoints: 326\n# Comments: 141",
+        "author": "speckx",
+        "published_at": "Fri, 05 Jun 2026 15:04:03 +0000",
+        "retrieved_at": "2026-06-06T06:45:09.177174+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://www.rochester.edu/newscenter/what-is-desalination-definition-ocean-water-704732/ Comments URL: https://news.ycombinator.com/item?id=48413500 Points: 326 # Comments: 141",
+      "key_points": [
+        "Article URL: https://www.rochester.edu/newscenter/what-is-desalination-definition-ocean-water-704732/ Comments URL: https://news.ycombinator.com/item?id=48413500 Points: 326 # Comments: 141"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "16331993b400eac3",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Astronauts told to return to ISS after sheltering over air leak repairs",
+        "url": "https://www.bbc.com/news/live/c4g44ew3g1kt",
+        "text": "Article URL: https://www.bbc.com/news/live/c4g44ew3g1kt\nComments URL: https://news.ycombinator.com/item?id=48413464\nPoints: 378\n# Comments: 243",
+        "author": "janpot",
+        "published_at": "Fri, 05 Jun 2026 15:00:31 +0000",
+        "retrieved_at": "2026-06-06T06:45:09.177189+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://www.bbc.com/news/live/c4g44ew3g1kt Comments URL: https://news.ycombinator.com/item?id=48413464 Points: 378 # Comments: 243",
+      "key_points": [
+        "Article URL: https://www.bbc.com/news/live/c4g44ew3g1kt Comments URL: https://news.ycombinator.com/item?id=48413464 Points: 378 # Comments: 243"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "b07eff714d30f2d7",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "India's surprise baby bust",
+        "url": "https://www.economist.com/leaders/2026/06/04/indias-surprise-baby-bust-is-a-warning-to-the-world",
+        "text": "https://archive.ph/ZDxIe\n\nComments URL: https://news.ycombinator.com/item?id=48413254\nPoints: 163\n# Comments: 715",
+        "author": "hakonbogen",
+        "published_at": "Fri, 05 Jun 2026 14:44:44 +0000",
+        "retrieved_at": "2026-06-06T06:45:09.177203+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "https://archive.ph/ZDxIe Comments URL: https://news.ycombinator.com/item?id=48413254 Points: 163 # Comments: 715",
+      "key_points": [
+        "https://archive.ph/ZDxIe Comments URL: https://news.ycombinator.com/item?id=48413254 Points: 163 # Comments: 715"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "549fc39966e36424",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "The Quiet Numbers Station: Decoding Nineteen Years of GPS Cryptography",
+        "url": "https://www.benthamsgaze.org/2026/06/02/the-quiet-numbers-station-decoding-nineteen-years-of-gps-cryptography/",
+        "text": "https://lsc-pagepro.mydigitalpublication.com/publication/?i=...PDF: https://cdn.coverstand.com/61061/865273/2c88ea662e2b57478723... (article is on page 62)Related: https://www.404media.co/the-u-s-military-quietly-turned-gps-...\n\nComments URL: https://news.ycombinator.com/item?id=48411799\nPoints: 80\n# Comments: 69",
+        "author": "lordgilman",
+        "published_at": "Fri, 05 Jun 2026 12:56:44 +0000",
+        "retrieved_at": "2026-06-06T06:45:09.177219+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "https://lsc-pagepro.mydigitalpublication.com/publication/?i=...PDF: https://cdn.coverstand.com/61061/865273/2c88ea662e2b57478723... (article is on page 62)Related: https://www.404media.co/the-u-s-military-quietly-turned-gps-...",
+      "key_points": [
+        "https://lsc-pagepro.mydigitalpublication.com/publication/?i=...PDF: https://cdn.coverstand.com/61061/865273/2c88ea662e2b57478723...",
+        "(article is on page 62)Related: https://www.404media.co/the-u-s-military-quietly-turned-gps-...",
+        "Comments URL: https://news.ycombinator.com/item?id=48411799 Points: 80 # Comments: 69"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    },
+    {
+      "item": {
+        "id": "8b17e4861cd5788f",
+        "source_id": "hacker-news-front-page",
+        "source_type": "rss",
+        "title": "Did Claude increase bugs in rsync?",
+        "url": "https://alexispurslane.github.io/rsync-analysis/",
+        "text": "Article URL: https://alexispurslane.github.io/rsync-analysis/\nComments URL: https://news.ycombinator.com/item?id=48411635\nPoints: 375\n# Comments: 375",
+        "author": "logicprog",
+        "published_at": "Fri, 05 Jun 2026 12:43:33 +0000",
+        "retrieved_at": "2026-06-06T06:45:09.177233+00:00",
+        "metadata": {
+          "feed_title": "Hacker News: Front Page"
+        },
+        "access_rights": {
+          "store_full_text": true
+        },
+        "provenance": {
+          "connector": "rss",
+          "retrieval": "feedparser"
+        }
+      },
+      "relevance_score": 1,
+      "summary": "Article URL: https://alexispurslane.github.io/rsync-analysis/ Comments URL: https://news.ycombinator.com/item?id=48411635 Points: 375 # Comments: 375",
+      "key_points": [
+        "Article URL: https://alexispurslane.github.io/rsync-analysis/ Comments URL: https://news.ycombinator.com/item?id=48411635 Points: 375 # Comments: 375"
+      ],
+      "tags": [],
+      "rationale": "No strong lexical overlap with the brief."
+    }
+  ],
+  "findings_markdown": "# Findings: Monitor configured research sources\n\n## Summary\n\nReviewed 20 item(s). Highest-scoring material is listed first.\n\n## Relevant Items\n\n### pg_durable: Microsoft open sources in-database durable execution\n- URL: https://github.com/microsoft/pg_durable\n- Source type: rss\n- Relevance: 2/5\n- Summary: Article URL: https://github.com/microsoft/pg_durable Comments URL: https://news.ycombinator.com/item?id=48414367 Points: 377 # Comments: 85\n- Key points:\n  - Article URL: https://github.com/microsoft/pg_durable Comments URL: https://news.ycombinator.com/item?id=48414367 Points: 377 # Comments: 85\n- Tags: sources\n- Rationale: Matched query terms: sources\n\n### S&P 500 rejects SpaceX, also blocking entry for OpenAI and Anthropic\n- URL: https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/ Comments URL: https://news.ycombinator.com/item?id=48421442 Points: 151 # Comments: 22\n- Key points:\n  - Article URL: https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/ Comments URL: https://news.ycombinator.com/item?id=48421442 Points: 151 # Comments: 22\n- Rationale: No strong lexical overlap with the brief.\n\n### Pre-Modern Armies for Worldbuilders, Part I: Why They Fight\n- URL: https://acoup.blog/2026/06/05/collections-pre-modern-armies-for-worldbuilders-part-i-why-they-fight/\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://acoup.blog/2026/06/05/collections-pre-modern-armies-for-worldbuilders-part-i-why-they-fight/ Comments URL: https://news.ycombinator.com/item?id=48421171 Points: 37 # Comments: 4\n- Key points:\n  - Article URL: https://acoup.blog/2026/06/05/collections-pre-modern-armies-for-worldbuilders-part-i-why-they-fight/ Comments URL: https://news.ycombinator.com/item?id=48421171 Points: 37 # Comments: 4\n- Rationale: No strong lexical overlap with the brief.\n\n### Lockdown Mode\n- URL: https://help.openai.com/en/articles/20001061-lockdown-mode\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://help.openai.com/en/articles/20001061-lockdown-mode Comments URL: https://news.ycombinator.com/item?id=48421145 Points: 40 # Comments: 17\n- Key points:\n  - Article URL: https://help.openai.com/en/articles/20001061-lockdown-mode Comments URL: https://news.ycombinator.com/item?id=48421145 Points: 40 # Comments: 17\n- Rationale: No strong lexical overlap with the brief.\n\n### The back cover of C++: The Language raises questions not answered by front cover\n- URL: https://devblogs.microsoft.com/oldnewthing/20260605-01/?p=112391\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://devblogs.microsoft.com/oldnewthing/20260605-01/?p=112391 Comments URL: https://news.ycombinator.com/item?id=48421079 Points: 66 # Comments: 10\n- Key points:\n  - Article URL: https://devblogs.microsoft.com/oldnewthing/20260605-01/?p=112391 Comments URL: https://news.ycombinator.com/item?id=48421079 Points: 66 # Comments: 10\n- Rationale: No strong lexical overlap with the brief.\n\n### Ask HN: Why is the HN crowd so anti-AI?\n- URL: https://news.ycombinator.com/item?id=48420827\n- Source type: rss\n- Relevance: 1/5\n- Summary: Genuine question.Over the past six months, there hasn\u2019t been a single day where I\u2019ve checked the HN Best RSS feed without seeing a post about how AI \u201cwrites bad code,\u201d \u201cintroduces bugs,\u201d \u201ccreates technical debt,\u201d or something along those lines.I\u2019ll probably make a lot of enemies by saying this, but do people realize that code is just a means to an end?Users don\u2019t care whether the code was written by AI or by hand, or which framework you used. They care that the product works.I say this as someone who has spent more than 20 years honing their craft as a software engineer.Let\u2019s face it: by the time I manually ship version 1.0 of a product, the AI-assisted version could have been deployed 10x f\n- Key points:\n  - Genuine question.Over the past six months, there hasn\u2019t been a single day where I\u2019ve checked the HN Best RSS feed without seeing a post about how AI \u201cwrites bad code,\u201d \u201cintroduces bugs,\u201d \u201ccreates technical debt,\u201d or something along those lines.I\u2019ll probably make a lot of enemies by saying this, but \n  - They care that the product works.I say this as someone who has spent more than 20 years honing their craft as a software engineer.Let\u2019s face it: by the time I manually ship version 1.0 of a product, the AI-assisted version could have been deployed 10x faster.\n  - By then, enough real-world feedback would have surfaced to identify the major issues, and tools like Claude Code would make it possible to fix and ship version 2.0 at an incredible pace.At some point, execution speed starts to matter more than the elegance of the code.\n  - Comments URL: https://news.ycombinator.com/item?id=48420827 Points: 89 # Comments: 176\n- Rationale: No strong lexical overlap with the brief.\n\n### Show HN: ABC Classic 100 Rankings visualised\n- URL: https://classic100.gotski.workers.dev/\n- Source type: rss\n- Relevance: 1/5\n- Summary: This weekend is the ABC Classic FM countdown, which prompted me to dust off an old un-published data visualisation of rankings from previous years.I've considered adding a search function, but I also kind of like that it requires a bit of exploration in the current form.Some of the code is a bit clunky and I wouldn't mind refactoring it. I'm also not sure about browser compatibility - I've only got access to a couple of devices to test it on.\n- Key points:\n  - This weekend is the ABC Classic FM countdown, which prompted me to dust off an old un-published data visualisation of rankings from previous years.I've considered adding a search function, but I also kind of like that it requires a bit of exploration in the current form.Some of the code is a bit clu\n  - I'm also not sure about browser compatibility - I've only got access to a couple of devices to test it on.\n  - Comments URL: https://news.ycombinator.com/item?id=48420494 Points: 26 # Comments: 17\n- Rationale: No strong lexical overlap with the brief.\n\n### The intracies of modern camera lens repair (2024)\n- URL: https://salvagedcircuitry.com/sigma-45mm.html\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://salvagedcircuitry.com/sigma-45mm.html Comments URL: https://news.ycombinator.com/item?id=48420148 Points: 137 # Comments: 43\n- Key points:\n  - Article URL: https://salvagedcircuitry.com/sigma-45mm.html Comments URL: https://news.ycombinator.com/item?id=48420148 Points: 137 # Comments: 43\n- Rationale: No strong lexical overlap with the brief.\n\n### Nordstjernen 1.0\n- URL: https://github.com/nordstjernen-web/nordstjernen/releases/tag/1.0.0\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://github.com/nordstjernen-web/nordstjernen/releases/tag/1.0.0 Comments URL: https://news.ycombinator.com/item?id=48419821 Points: 38 # Comments: 14\n- Key points:\n  - Article URL: https://github.com/nordstjernen-web/nordstjernen/releases/tag/1.0.0 Comments URL: https://news.ycombinator.com/item?id=48419821 Points: 38 # Comments: 14\n- Rationale: No strong lexical overlap with the brief.\n\n### The perils of UUID primary keys in SQLite\n- URL: https://andersmurphy.com/2026/06/05/the-perils-of-uuid-primary-keys-in-sqlite.html\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://andersmurphy.com/2026/06/05/the-perils-of-uuid-primary-keys-in-sqlite.html Comments URL: https://news.ycombinator.com/item?id=48419571 Points: 60 # Comments: 29\n- Key points:\n  - Article URL: https://andersmurphy.com/2026/06/05/the-perils-of-uuid-primary-keys-in-sqlite.html Comments URL: https://news.ycombinator.com/item?id=48419571 Points: 60 # Comments: 29\n- Rationale: No strong lexical overlap with the brief.\n\n### Three of our worst VC stories\n- URL: https://twitter.com/eastdakota/status/2062860530360959273\n- Source type: rss\n- Relevance: 1/5\n- Summary: https://xcancel.com/eastdakota/status/2062860530360959273More of these (via https://news.ycombinator.com/item?id=48418641 below):https://xcancel.com/gregisenberg/status/2061794787825479818 (https://xcancel.com/dunkhippo33/status/2062768969560510486https://xcancel.com/typesfast/status/2062791307094048937https://xcancel.com/awxjack/status/2062605286683336757https://xcancel.com/travisk/status/2062224472426365045https://xcancel.com/mark_cummins/status/2062293061426663612 Comments URL: https://news.ycombinator.com/item?id=48416845 Points: 215 # Comments: 108\n- Key points:\n  - https://xcancel.com/eastdakota/status/2062860530360959273More of these (via https://news.ycombinator.com/item?id=48418641 below):https://xcancel.com/gregisenberg/status/2061794787825479818 (https://xcancel.com/dunkhippo33/status/2062768969560510486https://xcancel.com/typesfast/status/206279130709404\n- Rationale: No strong lexical overlap with the brief.\n\n### Transformers are inherently succinct\n- URL: https://openreview.net/pdf?id=Yxz92UuPLQ\n- Source type: rss\n- Relevance: 1/5\n- Summary: This paper is being published at ICLR 2026 (top AI conference), and was selected as one of three outstanding papers. Comments URL: https://news.ycombinator.com/item?id=48416635 Points: 111 # Comments: 32\n- Key points:\n  - This paper is being published at ICLR 2026 (top AI conference), and was selected as one of three outstanding papers.\n  - Comments URL: https://news.ycombinator.com/item?id=48416635 Points: 111 # Comments: 32\n- Rationale: No strong lexical overlap with the brief.\n\n### Gov.uk has replaced Stripe with Dutch provider Adyen\n- URL: https://www.theregister.com/public-sector/2026/06/04/govuk-goes-dutch-on-payments-as-it-dumps-stripe/5250763\n- Source type: rss\n- Relevance: 1/5\n- Summary: https://gds.blog.gov.uk/2026/06/02/building-for-the-future-m...https://www.adyen.com/press-and-media/adyen-payments-gov-uk Comments URL: https://news.ycombinator.com/item?id=48415217 Points: 407 # Comments: 140\n- Key points:\n  - https://gds.blog.gov.uk/2026/06/02/building-for-the-future-m...https://www.adyen.com/press-and-media/adyen-payments-gov-uk Comments URL: https://news.ycombinator.com/item?id=48415217 Points: 407 # Comments: 140\n- Rationale: No strong lexical overlap with the brief.\n\n### Gemma 4 QAT models: Optimizing compression for mobile and laptop efficiency\n- URL: https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/ Comments URL: https://news.ycombinator.com/item?id=48414653 Points: 324 # Comments: 99\n- Key points:\n  - Article URL: https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/ Comments URL: https://news.ycombinator.com/item?id=48414653 Points: 324 # Comments: 99\n- Rationale: No strong lexical overlap with the brief.\n\n### Conventional Commits encourages focus on the wrong things\n- URL: https://sumnerevans.com/posts/software-engineering/stop-using-conventional-commits/\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://sumnerevans.com/posts/software-engineering/stop-using-conventional-commits/ Comments URL: https://news.ycombinator.com/item?id=48414027 Points: 295 # Comments: 227\n- Key points:\n  - Article URL: https://sumnerevans.com/posts/software-engineering/stop-using-conventional-commits/ Comments URL: https://news.ycombinator.com/item?id=48414027 Points: 295 # Comments: 227\n- Rationale: No strong lexical overlap with the brief.\n\n### New method turns ocean water into drinking water, without waste\n- URL: https://www.rochester.edu/newscenter/what-is-desalination-definition-ocean-water-704732/\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://www.rochester.edu/newscenter/what-is-desalination-definition-ocean-water-704732/ Comments URL: https://news.ycombinator.com/item?id=48413500 Points: 326 # Comments: 141\n- Key points:\n  - Article URL: https://www.rochester.edu/newscenter/what-is-desalination-definition-ocean-water-704732/ Comments URL: https://news.ycombinator.com/item?id=48413500 Points: 326 # Comments: 141\n- Rationale: No strong lexical overlap with the brief.\n\n### Astronauts told to return to ISS after sheltering over air leak repairs\n- URL: https://www.bbc.com/news/live/c4g44ew3g1kt\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://www.bbc.com/news/live/c4g44ew3g1kt Comments URL: https://news.ycombinator.com/item?id=48413464 Points: 378 # Comments: 243\n- Key points:\n  - Article URL: https://www.bbc.com/news/live/c4g44ew3g1kt Comments URL: https://news.ycombinator.com/item?id=48413464 Points: 378 # Comments: 243\n- Rationale: No strong lexical overlap with the brief.\n\n### India's surprise baby bust\n- URL: https://www.economist.com/leaders/2026/06/04/indias-surprise-baby-bust-is-a-warning-to-the-world\n- Source type: rss\n- Relevance: 1/5\n- Summary: https://archive.ph/ZDxIe Comments URL: https://news.ycombinator.com/item?id=48413254 Points: 163 # Comments: 715\n- Key points:\n  - https://archive.ph/ZDxIe Comments URL: https://news.ycombinator.com/item?id=48413254 Points: 163 # Comments: 715\n- Rationale: No strong lexical overlap with the brief.\n\n### The Quiet Numbers Station: Decoding Nineteen Years of GPS Cryptography\n- URL: https://www.benthamsgaze.org/2026/06/02/the-quiet-numbers-station-decoding-nineteen-years-of-gps-cryptography/\n- Source type: rss\n- Relevance: 1/5\n- Summary: https://lsc-pagepro.mydigitalpublication.com/publication/?i=...PDF: https://cdn.coverstand.com/61061/865273/2c88ea662e2b57478723... (article is on page 62)Related: https://www.404media.co/the-u-s-military-quietly-turned-gps-...\n- Key points:\n  - https://lsc-pagepro.mydigitalpublication.com/publication/?i=...PDF: https://cdn.coverstand.com/61061/865273/2c88ea662e2b57478723...\n  - (article is on page 62)Related: https://www.404media.co/the-u-s-military-quietly-turned-gps-...\n  - Comments URL: https://news.ycombinator.com/item?id=48411799 Points: 80 # Comments: 69\n- Rationale: No strong lexical overlap with the brief.\n\n### Did Claude increase bugs in rsync?\n- URL: https://alexispurslane.github.io/rsync-analysis/\n- Source type: rss\n- Relevance: 1/5\n- Summary: Article URL: https://alexispurslane.github.io/rsync-analysis/ Comments URL: https://news.ycombinator.com/item?id=48411635 Points: 375 # Comments: 375\n- Key points:\n  - Article URL: https://alexispurslane.github.io/rsync-analysis/ Comments URL: https://news.ycombinator.com/item?id=48411635 Points: 375 # Comments: 375\n- Rationale: No strong lexical overlap with the brief.\n",
+  "created_at": "2026-06-06T06:45:09.178566+00:00"
+}
