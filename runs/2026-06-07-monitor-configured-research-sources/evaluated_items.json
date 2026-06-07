@@ -1,0 +1,602 @@
+[
+  {
+    "item": {
+      "id": "5d960f72cdf6ce69",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "The 29th International Obfuscated C Code Contest (IOCCC) 2025 Winners",
+      "url": "https://www.ioccc.org/2025/",
+      "text": "Article URL: https://www.ioccc.org/2025/\nComments URL: https://news.ycombinator.com/item?id=48432199\nPoints: 67\n# Comments: 8",
+      "author": "matt_d",
+      "published_at": "Sun, 07 Jun 2026 05:47:54 +0000",
+      "retrieved_at": "2026-06-07T07:45:01.969963+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://www.ioccc.org/2025/ Comments URL: https://news.ycombinator.com/item?id=48432199 Points: 67 # Comments: 8",
+    "key_points": [
+      "Article URL: https://www.ioccc.org/2025/ Comments URL: https://news.ycombinator.com/item?id=48432199 Points: 67 # Comments: 8"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "aa89ff69b88583e4",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "I design with Claude more than Figma now",
+      "url": "https://blog.janestreet.com/i-design-with-claude-code-more-than-figma-now-index/",
+      "text": "Article URL: https://blog.janestreet.com/i-design-with-claude-code-more-than-figma-now-index/\nComments URL: https://news.ycombinator.com/item?id=48431981\nPoints: 84\n# Comments: 52",
+      "author": "MrBuddyCasino",
+      "published_at": "Sun, 07 Jun 2026 05:04:24 +0000",
+      "retrieved_at": "2026-06-07T07:45:01.969999+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://blog.janestreet.com/i-design-with-claude-code-more-than-figma-now-index/ Comments URL: https://news.ycombinator.com/item?id=48431981 Points: 84 # Comments: 52",
+    "key_points": [
+      "Article URL: https://blog.janestreet.com/i-design-with-claude-code-more-than-figma-now-index/ Comments URL: https://news.ycombinator.com/item?id=48431981 Points: 84 # Comments: 52"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "fc1df1285570529c",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "The circus freaks of open source",
+      "url": "https://drewdevault.com/blog/Circus-freaks-of-FOSS/",
+      "text": "Article URL: https://drewdevault.com/blog/Circus-freaks-of-FOSS/\nComments URL: https://news.ycombinator.com/item?id=48431952\nPoints: 53\n# Comments: 14",
+      "author": "keyle",
+      "published_at": "Sun, 07 Jun 2026 04:57:02 +0000",
+      "retrieved_at": "2026-06-07T07:45:01.970018+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://drewdevault.com/blog/Circus-freaks-of-FOSS/ Comments URL: https://news.ycombinator.com/item?id=48431952 Points: 53 # Comments: 14",
+    "key_points": [
+      "Article URL: https://drewdevault.com/blog/Circus-freaks-of-FOSS/ Comments URL: https://news.ycombinator.com/item?id=48431952 Points: 53 # Comments: 14"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "6496eaeffa9db6ed",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Valve P2P networking broken for more than 2 months",
+      "url": "https://github.com/ValveSoftware/GameNetworkingSockets/issues/398",
+      "text": "Article URL: https://github.com/ValveSoftware/GameNetworkingSockets/issues/398\nComments URL: https://news.ycombinator.com/item?id=48431461\nPoints: 114\n# Comments: 52",
+      "author": "babuskov",
+      "published_at": "Sun, 07 Jun 2026 03:21:52 +0000",
+      "retrieved_at": "2026-06-07T07:45:01.970034+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://github.com/ValveSoftware/GameNetworkingSockets/issues/398 Comments URL: https://news.ycombinator.com/item?id=48431461 Points: 114 # Comments: 52",
+    "key_points": [
+      "Article URL: https://github.com/ValveSoftware/GameNetworkingSockets/issues/398 Comments URL: https://news.ycombinator.com/item?id=48431461 Points: 114 # Comments: 52"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "f6941e71e81f77ea",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Field of clones: How horse replicas came to dominate polo",
+      "url": "https://knowablemagazine.org/content/article/technology/2026/cloned-polo-horses",
+      "text": "Article URL: https://knowablemagazine.org/content/article/technology/2026/cloned-polo-horses\nComments URL: https://news.ycombinator.com/item?id=48431286\nPoints: 70\n# Comments: 34",
+      "author": "gscott",
+      "published_at": "Sun, 07 Jun 2026 02:46:37 +0000",
+      "retrieved_at": "2026-06-07T07:45:01.970049+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://knowablemagazine.org/content/article/technology/2026/cloned-polo-horses Comments URL: https://news.ycombinator.com/item?id=48431286 Points: 70 # Comments: 34",
+    "key_points": [
+      "Article URL: https://knowablemagazine.org/content/article/technology/2026/cloned-polo-horses Comments URL: https://news.ycombinator.com/item?id=48431286 Points: 70 # Comments: 34"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "6f8ab3241eeccdd0",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Show HN: TakoVM \u2013 Isolated model and tool execution used by enterprises",
+      "url": "https://github.com/las7/TakoVM",
+      "text": "Article URL: https://github.com/las7/TakoVM\nComments URL: https://news.ycombinator.com/item?id=48431257\nPoints: 19\n# Comments: 5",
+      "author": "sakuraiben",
+      "published_at": "Sun, 07 Jun 2026 02:42:24 +0000",
+      "retrieved_at": "2026-06-07T07:45:01.970067+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://github.com/las7/TakoVM Comments URL: https://news.ycombinator.com/item?id=48431257 Points: 19 # Comments: 5",
+    "key_points": [
+      "Article URL: https://github.com/las7/TakoVM Comments URL: https://news.ycombinator.com/item?id=48431257 Points: 19 # Comments: 5"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "e9b1e60abeaab6ff",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "How Liminalism Became the Defining Aesthetic of Our Time",
+      "url": "https://hyperallergic.com/how-liminalism-became-the-defining-aesthetic-of-our-time/",
+      "text": "Article URL: https://hyperallergic.com/how-liminalism-became-the-defining-aesthetic-of-our-time/\nComments URL: https://news.ycombinator.com/item?id=48431085\nPoints: 46\n# Comments: 31",
+      "author": "zeech",
+      "published_at": "Sun, 07 Jun 2026 02:12:19 +0000",
+      "retrieved_at": "2026-06-07T07:45:01.970082+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://hyperallergic.com/how-liminalism-became-the-defining-aesthetic-of-our-time/ Comments URL: https://news.ycombinator.com/item?id=48431085 Points: 46 # Comments: 31",
+    "key_points": [
+      "Article URL: https://hyperallergic.com/how-liminalism-became-the-defining-aesthetic-of-our-time/ Comments URL: https://news.ycombinator.com/item?id=48431085 Points: 46 # Comments: 31"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "4cecc547d297e6d1",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Show HN: Oproxy \u2013 inspect and modify network traffic from the browser",
+      "url": "https://github.com/sauravrao637/oproxy",
+      "text": "Article URL: https://github.com/sauravrao637/oproxy\nComments URL: https://news.ycombinator.com/item?id=48431079\nPoints: 35\n# Comments: 6",
+      "author": "sauravrao637",
+      "published_at": "Sun, 07 Jun 2026 02:11:29 +0000",
+      "retrieved_at": "2026-06-07T07:45:01.970104+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://github.com/sauravrao637/oproxy Comments URL: https://news.ycombinator.com/item?id=48431079 Points: 35 # Comments: 6",
+    "key_points": [
+      "Article URL: https://github.com/sauravrao637/oproxy Comments URL: https://news.ycombinator.com/item?id=48431079 Points: 35 # Comments: 6"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "8ebafd8322f253cb",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Tokenomics: Quantifying Where Tokens Are Used in Agentic Software Engineering",
+      "url": "https://arxiv.org/abs/2601.14470",
+      "text": "Article URL: https://arxiv.org/abs/2601.14470\nComments URL: https://news.ycombinator.com/item?id=48430923\nPoints: 85\n# Comments: 25",
+      "author": "Anon84",
+      "published_at": "Sun, 07 Jun 2026 01:37:11 +0000",
+      "retrieved_at": "2026-06-07T07:45:01.970122+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://arxiv.org/abs/2601.14470 Comments URL: https://news.ycombinator.com/item?id=48430923 Points: 85 # Comments: 25",
+    "key_points": [
+      "Article URL: https://arxiv.org/abs/2601.14470 Comments URL: https://news.ycombinator.com/item?id=48430923 Points: 85 # Comments: 25"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "254bdecf30b81d58",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Public Domain Image Archive",
+      "url": "https://pdimagearchive.org/",
+      "text": "Article URL: https://pdimagearchive.org/\nComments URL: https://news.ycombinator.com/item?id=48430539\nPoints: 95\n# Comments: 16",
+      "author": "davidbarker",
+      "published_at": "Sun, 07 Jun 2026 00:22:51 +0000",
+      "retrieved_at": "2026-06-07T07:45:01.970138+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://pdimagearchive.org/ Comments URL: https://news.ycombinator.com/item?id=48430539 Points: 95 # Comments: 16",
+    "key_points": [
+      "Article URL: https://pdimagearchive.org/ Comments URL: https://news.ycombinator.com/item?id=48430539 Points: 95 # Comments: 16"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "ca7cc4a39826c05e",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Human-Like Neural Nets by Catapulting",
+      "url": "https://gwern.net/llm-catapult",
+      "text": "Article URL: https://gwern.net/llm-catapult\nComments URL: https://news.ycombinator.com/item?id=48430282\nPoints: 22\n# Comments: 3",
+      "author": "telotortium",
+      "published_at": "Sat, 06 Jun 2026 23:45:36 +0000",
+      "retrieved_at": "2026-06-07T07:45:01.970153+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://gwern.net/llm-catapult Comments URL: https://news.ycombinator.com/item?id=48430282 Points: 22 # Comments: 3",
+    "key_points": [
+      "Article URL: https://gwern.net/llm-catapult Comments URL: https://news.ycombinator.com/item?id=48430282 Points: 22 # Comments: 3"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "81cadd542c81bb0e",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Sem: New primitive for code understanding \u2013 not LSPs, but entities on top of Git",
+      "url": "https://ataraxy-labs.github.io/sem/",
+      "text": "Article URL: https://ataraxy-labs.github.io/sem/\nComments URL: https://news.ycombinator.com/item?id=48428475\nPoints: 110\n# Comments: 38",
+      "author": "rohanucla",
+      "published_at": "Sat, 06 Jun 2026 20:03:55 +0000",
+      "retrieved_at": "2026-06-07T07:45:01.970168+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://ataraxy-labs.github.io/sem/ Comments URL: https://news.ycombinator.com/item?id=48428475 Points: 110 # Comments: 38",
+    "key_points": [
+      "Article URL: https://ataraxy-labs.github.io/sem/ Comments URL: https://news.ycombinator.com/item?id=48428475 Points: 110 # Comments: 38"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "912e17cbe67f3ee5",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Ntsc-rs \u2013 open-source video emulation of analog TV and VHS artifacts",
+      "url": "https://ntsc.rs/",
+      "text": "Article URL: https://ntsc.rs/\nComments URL: https://news.ycombinator.com/item?id=48428025\nPoints: 325\n# Comments: 85",
+      "author": "gregsadetsky",
+      "published_at": "Sat, 06 Jun 2026 19:17:46 +0000",
+      "retrieved_at": "2026-06-07T07:45:01.970183+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://ntsc.rs/ Comments URL: https://news.ycombinator.com/item?id=48428025 Points: 325 # Comments: 85",
+    "key_points": [
+      "Article URL: https://ntsc.rs/ Comments URL: https://news.ycombinator.com/item?id=48428025 Points: 325 # Comments: 85"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "dfdebf4ed11b66f0",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Meta confirms 1000s of Instagram accounts were hacked by abusing its AI chatbot",
+      "url": "https://this.weekinsecurity.com/meta-confirms-thousands-of-instagram-accounts-were-hacked-by-abusing-its-ai-chatbot/",
+      "text": "Article URL: https://this.weekinsecurity.com/meta-confirms-thousands-of-instagram-accounts-were-hacked-by-abusing-its-ai-chatbot/\nComments URL: https://news.ycombinator.com/item?id=48427643\nPoints: 555\n# Comments: 199",
+      "author": "speckx",
+      "published_at": "Sat, 06 Jun 2026 18:35:27 +0000",
+      "retrieved_at": "2026-06-07T07:45:01.970197+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://this.weekinsecurity.com/meta-confirms-thousands-of-instagram-accounts-were-hacked-by-abusing-its-ai-chatbot/ Comments URL: https://news.ycombinator.com/item?id=48427643 Points: 555 # Comments: 199",
+    "key_points": [
+      "Article URL: https://this.weekinsecurity.com/meta-confirms-thousands-of-instagram-accounts-were-hacked-by-abusing-its-ai-chatbot/ Comments URL: https://news.ycombinator.com/item?id=48427643 Points: 555 # Comments: 199"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "f86c3ed65e25c5c2",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Zeroserve: A zero-config web server you can script with eBPF",
+      "url": "https://su3.io/posts/introducing-zeroserve",
+      "text": "Article URL: https://su3.io/posts/introducing-zeroserve\nComments URL: https://news.ycombinator.com/item?id=48425723\nPoints: 222\n# Comments: 54",
+      "author": "losfair",
+      "published_at": "Sat, 06 Jun 2026 14:59:43 +0000",
+      "retrieved_at": "2026-06-07T07:45:01.970211+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://su3.io/posts/introducing-zeroserve Comments URL: https://news.ycombinator.com/item?id=48425723 Points: 222 # Comments: 54",
+    "key_points": [
+      "Article URL: https://su3.io/posts/introducing-zeroserve Comments URL: https://news.ycombinator.com/item?id=48425723 Points: 222 # Comments: 54"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "a2aeb71c4868ff3f",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Motorola effectively bricked its entire line of WiFi routers without explanation",
+      "url": "https://mashable.com/tech/motorola-wifi-routers-stop-working-motosync-plus-app-down",
+      "text": "Article URL: https://mashable.com/tech/motorola-wifi-routers-stop-working-motosync-plus-app-down\nComments URL: https://news.ycombinator.com/item?id=48425611\nPoints: 124\n# Comments: 53",
+      "author": "thisislife2",
+      "published_at": "Sat, 06 Jun 2026 14:43:53 +0000",
+      "retrieved_at": "2026-06-07T07:45:01.970224+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://mashable.com/tech/motorola-wifi-routers-stop-working-motosync-plus-app-down Comments URL: https://news.ycombinator.com/item?id=48425611 Points: 124 # Comments: 53",
+    "key_points": [
+      "Article URL: https://mashable.com/tech/motorola-wifi-routers-stop-working-motosync-plus-app-down Comments URL: https://news.ycombinator.com/item?id=48425611 Points: 124 # Comments: 53"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "1326e6ebe58c12f8",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Moving beyond fork() + exec()",
+      "url": "https://lwn.net/SubscriberLink/1076018/16f01bbbb8e0d1f0/",
+      "text": "Article URL: https://lwn.net/SubscriberLink/1076018/16f01bbbb8e0d1f0/\nComments URL: https://news.ycombinator.com/item?id=48425528\nPoints: 287\n# Comments: 286",
+      "author": "jwilk",
+      "published_at": "Sat, 06 Jun 2026 14:34:20 +0000",
+      "retrieved_at": "2026-06-07T07:45:01.970238+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://lwn.net/SubscriberLink/1076018/16f01bbbb8e0d1f0/ Comments URL: https://news.ycombinator.com/item?id=48425528 Points: 287 # Comments: 286",
+    "key_points": [
+      "Article URL: https://lwn.net/SubscriberLink/1076018/16f01bbbb8e0d1f0/ Comments URL: https://news.ycombinator.com/item?id=48425528 Points: 287 # Comments: 286"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "b9b6134a73d9e480",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Benchmarks in Leipzig",
+      "url": "https://arxiv.org/abs/2606.05818",
+      "text": "Article URL: https://arxiv.org/abs/2606.05818\nComments URL: https://news.ycombinator.com/item?id=48425247\nPoints: 130\n# Comments: 44",
+      "author": "root-parent",
+      "published_at": "Sat, 06 Jun 2026 14:00:52 +0000",
+      "retrieved_at": "2026-06-07T07:45:01.970252+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://arxiv.org/abs/2606.05818 Comments URL: https://news.ycombinator.com/item?id=48425247 Points: 130 # Comments: 44",
+    "key_points": [
+      "Article URL: https://arxiv.org/abs/2606.05818 Comments URL: https://news.ycombinator.com/item?id=48425247 Points: 130 # Comments: 44"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "d6ece496ad33f337",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Nvidia is proposing a beast of a CPU system for Windows PCs",
+      "url": "https://twitter.com/lemire/status/2062880075117113739",
+      "text": "Article URL: https://twitter.com/lemire/status/2062880075117113739\nComments URL: https://news.ycombinator.com/item?id=48424605\nPoints: 269\n# Comments: 458",
+      "author": "tosh",
+      "published_at": "Sat, 06 Jun 2026 12:52:18 +0000",
+      "retrieved_at": "2026-06-07T07:45:01.970266+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://twitter.com/lemire/status/2062880075117113739 Comments URL: https://news.ycombinator.com/item?id=48424605 Points: 269 # Comments: 458",
+    "key_points": [
+      "Article URL: https://twitter.com/lemire/status/2062880075117113739 Comments URL: https://news.ycombinator.com/item?id=48424605 Points: 269 # Comments: 458"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "aa0c01bf2eee3dd9",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Mbodi AI (YC P25) Is Hiring Founding Machine Learning Engineer (Robotics)",
+      "url": "https://www.ycombinator.com/companies/mbodi-ai/jobs/WYAcNkX-founding-machine-learning-engineer",
+      "text": "Article URL: https://www.ycombinator.com/companies/mbodi-ai/jobs/WYAcNkX-founding-machine-learning-engineer\nComments URL: https://news.ycombinator.com/item?id=48424103\nPoints: 0\n# Comments: 0",
+      "author": "chitianhao",
+      "published_at": "Sat, 06 Jun 2026 12:00:56 +0000",
+      "retrieved_at": "2026-06-07T07:45:01.970279+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://www.ycombinator.com/companies/mbodi-ai/jobs/WYAcNkX-founding-machine-learning-engineer Comments URL: https://news.ycombinator.com/item?id=48424103 Points: 0 # Comments: 0",
+    "key_points": [
+      "Article URL: https://www.ycombinator.com/companies/mbodi-ai/jobs/WYAcNkX-founding-machine-learning-engineer Comments URL: https://news.ycombinator.com/item?id=48424103 Points: 0 # Comments: 0"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  }
+]
