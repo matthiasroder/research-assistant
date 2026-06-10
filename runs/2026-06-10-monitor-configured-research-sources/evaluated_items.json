@@ -1,0 +1,610 @@
+[
+  {
+    "item": {
+      "id": "645ed0d63793c548",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Google Chrome is killing all uBlock Origin bypasses, Edge, Opera to follow",
+      "url": "https://www.neowin.net/news/google-chrome-is-killing-all-ublock-origin-bypasses-microsoft-edge-opera-to-follow/",
+      "text": "Article URL: https://www.neowin.net/news/google-chrome-is-killing-all-ublock-origin-bypasses-microsoft-edge-opera-to-follow/\nComments URL: https://news.ycombinator.com/item?id=48471970\nPoints: 159\n# Comments: 122",
+      "author": "d3Xt3r",
+      "published_at": "Wed, 10 Jun 2026 05:50:07 +0000",
+      "retrieved_at": "2026-06-10T07:57:59.348758+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://www.neowin.net/news/google-chrome-is-killing-all-ublock-origin-bypasses-microsoft-edge-opera-to-follow/ Comments URL: https://news.ycombinator.com/item?id=48471970 Points: 159 # Comments: 122",
+    "key_points": [
+      "Article URL: https://www.neowin.net/news/google-chrome-is-killing-all-ublock-origin-bypasses-microsoft-edge-opera-to-follow/ Comments URL: https://news.ycombinator.com/item?id=48471970 Points: 159 # Comments: 122"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "70756230d55aa9e3",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Vibe coding my way to a healthy family: Introducing Gamow Labs",
+      "url": "https://www.ddmckinnon.com/2026/06/09/vibe-coding-my-way-to-a-healthy-family-introducing-gamow-labs/",
+      "text": "Article URL: https://www.ddmckinnon.com/2026/06/09/vibe-coding-my-way-to-a-healthy-family-introducing-gamow-labs/\nComments URL: https://news.ycombinator.com/item?id=48471048\nPoints: 77\n# Comments: 19",
+      "author": "dmckinno",
+      "published_at": "Wed, 10 Jun 2026 03:27:47 +0000",
+      "retrieved_at": "2026-06-10T07:57:59.348799+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://www.ddmckinnon.com/2026/06/09/vibe-coding-my-way-to-a-healthy-family-introducing-gamow-labs/ Comments URL: https://news.ycombinator.com/item?id=48471048 Points: 77 # Comments: 19",
+    "key_points": [
+      "Article URL: https://www.ddmckinnon.com/2026/06/09/vibe-coding-my-way-to-a-healthy-family-introducing-gamow-labs/ Comments URL: https://news.ycombinator.com/item?id=48471048 Points: 77 # Comments: 19"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "36bf1393db208444",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "The Evolution of 'More Like This'",
+      "url": "https://manticoresearch.com/blog/the-evolution-of-more-like-this/",
+      "text": "Article URL: https://manticoresearch.com/blog/the-evolution-of-more-like-this/\nComments URL: https://news.ycombinator.com/item?id=48470975\nPoints: 8\n# Comments: 0",
+      "author": "snikolaev",
+      "published_at": "Wed, 10 Jun 2026 03:16:25 +0000",
+      "retrieved_at": "2026-06-10T07:57:59.348821+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://manticoresearch.com/blog/the-evolution-of-more-like-this/ Comments URL: https://news.ycombinator.com/item?id=48470975 Points: 8 # Comments: 0",
+    "key_points": [
+      "Article URL: https://manticoresearch.com/blog/the-evolution-of-more-like-this/ Comments URL: https://news.ycombinator.com/item?id=48470975 Points: 8 # Comments: 0"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "ca6ffde6b0fe5ec3",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Rich Sutton on AI creativity and discovery",
+      "url": "https://twitter.com/RichardSSutton/status/2061216087744946656",
+      "text": "https://www.youtube.com/watch?v=K5LAFEjTlBA\n\nComments URL: https://news.ycombinator.com/item?id=48470581\nPoints: 92\n# Comments: 50",
+      "author": "yimby",
+      "published_at": "Wed, 10 Jun 2026 02:25:24 +0000",
+      "retrieved_at": "2026-06-10T07:57:59.348841+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "https://www.youtube.com/watch?v=K5LAFEjTlBA Comments URL: https://news.ycombinator.com/item?id=48470581 Points: 92 # Comments: 50",
+    "key_points": [
+      "https://www.youtube.com/watch?v=K5LAFEjTlBA Comments URL: https://news.ycombinator.com/item?id=48470581 Points: 92 # Comments: 50"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "318af1d07675edaf",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "German ruling declares Google liable for false answers in AI Overviews",
+      "url": "https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/",
+      "text": "Article URL: https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/\nComments URL: https://news.ycombinator.com/item?id=48470248\nPoints: 418\n# Comments: 234",
+      "author": "ahlCVA",
+      "published_at": "Wed, 10 Jun 2026 01:44:13 +0000",
+      "retrieved_at": "2026-06-10T07:57:59.348860+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/ Comments URL: https://news.ycombinator.com/item?id=48470248 Points: 418 # Comments: 234",
+    "key_points": [
+      "Article URL: https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/ Comments URL: https://news.ycombinator.com/item?id=48470248 Points: 418 # Comments: 234"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "8cdd6ba244866b86",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "macOS Container Machines",
+      "url": "https://github.com/apple/container/blob/main/docs/container-machine.md",
+      "text": "Article URL: https://github.com/apple/container/blob/main/docs/container-machine.md\nComments URL: https://news.ycombinator.com/item?id=48469658\nPoints: 638\n# Comments: 237",
+      "author": "timsneath",
+      "published_at": "Wed, 10 Jun 2026 00:29:01 +0000",
+      "retrieved_at": "2026-06-10T07:57:59.348878+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://github.com/apple/container/blob/main/docs/container-machine.md Comments URL: https://news.ycombinator.com/item?id=48469658 Points: 638 # Comments: 237",
+    "key_points": [
+      "Article URL: https://github.com/apple/container/blob/main/docs/container-machine.md Comments URL: https://news.ycombinator.com/item?id=48469658 Points: 638 # Comments: 237"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "15c66f99d2b9d044",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "RIP software hackathons. Long live the hardware hackathon",
+      "url": "https://blog.oscars.dev/posts/rip-software-hackathons-long-live-the-hardware-hackathon/",
+      "text": "Article URL: https://blog.oscars.dev/posts/rip-software-hackathons-long-live-the-hardware-hackathon/\nComments URL: https://news.ycombinator.com/item?id=48468766\nPoints: 142\n# Comments: 62",
+      "author": "ozcap",
+      "published_at": "Tue, 09 Jun 2026 22:35:57 +0000",
+      "retrieved_at": "2026-06-10T07:57:59.348895+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://blog.oscars.dev/posts/rip-software-hackathons-long-live-the-hardware-hackathon/ Comments URL: https://news.ycombinator.com/item?id=48468766 Points: 142 # Comments: 62",
+    "key_points": [
+      "Article URL: https://blog.oscars.dev/posts/rip-software-hackathons-long-live-the-hardware-hackathon/ Comments URL: https://news.ycombinator.com/item?id=48468766 Points: 142 # Comments: 62"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "d6fd836ae1b385be",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Surprise, Pay $1000",
+      "url": "https://forestwalk.ai/blog/surprise-blacksmith-costs/",
+      "text": "Article URL: https://forestwalk.ai/blog/surprise-blacksmith-costs/\nComments URL: https://news.ycombinator.com/item?id=48468370\nPoints: 109\n# Comments: 35",
+      "author": "apike",
+      "published_at": "Tue, 09 Jun 2026 22:01:15 +0000",
+      "retrieved_at": "2026-06-10T07:57:59.348919+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://forestwalk.ai/blog/surprise-blacksmith-costs/ Comments URL: https://news.ycombinator.com/item?id=48468370 Points: 109 # Comments: 35",
+    "key_points": [
+      "Article URL: https://forestwalk.ai/blog/surprise-blacksmith-costs/ Comments URL: https://news.ycombinator.com/item?id=48468370 Points: 109 # Comments: 35"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "4c39fbf1ec276a5e",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "If Claude Fable stops helping you, you'll never know",
+      "url": "https://jonready.com/blog/posts/claude-fable5-is-allowed-to-sabotage-your-app-if-youre-a-competitor.html",
+      "text": "Related: https://simonwillison.net/2026/Jun/10/if-claude-fable-stops-helping-you/\n\nComments URL: https://news.ycombinator.com/item?id=48467896\nPoints: 754\n# Comments: 370",
+      "author": "mips_avatar",
+      "published_at": "Tue, 09 Jun 2026 21:19:11 +0000",
+      "retrieved_at": "2026-06-10T07:57:59.348938+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Related: https://simonwillison.net/2026/Jun/10/if-claude-fable-stops-helping-you/ Comments URL: https://news.ycombinator.com/item?id=48467896 Points: 754 # Comments: 370",
+    "key_points": [
+      "Related: https://simonwillison.net/2026/Jun/10/if-claude-fable-stops-helping-you/ Comments URL: https://news.ycombinator.com/item?id=48467896 Points: 754 # Comments: 370"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "95c1e87f57e070c9",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Exif Smuggling (2025)",
+      "url": "https://github.com/signalblur/exifsmugglingpoc",
+      "text": "Article URL: https://github.com/signalblur/exifsmugglingpoc\nComments URL: https://news.ycombinator.com/item?id=48467759\nPoints: 81\n# Comments: 24",
+      "author": "rolph",
+      "published_at": "Tue, 09 Jun 2026 21:06:00 +0000",
+      "retrieved_at": "2026-06-10T07:57:59.348956+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://github.com/signalblur/exifsmugglingpoc Comments URL: https://news.ycombinator.com/item?id=48467759 Points: 81 # Comments: 24",
+    "key_points": [
+      "Article URL: https://github.com/signalblur/exifsmugglingpoc Comments URL: https://news.ycombinator.com/item?id=48467759 Points: 81 # Comments: 24"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "486b5ad10b42d455",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Upcoming breaking changes for npm v12",
+      "url": "https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/",
+      "text": "Article URL: https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/\nComments URL: https://news.ycombinator.com/item?id=48467705\nPoints: 330\n# Comments: 116",
+      "author": "plasma",
+      "published_at": "Tue, 09 Jun 2026 21:01:00 +0000",
+      "retrieved_at": "2026-06-10T07:57:59.348972+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/ Comments URL: https://news.ycombinator.com/item?id=48467705 Points: 330 # Comments: 116",
+    "key_points": [
+      "Article URL: https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/ Comments URL: https://news.ycombinator.com/item?id=48467705 Points: 330 # Comments: 116"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "3621f79db7221383",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Grit: Rewriting Git in Rust with agents",
+      "url": "https://blog.gitbutler.com/true-grit",
+      "text": "Article URL: https://blog.gitbutler.com/true-grit\nComments URL: https://news.ycombinator.com/item?id=48466812\nPoints: 127\n# Comments: 173",
+      "author": "cbrewster",
+      "published_at": "Tue, 09 Jun 2026 19:58:21 +0000",
+      "retrieved_at": "2026-06-10T07:57:59.348989+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://blog.gitbutler.com/true-grit Comments URL: https://news.ycombinator.com/item?id=48466812 Points: 127 # Comments: 173",
+    "key_points": [
+      "Article URL: https://blog.gitbutler.com/true-grit Comments URL: https://news.ycombinator.com/item?id=48466812 Points: 127 # Comments: 173"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "58153e3d4b355cf4",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Ultrafast machine learning on FPGAs via Kolmogorov-Arnold Networks",
+      "url": "https://aarushgupta.io/posts/kan-fpga/",
+      "text": "https://web.archive.org/web/20260609200156/https://aarushgup...\n\nComments URL: https://news.ycombinator.com/item?id=48466277\nPoints: 215\n# Comments: 30",
+      "author": "ag2718",
+      "published_at": "Tue, 09 Jun 2026 19:21:45 +0000",
+      "retrieved_at": "2026-06-10T07:57:59.349004+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "https://web.archive.org/web/20260609200156/https://aarushgup... Comments URL: https://news.ycombinator.com/item?id=48466277 Points: 215 # Comments: 30",
+    "key_points": [
+      "https://web.archive.org/web/20260609200156/https://aarushgup...",
+      "Comments URL: https://news.ycombinator.com/item?id=48466277 Points: 215 # Comments: 30"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "67f5e2103b245286",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "CEOs who think AI replaces their employees are just bad CEOs",
+      "url": "https://www.techdirt.com/2026/06/09/ceos-who-think-ai-replaces-their-employees-are-just-bad-ceos/",
+      "text": "Article URL: https://www.techdirt.com/2026/06/09/ceos-who-think-ai-replaces-their-employees-are-just-bad-ceos/\nComments URL: https://news.ycombinator.com/item?id=48465675\nPoints: 619\n# Comments: 233",
+      "author": "speckx",
+      "published_at": "Tue, 09 Jun 2026 18:45:59 +0000",
+      "retrieved_at": "2026-06-10T07:57:59.349019+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://www.techdirt.com/2026/06/09/ceos-who-think-ai-replaces-their-employees-are-just-bad-ceos/ Comments URL: https://news.ycombinator.com/item?id=48465675 Points: 619 # Comments: 233",
+    "key_points": [
+      "Article URL: https://www.techdirt.com/2026/06/09/ceos-who-think-ai-replaces-their-employees-are-just-bad-ceos/ Comments URL: https://news.ycombinator.com/item?id=48465675 Points: 619 # Comments: 233"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "cf4301a4fe0407d6",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "What it feels like to work with Mythos",
+      "url": "https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos",
+      "text": "Article URL: https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos\nComments URL: https://news.ycombinator.com/item?id=48464140\nPoints: 249\n# Comments: 214",
+      "author": "swolpers",
+      "published_at": "Tue, 09 Jun 2026 17:17:21 +0000",
+      "retrieved_at": "2026-06-10T07:57:59.349034+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos Comments URL: https://news.ycombinator.com/item?id=48464140 Points: 249 # Comments: 214",
+    "key_points": [
+      "Article URL: https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos Comments URL: https://news.ycombinator.com/item?id=48464140 Points: 249 # Comments: 214"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "a4581d96307063f3",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Claude Fable 5",
+      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "text": "System Card [pdf]: https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c3...\n\nComments URL: https://news.ycombinator.com/item?id=48463808\nPoints: 2139\n# Comments: 1655",
+      "author": "Philpax",
+      "published_at": "Tue, 09 Jun 2026 16:58:01 +0000",
+      "retrieved_at": "2026-06-10T07:57:59.349049+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "System Card [pdf]: https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c3... Comments URL: https://news.ycombinator.com/item?id=48463808 Points: 2139 # Comments: 1655",
+    "key_points": [
+      "System Card [pdf]: https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c3...",
+      "Comments URL: https://news.ycombinator.com/item?id=48463808 Points: 2139 # Comments: 1655"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "30fb464abefc5c09",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Launch HN: Transload (YC P26) \u2013 Measuring freight items with CCTV",
+      "url": "https://news.ycombinator.com/item?id=48463273",
+      "text": "Hi HN \u2014 we\u2019re Julius, Jago, and Nils, and we\u2019re building transload (transload.io).transload helps LTL trucking companies measure freight dimensions using the security cameras already installed in their terminals. Instead of sending shipments through a dedicated dimensioning station, we measure them automatically as they move through the normal dock workflow.We\u2019ve put together a small HN-specific demo site here: https://hn.transload.io/In LTL trucking, dimensions matter because they affect pricing, freight classification, and trailer utilization. If a shipment is larger than the shipper reported, the carrier may undercharge for it while still giving up the same amount of trailer space. The obvious fix is to measure every shipment, but that is surprisingly hard in a busy freight terminal. Dedicated dimensioning systems work for freight that passes through them, but they can add forklift travel, create dock congestion, and change the normal flow of work. In practice, many terminals only measure a sample of their shipments.Jago grew up close to this industry through his family\u2019s LTL trucking and cross-docking business. We did not start out building freight dimensioning. Our first idea was an AI system for optimizing forklift routes inside cross-dock terminals. After spending time with customers and talking to more than 50 trucking companies, we realized that forklift routing was not the pain people kept bringing up. Freight dimensions were.At the same time, we saw that spatial AI was advancing quickly. Monocular metric depth estimation has become dramatically better, making it possible to recover accurate 3D structure from ordinary camera footage without expensive LiDAR sensors. MapAnything (https://github.com/facebookresearch/map-anything) and MoGe (https://github.com/microsoft/moge) are two examples.Freight terminals also have helpful structure: fixed cameras, repeated workflows, barcode scan timestamps, and known layouts. Nearly every warehouse already has CCTV. That led us to a simple question: what if we could measure freight automatically using the existing security cameras, entirely in the background? That would allow carriers to measure every shipment without changing the dock workflow.Our system has two main steps: connect a barcode scan to the right object in the video, then estimate that object\u2019s dimensions in real-world units.Dock workers already scan freight as part of the normal workflow. Each scan gives us a timestamp and a handling-unit ID. Around that timestamp, we analyze the video to infer which worker scanned and which shipment they scanned. We expected VLMs to handle this; they turned out to be far too unreliable. Instead, we train our own model that reasons in 3D over cues like gaze, body orientation, and movement.That association step is critical. A frame can contain dozens of pallets, several workers, forklifts, and partially hidden freight. If we attach the scan to the wrong object, the measurement is useless.Once we know the target shipment, we segment it and estimate a metric 3D bounding box from the monocular camera view. After the box is fitted, the dimensions are straightforward: length, width, height, and volume come directly from it.The hard part is precisely fitting that bounding box from one ordinary security camera. A single 2D image does not directly tell you object shape or scale, and many different 3D boxes can explain similar-looking image evidence. We use the object mask, visible edges, floor contact, camera geometry, and constraints from the terminal to find the 3D box that best matches the scene.We are currently working with several LTL carriers. For one customer, roughly 10% of checked shipments had dimension errors. The first use case is revenue recovery: identify under-dimensioned shipments, attach visual evidence, and help carriers correct the billing or classification. Longer term, the same data can help carriers understand trailer utilization better.LTL freight is an odd place to be doing 3D computer vision, and we learn something new every week. If you\u2019ve worked on monocular reconstruction, 3D object detection, warehouse perception, or messy real-world CV, we\u2019d love your take. Questions about freight, LTL terminals, or the technical approach are very welcome too.\n\nComments URL: https://news.ycombinator.com/item?id=48463273\nPoints: 46\n# Comments: 15",
+      "author": "nils_spatial",
+      "published_at": "Tue, 09 Jun 2026 16:28:28 +0000",
+      "retrieved_at": "2026-06-10T07:57:59.349077+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Hi HN \u2014 we\u2019re Julius, Jago, and Nils, and we\u2019re building transload (transload.io).transload helps LTL trucking companies measure freight dimensions using the security cameras already installed in their terminals. Instead of sending shipments through a dedicated dimensioning station, we measure them automatically as they move through the normal dock workflow.We\u2019ve put together a small HN-specific demo site here: https://hn.transload.io/In LTL trucking, dimensions matter because they affect pricing, freight classification, and trailer utilization.",
+    "key_points": [
+      "Hi HN \u2014 we\u2019re Julius, Jago, and Nils, and we\u2019re building transload (transload.io).transload helps LTL trucking companies measure freight dimensions using the security cameras already installed in their terminals.",
+      "Instead of sending shipments through a dedicated dimensioning station, we measure them automatically as they move through the normal dock workflow.We\u2019ve put together a small HN-specific demo site here: https://hn.transload.io/In LTL trucking, dimensions matter because they affect pricing, freight cl",
+      "If a shipment is larger than the shipper reported, the carrier may undercharge for it while still giving up the same amount of trailer space.",
+      "The obvious fix is to measure every shipment, but that is surprisingly hard in a busy freight terminal."
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "78c6f3ed897d195e",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "WWDC 2026: Apple is Folding",
+      "url": "https://cupertinolens.com/2026/06/09/wwdc-2026-apple-is-folding/",
+      "text": "Article URL: https://cupertinolens.com/2026/06/09/wwdc-2026-apple-is-folding/\nComments URL: https://news.ycombinator.com/item?id=48461226\nPoints: 217\n# Comments: 244",
+      "author": "brandonb",
+      "published_at": "Tue, 09 Jun 2026 13:56:38 +0000",
+      "retrieved_at": "2026-06-10T07:57:59.349093+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://cupertinolens.com/2026/06/09/wwdc-2026-apple-is-folding/ Comments URL: https://news.ycombinator.com/item?id=48461226 Points: 217 # Comments: 244",
+    "key_points": [
+      "Article URL: https://cupertinolens.com/2026/06/09/wwdc-2026-apple-is-folding/ Comments URL: https://news.ycombinator.com/item?id=48461226 Points: 217 # Comments: 244"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "797efe5b407d24cb",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Emerge Career (YC S22) Is Hiring a Founding Growth Marketer",
+      "url": "https://www.ycombinator.com/companies/emerge-career/jobs/v0S1AEG-founding-growth-marketer",
+      "text": "Article URL: https://www.ycombinator.com/companies/emerge-career/jobs/v0S1AEG-founding-growth-marketer\nComments URL: https://news.ycombinator.com/item?id=48459968\nPoints: 0\n# Comments: 0",
+      "author": "gabesaruhashi",
+      "published_at": "Tue, 09 Jun 2026 12:01:09 +0000",
+      "retrieved_at": "2026-06-10T07:57:59.349110+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Article URL: https://www.ycombinator.com/companies/emerge-career/jobs/v0S1AEG-founding-growth-marketer Comments URL: https://news.ycombinator.com/item?id=48459968 Points: 0 # Comments: 0",
+    "key_points": [
+      "Article URL: https://www.ycombinator.com/companies/emerge-career/jobs/v0S1AEG-founding-growth-marketer Comments URL: https://news.ycombinator.com/item?id=48459968 Points: 0 # Comments: 0"
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  },
+  {
+    "item": {
+      "id": "350bd85cf1a69ca0",
+      "source_id": "hacker-news-front-page",
+      "source_type": "rss",
+      "title": "Show HN: Gravity \u2013 Interactive solar-system simulator, from Newton to Einstein",
+      "url": "https://qunabu.github.io/Gravity/",
+      "text": "Just for fun and self education, I've built this over a weekend to teach myself why orbits exist, not just show planets going around. Something that was never clearly explain to me in school. \nIt opens with a guided tour that builds the idea up step by step: two bodies and the equal/opposite force, inertia (the Sun is removed and Earth just drifts straight), then \"an orbit is falling and continuously missing,\" cosmic velocities with a little rocket, Voyager 1 & 2's real gravity assists (the clock runs the actual 1977\u20131989 dates so the planets orbit into their grand-tour alignment and the slingshots line up), and it ends on Einstein \u2014 gravity as curved spacetime, the classic rubber-sheet well.\nWhat's real: every body uses its real radius/mass and J2000 orbital elements; positions come from solving Kepler's equation each  frame. You can toggle to an N-body mode (symplectic leapfrog) that shows live energy drift (~1e-6%) so you can see the integrator is honest. The only thing faked is scale \u2014 at true scale you can't see anything \u2014 so there's a toggle between true scale and a log-remapped \"visual\" scale, with physics always running in real AU.\nTech: TypeScript + Three.js + Vite, fully client-side, no backend, works offline (surface textures are generated procedurally from value-noise; only Earth uses a real image). Source: https://github.com/qunabu/GravityHappy to answer questions \u2014 and feedback on the physics or the explanations is very welcome. This project might be totally inaccurate in terms of real physics, this is how i do understand this on my own - i'm happy to confront this with reality\n\nComments URL: https://news.ycombinator.com/item?id=48459837\nPoints: 168\n# Comments: 37",
+      "author": "qunabu",
+      "published_at": "Tue, 09 Jun 2026 11:46:40 +0000",
+      "retrieved_at": "2026-06-10T07:57:59.349130+00:00",
+      "metadata": {
+        "feed_title": "Hacker News: Front Page"
+      },
+      "access_rights": {
+        "store_full_text": true
+      },
+      "provenance": {
+        "connector": "rss",
+        "retrieval": "feedparser"
+      }
+    },
+    "relevance_score": 1,
+    "summary": "Just for fun and self education, I've built this over a weekend to teach myself why orbits exist, not just show planets going around. Something that was never clearly explain to me in school.",
+    "key_points": [
+      "Just for fun and self education, I've built this over a weekend to teach myself why orbits exist, not just show planets going around.",
+      "Something that was never clearly explain to me in school.",
+      "It opens with a guided tour that builds the idea up step by step: two bodies and the equal/opposite force, inertia (the Sun is removed and Earth just drifts straight), then \"an orbit is falling and continuously missing,\" cosmic velocities with a little rocket, Voyager 1 & 2's real gravity assists (t",
+      "What's real: every body uses its real radius/mass and J2000 orbital elements; positions come from solving Kepler's equation each frame."
+    ],
+    "tags": [],
+    "rationale": "No strong lexical overlap with the brief."
+  }
+]
