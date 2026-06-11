@@ -1,15 +1,32 @@
 # Research platform configuration.
 #
-# The first implementation has an Anthropic provider and a local extractive
-# fallback. Add provider-specific keys as environment variables, not here.
+# Evaluation routes through Anthropic when ANTHROPIC_API_KEY is set and falls
+# back to local extractive heuristics otherwise, so the platform still runs
+# without credentials. Set provider: local to force offline evaluation.
+# Add provider-specific keys as environment variables, not here.
 
-min_relevance_score: 1
+# Items must score at least this (1-5) to appear in findings. Local scoring
+# never goes below 1, so a threshold of 1 would filter nothing.
+min_relevance_score: 2
 
 models:
   evaluation:
-    provider: local
-    # provider: anthropic
-    # model: claude-haiku-4-5-20251001
+    provider: anthropic
+    model: claude-haiku-4-5-20251001
+    # provider: local
+
+  # Cross-item synthesis at the top of findings.md. Falls back to the
+  # evaluation provider and model when omitted; set provider: local to
+  # disable the model-written synthesis section entirely.
+  # synthesis:
+  #   provider: anthropic
+  #   model: claude-haiku-4-5-20251001
+
+storage:
+  # The repository is public: committed run artifacts store only short
+  # excerpts of fetched third-party text. Evaluation still uses full text
+  # in memory before artifacts are written.
+  max_committed_item_text_chars: 700
 
 access_profiles:
   public:
@@ -20,4 +37,3 @@ access_profiles:
   browser_session:
     method: browser_session
     store_full_text: false
-

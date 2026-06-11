@@ -55,7 +55,7 @@ class ApiJsonConnector:
                     url=url,
                     text=text[:max_store_chars],
                     published_at=_first_value(record, source.metadata.get("published_fields", ["published_at", "date", "pubDate"])),
-                    metadata={"provider_record": record if source.access.get("store_raw_record", False) else None},
+                    metadata={"provider_record": record} if source.access.get("store_raw_record", False) else {},
                     access_rights={
                         "store_full_text": store_full_text,
                         "max_store_chars": max_store_chars,

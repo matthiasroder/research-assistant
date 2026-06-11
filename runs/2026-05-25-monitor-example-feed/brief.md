@@ -1,3 +1,0 @@
-# Brief
-
-Monitor example feed

@@ -11,6 +11,24 @@ from urllib.parse import urljoin, urlparse
 from ..models import ResearchItem, Source, stable_id
 
 
+# Tags whose content is page chrome (navigation, subscribe forms, footers)
+# rather than article text. Skipping them keeps excerpts and local-evaluation
+# summaries from being boilerplate.
+_SKIP_TAGS = {
+    "script",
+    "style",
+    "noscript",
+    "svg",
+    "nav",
+    "header",
+    "footer",
+    "aside",
+    "form",
+    "button",
+    "iframe",
+}
+
+
 class _ReadableHtmlParser(HTMLParser):
     def __init__(self) -> None:
         super().__init__()
@@ -24,7 +42,7 @@ class _ReadableHtmlParser(HTMLParser):
         attrs_dict = {name.lower(): value or "" for name, value in attrs}
         if tag == "title":
             self._in_title = True
-        if tag in {"script", "style", "noscript", "svg"}:
+        if tag in _SKIP_TAGS:
             self._skip_depth += 1
         if tag == "link":
             rel = attrs_dict.get("rel", "").lower()
@@ -38,7 +56,7 @@ class _ReadableHtmlParser(HTMLParser):
     def handle_endtag(self, tag: str) -> None:
         if tag == "title":
             self._in_title = False
-        if tag in {"script", "style", "noscript", "svg"} and self._skip_depth:
+        if tag in _SKIP_TAGS and self._skip_depth:
             self._skip_depth -= 1
 
     def handle_data(self, data: str) -> None:

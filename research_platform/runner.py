@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import sys
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -27,18 +28,28 @@ CONNECTORS = {
 }
 
 
-def load_config(path: Path | None) -> dict[str, Any]:
+def _load_yaml(path: Path | None) -> dict[str, Any]:
     if not path or not path.exists():
         return {}
     with path.open() as handle:
         return yaml.safe_load(handle) or {}
 
 
+def load_config(path: Path | None) -> dict[str, Any]:
+    return _load_yaml(path)
+
+
+def load_source_brief(path: Path | None) -> str | None:
+    """Return the standing research brief defined in a source file, if any."""
+    brief = _load_yaml(path).get("brief")
+    if brief is None:
+        return None
+    text = str(brief).strip()
+    return text or None
+
+
 def load_source_file(path: Path | None) -> list[Source]:
-    if not path or not path.exists():
-        return []
-    with path.open() as handle:
-        data = yaml.safe_load(handle) or {}
+    data = _load_yaml(path)
     sources = []
     for entry in data.get("sources", []):
         sources.append(
@@ -59,6 +70,10 @@ def fetch_items(sources: list, max_items_per_source: int = 20) -> list[ResearchI
     for source in sources:
         connector = CONNECTORS.get(source.type)
         if not connector:
+            print(
+                f"Warning: no connector for source type '{source.type}' ({source.id}); skipping.",
+                file=sys.stderr,
+            )
             continue
         try:
             if source.type in {"api_json", "rss"}:
@@ -92,8 +107,9 @@ def run(
     max_items_per_source: int = 20,
     configured_sources: list[Source] | None = None,
 ) -> tuple[RunResult, Path]:
-    run_id = make_run_id(brief.question)
-    run_dir = repo_root / "runs" / run_id
+    runs_root = repo_root / "runs"
+    run_id = make_run_id(brief.question, runs_root=runs_root)
+    run_dir = runs_root / run_id
     state_path = repo_root / "knowledge" / "platform_state.json"
 
     if configured_sources:
@@ -112,7 +128,14 @@ def run(
 
     gateway = ModelGateway(config.get("models", {}))
     evaluated = [gateway.evaluate(item, brief) for item in items_to_evaluate]
-    evaluated = [item for item in evaluated if item.relevance_score >= config.get("min_relevance_score", 1)]
+    min_score = config.get("min_relevance_score", 1)
+    # Failed fetches stay in the findings regardless of score so broken
+    # sources remain visible.
+    evaluated = [
+        item
+        for item in evaluated
+        if item.relevance_score >= min_score or _fetch_failed(item.item)
+    ]
     findings = gateway.synthesize(evaluated, brief)
 
     result = RunResult(
@@ -123,14 +146,27 @@ def run(
         evaluated_items=evaluated,
         findings_markdown=findings,
     )
-    write_run(run_dir, result)
+    max_text_chars = int(config.get("storage", {}).get("max_committed_item_text_chars", 700))
+    write_run(run_dir, result, max_item_text_chars=max_text_chars)
     if brief.mode == "monitor-sources":
-        seen_store.mark_seen([item.id for item in items])
+        # Failed fetches are never marked seen, so a source that keeps
+        # failing keeps surfacing in every run.
+        seen_store.mark_seen([item.id for item in items if not _fetch_failed(item)])
         seen_store.save()
     return result, run_dir
 
 
-def write_run(run_dir: Path, result: RunResult) -> None:
+def _fetch_failed(item: ResearchItem) -> bool:
+    return item.provenance.get("retrieval") == "failed"
+
+
+def write_run(run_dir: Path, result: RunResult, max_item_text_chars: int = 700) -> None:
+    """Write run artifacts.
+
+    Item text is truncated to a short excerpt in the committed artifacts: the
+    repository is public, so full third-party text must not be republished.
+    Evaluation always runs on the full in-memory text before this point.
+    """
     run_dir.mkdir(parents=True, exist_ok=True)
     (run_dir / "brief.md").write_text(f"# Brief\n\n{result.brief.question}\n", encoding="utf-8")
     (run_dir / "sources.json").write_text(
@@ -138,41 +174,86 @@ def write_run(run_dir: Path, result: RunResult) -> None:
         encoding="utf-8",
     )
     (run_dir / "items.json").write_text(
-        json.dumps([item.to_dict() for item in result.items], indent=2),
+        json.dumps(
+            [_excerpted_item_dict(item, max_item_text_chars) for item in result.items],
+            indent=2,
+        ),
         encoding="utf-8",
     )
+    evaluated_dicts = []
+    for evaluated in result.evaluated_items:
+        data = evaluated.to_dict()
+        data["item"] = _excerpted_item_dict(evaluated.item, max_item_text_chars)
+        evaluated_dicts.append(data)
     (run_dir / "evaluated_items.json").write_text(
-        json.dumps([item.to_dict() for item in result.evaluated_items], indent=2),
+        json.dumps(evaluated_dicts, indent=2),
         encoding="utf-8",
     )
     (run_dir / "findings.md").write_text(result.findings_markdown, encoding="utf-8")
-    (run_dir / "run.json").write_text(json.dumps(result.to_dict(), indent=2), encoding="utf-8")
+    manifest = {
+        "run_id": result.run_id,
+        "brief": result.brief.to_dict(),
+        "created_at": result.created_at,
+        "counts": {
+            "sources": len(result.sources),
+            "items": len(result.items),
+            "evaluated_items": len(result.evaluated_items),
+        },
+        "files": [
+            "brief.md",
+            "sources.json",
+            "items.json",
+            "evaluated_items.json",
+            "findings.md",
+        ],
+    }
+    (run_dir / "run.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
 
 
-def make_run_id(question: str) -> str:
+def _excerpted_item_dict(item: ResearchItem, max_chars: int) -> dict[str, Any]:
+    data = item.to_dict()
+    if max_chars > 0 and len(data.get("text", "")) > max_chars:
+        data["text"] = data["text"][:max_chars] + " …[truncated for committed artifact]"
+    return data
+
+
+def make_run_id(question: str, runs_root: Path | None = None) -> str:
     today = datetime.now().strftime("%Y-%m-%d")
-    slug = re.sub(r"[^a-z0-9]+", "-", question.lower()).strip("-")[:48] or "research-run"
-    return f"{today}-{slug}"
+    slug = re.sub(r"[^a-z0-9]+", "-", question.lower())[:48].strip("-") or "research-run"
+    run_id = f"{today}-{slug}"
+    if runs_root is not None and (runs_root / run_id).exists():
+        run_id = f"{run_id}-{datetime.now().strftime('%H%M%S')}"
+    return run_id
 
 
-def parse_args() -> argparse.Namespace:
+def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Run a small agentic research workflow.")
     parser.add_argument("mode", choices=["analyze-url", "research-topic", "monitor-sources"])
-    parser.add_argument("--brief", required=True, help="Research question or monitoring intent.")
+    parser.add_argument(
+        "--brief",
+        help="Research question or monitoring intent. Optional when the source file defines a top-level 'brief:'.",
+    )
     parser.add_argument("--url", action="append", default=[], help="Source URL. Can be passed multiple times.")
     parser.add_argument("--config", default="config/research.yaml", help="Platform config path.")
-    parser.add_argument("--source-file", help="YAML file with configured sources.")
+    parser.add_argument("--source-file", help="YAML file with configured sources and an optional standing brief.")
     parser.add_argument("--max-sources", type=int, default=8)
     parser.add_argument("--max-items-per-source", type=int, default=20)
-    return parser.parse_args()
+    return parser
 
 
 def main() -> None:
-    args = parse_args()
+    parser = build_parser()
+    args = parser.parse_args()
     repo_root = Path.cwd()
     config = load_config(repo_root / args.config)
-    configured_sources = load_source_file(repo_root / args.source_file) if args.source_file else []
-    brief = ResearchBrief(question=args.brief, mode=args.mode)
+    source_path = repo_root / args.source_file if args.source_file else None
+    configured_sources = load_source_file(source_path)
+    # An explicit --brief wins; otherwise fall back to the standing brief in
+    # the source file so scheduled monitoring is configured in one place.
+    brief_text = args.brief or load_source_brief(source_path)
+    if not brief_text:
+        parser.error("Provide --brief or define a top-level 'brief:' in the source file.")
+    brief = ResearchBrief(question=brief_text, mode=args.mode)
     result, run_dir = run(
         brief=brief,
         urls=args.url,

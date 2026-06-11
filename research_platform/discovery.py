@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import sys
 from urllib.parse import urlparse
 
 from .connectors.search import discover_web_sources
@@ -32,24 +33,24 @@ def discover_sources(topic: str, seed_urls: list[str] | None = None, max_sources
     sources: list[Source] = []
     seen: set[str] = set()
 
-    for source in sources_from_urls(seed_urls or []):
+    def add(source: Source) -> None:
         if source.id not in seen:
             sources.append(source)
             seen.add(source.id)
 
-    if seed_urls:
-        for feed_url in WebpageConnector().discover_feed_urls(seed_urls):
-            source = Source.from_url(feed_url, "rss")
-            if source.id not in seen:
-                sources.append(source)
-                seen.add(source.id)
+    for source in sources_from_urls(seed_urls or []):
+        add(source)
 
+    # Web search results come before guessed feed URLs so unverified
+    # /feed, /rss guesses cannot crowd real results out of max_sources.
     try:
         for source in discover_web_sources(topic, max_sources=max_sources):
-            if source.id not in seen:
-                sources.append(source)
-                seen.add(source.id)
-    except Exception:
-        pass
+            add(source)
+    except Exception as exc:
+        print(f"Warning: web search discovery failed: {exc}", file=sys.stderr)
+
+    if seed_urls:
+        for feed_url in WebpageConnector().discover_feed_urls(seed_urls):
+            add(Source.from_url(feed_url, "rss"))
 
     return sources[:max_sources]

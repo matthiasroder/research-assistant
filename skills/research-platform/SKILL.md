@@ -28,7 +28,7 @@ periodic research monitoring through GitHub Actions.
 3. Read `runs/<run-id>/findings.md` and summarize the result to the user.
 4. Mention the run folder path so the user can inspect `brief.md`,
    `sources.json`, `items.json`, `evaluated_items.json`, `findings.md`, and
-   `run.json`.
+   `run.json` (a slim manifest with the brief, counts, and file list).
 
 ## Scheduling With GitHub Actions
 
@@ -39,15 +39,17 @@ When the user asks to schedule or deploy periodic monitoring:
    source file.
 3. Keep `workflow_dispatch` enabled so the monitor can be run manually.
 4. Use a `schedule` cron trigger for unattended runs.
-5. Ensure the workflow installs `scripts/research_assistant/requirements.txt`.
+5. Ensure the workflow installs `requirements.txt` from the repository root.
 6. Run:
 
    ```bash
    python -m research_platform.runner monitor-sources \
-     --brief "Monitor configured research sources" \
      --source-file config/monitor-sources.yaml \
      --max-items-per-source 20
    ```
+
+   The standing brief comes from the `brief:` key in the source file; an
+   explicit `--brief` overrides it.
 
 7. Commit monitor artifacts back to the private repository:
    - `runs/`
@@ -63,10 +65,14 @@ When the user asks to schedule or deploy periodic monitoring:
   a configured authenticated connector.
 - API-backed licensed providers and catalogues can be configured with
   `type: api_json`; secrets must be referenced by environment variable name.
-- Model selection lives in `config/research.yaml`. The default provider is local
-  extractive evaluation so the platform runs without API keys. Set
-  `models.evaluation.provider: anthropic` and provide `ANTHROPIC_API_KEY` for
-  Claude-backed evaluation.
-- The repository is private, so generated run artifacts may be committed. Still
-  avoid committing API keys or provider material that is explicitly restricted by
-  license terms.
+- Source files may define a top-level `brief:` as the standing research
+  intent for monitoring; `--brief` on the command line takes precedence.
+- Model selection lives in `config/research.yaml`. The default provider is
+  `anthropic` (Claude-backed evaluation when `ANTHROPIC_API_KEY` is set); the
+  gateway automatically falls back to local extractive evaluation when the key
+  is missing, so the platform still runs without credentials.
+- The repository is PUBLIC. Run artifacts are committed, but item text is
+  truncated to short excerpts (`storage.max_committed_item_text_chars` in
+  `config/research.yaml`) so full third-party content is never republished.
+  Never commit API keys or provider material that is restricted by license
+  terms, and keep personal context out of committed files.

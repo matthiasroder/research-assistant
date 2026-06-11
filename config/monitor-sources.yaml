@@ -1,6 +1,20 @@
-# Sources used by the scheduled GitHub Actions monitor.
+# Sources watched by the scheduled GitHub Actions monitor.
 #
-# Edit this file to add the sources you want the platform to watch.
+# This file is the one place to configure scheduled monitoring: the standing
+# research brief (what you care about) and the sources to watch. Edit both
+# after forking.
+#
+# See config/sources.example.yaml for all supported source types. Note that
+# x_profile sources only emit a one-time placeholder until an authenticated
+# X connector exists, so they are not useful here yet.
+
+# Every fetched item is evaluated against this brief. An explicit --brief on
+# the command line overrides it.
+brief: >
+  Watch the configured sources for developments in agentic AI systems,
+  research automation, and AI-assisted knowledge work. Surface concrete
+  releases, techniques, and analyses that someone building research agents
+  should not miss; skip routine product marketing.
 
 sources:
   - id: hacker-news-front-page
@@ -9,12 +23,3 @@ sources:
     url: https://hnrss.org/frontpage
     access:
       method: public
-
-  - id: openai-x-profile
-    type: x_profile
-    name: OpenAI on X
-    url: https://x.com/openai
-    access:
-      method: browser_session
-      store_full_text: false
-

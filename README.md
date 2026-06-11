@@ -1,206 +1,160 @@
 # Research Assistant
 
-An AI-powered research assistant that runs while you sleep. It fetches RSS feeds, filters for relevance to *your* current work, and writes a personalized digest to your repo every morning.
-
-## Platform Direction
-
-This repository is being expanded from a personal RSS digest into a small agentic
-research platform. The old feed workflow still exists under
-`scripts/research_assistant/`, but the new platform code lives in
-`research_platform/` and treats RSS as just one connector.
-
-The new platform shape is:
+An agentic research platform that runs while you sleep. Give it a research
+brief and a set of sources — web pages, RSS feeds, JSON APIs — and it fetches
+what's new, evaluates every item against your brief with Claude, and writes a
+findings report you can read over coffee. Every run is recorded as a
+self-contained, auditable folder.
 
 ```text
 source discovery -> source connectors -> normalized ResearchItems
 -> evaluation/model gateway -> findings/output -> run folder
 ```
 
-Current first-slice capabilities:
+Evaluation and synthesis run through Claude (Haiku by default) when
+`ANTHROPIC_API_KEY` is set. Without a key, the platform falls back to local
+extractive heuristics — less clever, but everything still works, so you can
+try it before configuring credentials.
 
-- Analyze one or more normal website URLs.
-- Discover candidate source URLs for a research topic.
-- Fetch RSS/Atom feeds as one source type.
-- Normalize X/Twitter post URLs as social research items.
-- Read configured JSON APIs for licensed news providers, catalogues, and other
-  metadata services.
-- Run with local extractive evaluation by default.
-- Route evaluation through Anthropic when configured.
-- Write every run to `runs/<run-id>/` with sources, items, evaluations, findings,
-  and provenance.
+## Quick Start: scheduled monitoring in your fork
 
-Run examples:
-
-```bash
-python3 -m research_platform.runner analyze-url \
-  --brief "What does this say about agentic research platforms?" \
-  --url "https://example.com"
-
-python3 -m research_platform.runner research-topic \
-  --brief "agentic research platforms for enterprise knowledge work"
-
-python3 -m research_platform.runner monitor-sources \
-  --brief "Watch these sources for important research-platform updates" \
-  --url "https://example.com/feed.xml"
-
-python3 -m research_platform.runner monitor-sources \
-  --brief "Monitor configured demo sources" \
-  --source-file config/demo-sources.yaml
-```
-
-## Scheduled Monitoring
-
-The platform includes a GitHub Actions workflow at
-`.github/workflows/research-platform-monitor.yml`. It runs daily at `04:00 UTC`
-and can also be started manually from the GitHub Actions tab.
-
-The scheduled monitor reads `config/monitor-sources.yaml`, runs:
-
-```bash
-python -m research_platform.runner monitor-sources \
-  --brief "Monitor configured research sources" \
-  --source-file config/monitor-sources.yaml \
-  --max-items-per-source 20
-```
-
-and commits the resulting `runs/` folder plus `knowledge/platform_state.json`
-back to the private repository. Edit `config/monitor-sources.yaml` to change
-what the scheduled monitor watches.
-
-Configuration lives in `config/research.yaml`. The default model provider is
-`local`, so the platform can run without credentials. To use Claude-backed
-evaluation, set:
-
-```yaml
-models:
-  evaluation:
-    provider: anthropic
-    model: claude-haiku-4-5-20251001
-```
-
-and provide `ANTHROPIC_API_KEY` in the environment.
-
-Configured source registries use the format shown in
-`config/sources.example.yaml`. Copy it to your own file before running it;
-several entries are placeholders for licensed providers. API-backed providers
-should reference secrets by environment variable name, not by storing keys in
-YAML.
-
-There is also a Codex skill definition at `skills/research-platform/SKILL.md`.
-It describes how Codex should invoke the local runner for topic research, URL
-analysis, and monitoring.
-
-## How It Works
-
-```
-5:00 AM → Fetch RSS feeds → Filter with Claude Haiku → Analyze with Claude Sonnet → Write digest → Commit
-```
-
-1. **Fetches** articles from RSS feeds you configure
-2. **Reads** your drafts and IDEAS.md to understand your current focus
-3. **Filters** articles for relevance (batch processing with Claude Haiku)
-4. **Analyzes** relevant articles in depth (Claude Sonnet)
-5. **Synthesizes** themes across articles
-6. **Writes** a personalized digest to `knowledge/feeds/YYYY-MM-DD.md`
-7. **Commits** and pushes automatically
-
-## Quick Start
+The main way to use this repo is to fork it and let GitHub Actions run the
+monitor for you every morning.
 
 ### 1. Fork this repo
 
-Click "Use this template" or fork it.
+Fork it on GitHub. If your research interests are sensitive, make the fork
+**private** — the workflow commits findings back to the repository.
 
 ### 2. Add your Anthropic API key
 
 Go to **Settings → Secrets and variables → Actions → New repository secret**
 
 - Name: `ANTHROPIC_API_KEY`
-- Value: Your API key from [console.anthropic.com](https://console.anthropic.com)
+- Value: your API key from [console.anthropic.com](https://console.anthropic.com)
 
 ### 3. Enable workflow permissions
 
-Go to **Settings → Actions → General → Workflow permissions**
+Go to **Settings → Actions → General → Workflow permissions** and select
+**"Read and write permissions"** so the workflow can commit findings.
 
-Select **"Read and write permissions"**
+### 4. Configure your brief and sources
 
-### 4. Configure your feeds
-
-Edit `config/feeds.yaml`:
+Everything the scheduled monitor needs lives in one file,
+`config/monitor-sources.yaml`:
 
 ```yaml
-feeds:
-  - name: Simon Willison
-    url: https://simonwillison.net/atom/everything/
+brief: >
+  Watch the configured sources for developments in agentic AI systems,
+  research automation, and AI-assisted knowledge work.
 
-  - name: Hacker News
+sources:
+  - id: hacker-news-front-page
+    type: rss
+    name: Hacker News Front Page
     url: https://hnrss.org/frontpage
-
-  # Add your favorite blogs and news sources
+    access:
+      method: public
 ```
 
-### 5. Add your context
+The brief is the standing description of what you care about; every fetched
+item is scored against it. Add the feeds, pages, and APIs you want watched
+(see `config/sources.example.yaml` for all source types).
 
-Edit `IDEAS.md` with your current interests, projects, and goals. The assistant uses this to determine what's relevant to you.
+### 5. Enable and run
 
-Add drafts to `content/drafts/` - these are also used for context.
+GitHub disables workflows in forks by default — open the **Actions** tab once
+and enable them. The monitor then runs daily at 04:30 UTC (GitHub may delay
+scheduled runs) and can be triggered manually via **Run workflow**.
 
-### 6. Run it
+Each morning you'll find a new folder under `runs/` whose `findings.md`
+contains a Claude-written synthesis of what's new, followed by every relevant
+item with its score, summary, and key points. The workflow prunes run folders
+older than 90 days so the repository doesn't grow without bound.
 
-Go to **Actions → Research Assistant → Run workflow**
+## CLI usage
 
-Or wait until 5am Berlin time (4am UTC) for the scheduled run.
+Everything also runs locally. You need Python 3.10+ and:
 
-## Output
-
-Digests appear in `knowledge/feeds/`:
-
-```markdown
-# Research Digest: January 19, 2026
-
-## Themes Today
-- Three authors discussed agentic AI workflows
-- Growing interest in local-first approaches
-
-## Articles
-
-### Simon Willison: "Building with Claude"
-**Summary:** Explores patterns for building reliable AI applications...
-**Key insight:** Context window management matters more than prompt engineering
-**Relevance:** High - directly relates to your draft on AI workflows
-**Tags:** #ai #engineering
+```bash
+pip install -r requirements.txt
 ```
+
+Three modes:
+
+```bash
+# What does this page say about my question?
+python3 -m research_platform.runner analyze-url \
+  --brief "What does this say about agentic research platforms?" \
+  --url "https://example.com"
+
+# Research a topic from scratch — discovers sources via web search.
+python3 -m research_platform.runner research-topic \
+  --brief "agentic research platforms for enterprise knowledge work"
+
+# Check configured sources for new items (brief comes from the source file).
+python3 -m research_platform.runner monitor-sources \
+  --source-file config/monitor-sources.yaml
+```
+
+Pass `--url` multiple times for several URLs. `--brief` always overrides the
+source file's standing brief.
+
+## What a run produces
+
+Every invocation writes `runs/<date>-<brief-slug>/` containing:
+
+- `findings.md` — the human-readable report: synthesis first, then ranked items.
+- `brief.md` — the question the run answered.
+- `sources.json` — where the platform looked.
+- `items.json` — every normalized item that was fetched.
+- `evaluated_items.json` — scores, summaries, key points, tags, rationale.
+- `run.json` — a slim manifest (brief, counts, file list).
+
+Because this repository is public, committed artifacts store only short
+excerpts of fetched third-party text (configurable via
+`storage.max_committed_item_text_chars`), never full content. Failed fetches
+are reported in the findings rather than silently dropped, so a broken source
+stays visible until you fix or remove it.
+
+## Source types
+
+| Type | What it does |
+|---|---|
+| `rss` | RSS/Atom feeds via feedparser |
+| `webpage` | Fetches a page and extracts readable article text |
+| `api_json` | Configurable JSON APIs (licensed news, catalogues); field mapping and API keys via environment variables — see `config/sources.example.yaml` |
+| `x_post` / `x_profile` | Normalizes X/Twitter URLs as research items (placeholder until an authenticated connector exists) |
 
 ## Configuration
 
-### Schedule
+`config/research.yaml` holds platform settings:
 
-Default: 5am Berlin time (4am UTC). Edit `.github/workflows/research-assistant.yml`:
+- `models.evaluation` — provider (`anthropic` or `local`) and model for
+  per-item scoring.
+- `models.synthesis` — optional separate settings for the findings synthesis;
+  defaults to the evaluation settings.
+- `min_relevance_score` — items below this score (1–5) stay out of findings.
+- `storage.max_committed_item_text_chars` — excerpt cap for committed artifacts.
 
-```yaml
-schedule:
-  - cron: '0 4 * * *'  # Change this to your preferred time
+API-backed sources reference secrets by environment variable name in their
+YAML config — never put keys in files.
+
+## Agent skill
+
+`skills/research-platform/SKILL.md` teaches coding agents (Claude Code, Codex)
+how to drive the platform: which mode to pick, how to invoke the runner, and
+how to report findings back. "Research this topic", "watch these sources",
+and "what does this page say" all map onto the three modes.
+
+## Tests
+
+```bash
+python -m unittest discover -s tests
 ```
 
-### Model Selection
-
-The assistant uses:
-- **Claude Haiku** for filtering (fast, cheap)
-- **Claude Sonnet** for analysis (thorough, nuanced)
-
-Edit `scripts/research_assistant/filter.py` and `analyze.py` to change models.
-
-## Cost
-
-Estimated cost: **~$0.50/day** with typical usage (50 feeds, ~30 relevant articles).
-
-- Haiku filtering: ~$0.02
-- Sonnet analysis: ~$0.45
-- Synthesis: ~$0.02
-
-## The Origin Story
-
-This tool was built in a single collaborative session between a human and Claude. Read the full conversation: [docs/how-it-was-built.md](docs/how-it-was-built.md)
+Tests also run in CI on every push via `.github/workflows/tests.yml`.
 
 ## License
 
-MIT - See LICENSE file
+MIT — see LICENSE file.

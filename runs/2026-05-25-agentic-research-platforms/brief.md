@@ -1,3 +1,0 @@
-# Brief
-
-agentic research platforms
