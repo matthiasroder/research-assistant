@@ -1,8 +1,11 @@
+import json
 import unittest
+from unittest import mock
 
-from research_platform.connectors.api import _first_value, _items_at_path
+from research_platform.connectors.api import ApiJsonConnector, _first_value, _items_at_path
 from research_platform.connectors.web import _ReadableHtmlParser
 from research_platform.discovery import source_type_for_url
+from research_platform.models import Source
 
 
 class ReadableHtmlParserTests(unittest.TestCase):
@@ -59,6 +62,11 @@ class SourceTypeForUrlTests(unittest.TestCase):
     def test_webpage_default(self):
         self.assertEqual(source_type_for_url("https://example.com/about"), "webpage")
 
+    def test_x_and_twitter_only_match_real_hosts(self):
+        self.assertEqual(source_type_for_url("https://examplex.com/blog"), "webpage")
+        self.assertEqual(source_type_for_url("https://notwitter.com/status/123"), "webpage")
+        self.assertEqual(source_type_for_url("https://subdomain.x.com/openai"), "x_profile")
+
 
 class ApiHelperTests(unittest.TestCase):
     def test_items_at_path(self):
@@ -70,6 +78,41 @@ class ApiHelperTests(unittest.TestCase):
         record = {"headline": "H", "title": "T"}
         self.assertEqual(_first_value(record, ["title", "headline"]), "T")
         self.assertIsNone(_first_value(record, ["missing"]))
+
+
+class ApiJsonConnectorTests(unittest.TestCase):
+    class JsonResponse:
+        headers = {"content-type": "application/json"}
+
+        def __init__(self, payload):
+            self.payload = payload
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *args):
+            return False
+
+        def read(self, _size):
+            return json.dumps(self.payload).encode("utf-8")
+
+    def test_preserves_evaluation_text_beyond_storage_cap(self):
+        text = "x" * 1200 + " agentic research platforms"
+        source = Source(
+            id="api",
+            type="api_json",
+            name="API",
+            url="https://provider.example/search",
+            access={"store_full_text": False},
+            metadata={"items_path": "articles", "text_fields": ["description"]},
+        )
+        payload = {"articles": [{"title": "Long item", "url": "https://example.com/item", "description": text}]}
+
+        with mock.patch("urllib.request.urlopen", return_value=self.JsonResponse(payload)):
+            item = ApiJsonConnector().fetch(source, limit_items=1, limit_chars=2000)[0]
+
+        self.assertIn("agentic research platforms", item.text)
+        self.assertEqual(item.access_rights["max_store_chars"], 1000)
 
 
 if __name__ == "__main__":

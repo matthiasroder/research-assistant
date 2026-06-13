@@ -3,9 +3,10 @@ import tempfile
 import unittest
 from datetime import datetime
 from pathlib import Path
+from unittest import mock
 
 from research_platform.models import EvaluatedItem, ResearchBrief, ResearchItem, RunResult, Source
-from research_platform.runner import load_source_brief, load_source_file, make_run_id, write_run
+from research_platform.runner import DiscoveryError, load_source_brief, load_source_file, make_run_id, run, write_run
 
 
 def _item(text: str = "Some text.") -> ResearchItem:
@@ -82,6 +83,63 @@ class WriteRunTests(unittest.TestCase):
             self.assertNotIn("findings_markdown", manifest)
             for name in manifest["files"]:
                 self.assertTrue((run_dir / name).exists())
+
+    def test_provider_record_metadata_is_redacted_in_artifacts(self):
+        secret = "provider-only full text " + ("x" * 1000)
+        item = _item("short text")
+        item.metadata = {"provider_record": {"full_text": secret}, "safe": "metadata"}
+        result = RunResult(
+            run_id="2026-01-01-test",
+            brief=ResearchBrief(question="test", mode="monitor-sources"),
+            sources=[Source(id="api", type="api_json", name="API", url="https://provider.example")],
+            items=[item],
+            evaluated_items=[EvaluatedItem(item=item, relevance_score=4, summary="s")],
+            findings_markdown="# Findings\n",
+        )
+
+        with tempfile.TemporaryDirectory() as tmp:
+            run_dir = Path(tmp) / "run"
+            write_run(run_dir, result, max_item_text_chars=100)
+            items_text = (run_dir / "items.json").read_text()
+            evaluated_text = (run_dir / "evaluated_items.json").read_text()
+            items = json.loads(items_text)
+            evaluated = json.loads(evaluated_text)
+
+        self.assertNotIn(secret, items_text)
+        self.assertNotIn(secret, evaluated_text)
+        self.assertNotIn("provider_record", items[0]["metadata"])
+        self.assertTrue(items[0]["metadata"]["provider_record_redacted"])
+        self.assertNotIn("provider_record", evaluated[0]["item"]["metadata"])
+        self.assertEqual(items[0]["metadata"]["safe"], "metadata")
+
+    def test_item_storage_cap_is_applied_to_artifacts(self):
+        item = _item("x" * 500)
+        item.access_rights = {"store_full_text": False, "max_store_chars": 50}
+        result = RunResult(
+            run_id="2026-01-01-test",
+            brief=ResearchBrief(question="test", mode="monitor-sources"),
+            sources=[Source.from_url("https://example.com")],
+            items=[item],
+            evaluated_items=[EvaluatedItem(item=item, relevance_score=3, summary="s")],
+            findings_markdown="# Findings\n",
+        )
+
+        with tempfile.TemporaryDirectory() as tmp:
+            run_dir = Path(tmp) / "run"
+            write_run(run_dir, result, max_item_text_chars=1000)
+            item_data = json.loads((run_dir / "items.json").read_text())[0]
+
+        self.assertIn("truncated", item_data["text"])
+        self.assertLess(len(item_data["text"]), 120)
+
+
+class RunTests(unittest.TestCase):
+    def test_research_topic_without_discovered_sources_fails(self):
+        brief = ResearchBrief(question="agentic research platforms", mode="research-topic")
+        with tempfile.TemporaryDirectory() as tmp:
+            with mock.patch("research_platform.runner.discover_sources", return_value=[]):
+                with self.assertRaisesRegex(DiscoveryError, "No sources were discovered"):
+                    run(brief=brief, urls=[], config={}, repo_root=Path(tmp))
 
 
 class LoadSourceFileTests(unittest.TestCase):

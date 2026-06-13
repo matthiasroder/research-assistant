@@ -11,10 +11,11 @@ from .models import Source
 
 
 def source_type_for_url(url: str) -> str:
-    host = urlparse(url).netloc.lower()
-    path = urlparse(url).path.lower()
-    if "twitter.com" in host or "x.com" in host:
-        return "x_post" if "/status/" in url else "x_profile"
+    parsed = urlparse(url)
+    host = (parsed.hostname or "").lower()
+    path = parsed.path.lower()
+    if _is_x_or_twitter_host(host):
+        return "x_post" if "/status/" in path else "x_profile"
     if (
         "rss" in host
         or url.endswith((".xml", ".rss", ".atom"))
@@ -23,6 +24,10 @@ def source_type_for_url(url: str) -> str:
     ):
         return "rss"
     return "webpage"
+
+
+def _is_x_or_twitter_host(host: str) -> bool:
+    return host in {"x.com", "twitter.com"} or host.endswith(".x.com") or host.endswith(".twitter.com")
 
 
 def sources_from_urls(urls: list[str]) -> list[Source]:

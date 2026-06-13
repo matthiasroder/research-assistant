@@ -28,6 +28,10 @@ CONNECTORS = {
 }
 
 
+class DiscoveryError(RuntimeError):
+    """Raised when source discovery cannot produce a usable research run."""
+
+
 def _load_yaml(path: Path | None) -> dict[str, Any]:
     if not path or not path.exists():
         return {}
@@ -118,6 +122,11 @@ def run(
         sources = discover_sources(brief.question, seed_urls=urls, max_sources=max_sources)
     else:
         sources = sources_from_urls(urls)
+    if brief.mode == "research-topic" and not sources:
+        raise DiscoveryError(
+            "No sources were discovered for research-topic. Provide one or more --url seed sources "
+            "or configure a stable search provider before running this mode."
+        )
 
     items = fetch_items(sources, max_items_per_source=max_items_per_source)
     seen_store = SeenStore(state_path)
@@ -212,8 +221,30 @@ def write_run(run_dir: Path, result: RunResult, max_item_text_chars: int = 700) 
 
 def _excerpted_item_dict(item: ResearchItem, max_chars: int) -> dict[str, Any]:
     data = item.to_dict()
-    if max_chars > 0 and len(data.get("text", "")) > max_chars:
-        data["text"] = data["text"][:max_chars] + " …[truncated for committed artifact]"
+    artifact_max_chars = _artifact_text_limit(item, max_chars)
+    if artifact_max_chars > 0 and len(data.get("text", "")) > artifact_max_chars:
+        data["text"] = data["text"][:artifact_max_chars] + " …[truncated for committed artifact]"
+    data["metadata"] = _artifact_metadata(data.get("metadata", {}))
+    return data
+
+
+def _artifact_text_limit(item: ResearchItem, default_max_chars: int) -> int:
+    limits = [default_max_chars] if default_max_chars > 0 else []
+    if not item.access_rights.get("store_full_text", True):
+        try:
+            item_max_chars = int(item.access_rights.get("max_store_chars", 0))
+        except (TypeError, ValueError):
+            item_max_chars = 0
+        if item_max_chars > 0:
+            limits.append(item_max_chars)
+    return min(limits) if limits else default_max_chars
+
+
+def _artifact_metadata(metadata: dict[str, Any]) -> dict[str, Any]:
+    data = dict(metadata) if isinstance(metadata, dict) else {}
+    if "provider_record" in data:
+        data.pop("provider_record")
+        data["provider_record_redacted"] = True
     return data
 
 
@@ -254,15 +285,18 @@ def main() -> None:
     if not brief_text:
         parser.error("Provide --brief or define a top-level 'brief:' in the source file.")
     brief = ResearchBrief(question=brief_text, mode=args.mode)
-    result, run_dir = run(
-        brief=brief,
-        urls=args.url,
-        config=config,
-        repo_root=repo_root,
-        max_sources=args.max_sources,
-        max_items_per_source=args.max_items_per_source,
-        configured_sources=configured_sources,
-    )
+    try:
+        result, run_dir = run(
+            brief=brief,
+            urls=args.url,
+            config=config,
+            repo_root=repo_root,
+            max_sources=args.max_sources,
+            max_items_per_source=args.max_items_per_source,
+            configured_sources=configured_sources,
+        )
+    except DiscoveryError as exc:
+        parser.error(str(exc))
     print(f"Run: {result.run_id}")
     print(f"Sources: {len(result.sources)}")
     print(f"Items: {len(result.items)}")
