@@ -36,7 +36,11 @@ class XConnector:
                 text=text,
                 author=author,
                 metadata={"status_id": status_id, "requires_authenticated_retrieval": True},
-                access_rights={"store_full_text": False, "reason": "social/auth connector not configured"},
+                access_rights={
+                    "store_full_text": False,
+                    "allow_external_processing": False,
+                    "reason": "social/auth connector not configured",
+                },
                 provenance={"connector": source.type, "retrieval": "url_normalization"},
             )
         ]

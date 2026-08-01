@@ -7,6 +7,7 @@ from urllib.parse import urlparse
 
 from .connectors.search import discover_web_sources
 from .connectors.web import WebpageConnector
+from .execution import stable_error_code
 from .models import Source
 
 
@@ -52,7 +53,7 @@ def discover_sources(topic: str, seed_urls: list[str] | None = None, max_sources
         for source in discover_web_sources(topic, max_sources=max_sources):
             add(source)
     except Exception as exc:
-        print(f"Warning: web search discovery failed: {exc}", file=sys.stderr)
+        print(f"Warning: web search discovery failed ({stable_error_code(exc)}).", file=sys.stderr)
 
     if seed_urls:
         for feed_url in WebpageConnector().discover_feed_urls(seed_urls):

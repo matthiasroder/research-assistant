@@ -76,6 +76,78 @@ class ResearchItem:
 
 
 @dataclass
+class EvidenceRef:
+    """An exact, bounded excerpt supporting a claim."""
+
+    item_id: str
+    excerpt: str
+    start: int
+    end: int
+    text_sha256: str
+    excerpt_sha256: str
+
+
+@dataclass
+class GroundedClaim:
+    """A substantive claim with exact evidence in its ResearchItem text."""
+
+    id: str
+    text: str
+    evidence: list[EvidenceRef] = field(default_factory=list)
+
+
+@dataclass
+class ProviderExecution:
+    """Sanitized, serializable metadata for one model operation."""
+
+    operation: str
+    status: str
+    outcome_code: str
+    requested_provider: str | None = None
+    used_provider: str | None = None
+    model: str | None = None
+    attempts: int = 0
+    input_tokens: int | None = None
+    output_tokens: int | None = None
+    estimated_cost_usd: str | None = None
+    fallback_reason_code: str | None = None
+    error_code: str | None = None
+
+
+@dataclass
+class SourceFetchOutcome:
+    """Observable result of fetching one configured source."""
+
+    source_id: str
+    source_type: str
+    status: str
+    outcome_code: str
+    item_count: int
+    attempts: int = 1
+    warnings: list[str] = field(default_factory=list)
+
+
+@dataclass
+class BudgetUsage:
+    """Run-level limits and consumption."""
+
+    limits: dict[str, Any] = field(default_factory=dict)
+    used: dict[str, Any] = field(default_factory=dict)
+    status: str = "within_limit"
+    exhausted_limit: str | None = None
+
+
+@dataclass
+class RunHealth:
+    """Same-run health contract for downstream delivery gates."""
+
+    run_id: str
+    status: str
+    blocking_codes: list[str] = field(default_factory=list)
+    checked_at: str = field(default_factory=utc_now)
+
+
+@dataclass
 class EvaluatedItem:
     """A research item plus the platform's judgment about it."""
 
@@ -85,6 +157,10 @@ class EvaluatedItem:
     key_points: list[str] = field(default_factory=list)
     tags: list[str] = field(default_factory=list)
     rationale: str = ""
+    grounded_claims: list[GroundedClaim] = field(default_factory=list)
+    uncertainties: list[str] = field(default_factory=list)
+    execution: ProviderExecution | None = None
+    schema_version: int = 2
 
     def to_dict(self) -> dict[str, Any]:
         data = asdict(self)
@@ -103,6 +179,12 @@ class RunResult:
     evaluated_items: list[EvaluatedItem]
     findings_markdown: str
     created_at: str = field(default_factory=utc_now)
+    source_outcomes: list[SourceFetchOutcome] = field(default_factory=list)
+    synthesis_execution: ProviderExecution | None = None
+    budget: BudgetUsage | None = None
+    health: RunHealth | None = None
+    acknowledgment: dict[str, Any] = field(default_factory=dict)
+    schema_version: int = 2
 
     def to_dict(self) -> dict[str, Any]:
         return {
@@ -113,5 +195,10 @@ class RunResult:
             "evaluated_items": [item.to_dict() for item in self.evaluated_items],
             "findings_markdown": self.findings_markdown,
             "created_at": self.created_at,
+            "source_outcomes": [asdict(outcome) for outcome in self.source_outcomes],
+            "synthesis_execution": asdict(self.synthesis_execution) if self.synthesis_execution else None,
+            "budget": asdict(self.budget) if self.budget else None,
+            "health": asdict(self.health) if self.health else None,
+            "acknowledgment": self.acknowledgment,
+            "schema_version": self.schema_version,
         }
-

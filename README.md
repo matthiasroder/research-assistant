@@ -13,8 +13,8 @@ source discovery -> source connectors -> normalized ResearchItems
 
 Evaluation and synthesis run through Claude (Haiku by default) when
 `ANTHROPIC_API_KEY` is set. Without a key, the platform falls back to local
-extractive heuristics — less clever, but everything still works, so you can
-try it before configuring credentials.
+extractive heuristics. That fallback is explicitly marked as degraded, so a
+production delivery gate cannot mistake it for a healthy Claude-backed run.
 
 ## Quick Start: scheduled monitoring in your fork
 
@@ -68,17 +68,22 @@ and enable them. The monitor then runs daily at 04:30 UTC (GitHub may delay
 scheduled runs) and can be triggered manually via **Run workflow**.
 
 Each morning you'll find a new folder under `runs/` whose `findings.md`
-contains a Claude-written synthesis of what's new, followed by every relevant
-item with its score, summary, and key points. The workflow prunes run folders
-older than 90 days so the repository doesn't grow without bound.
+contains a deterministic, privacy-bounded rendering of the exact evidence
+retained for relevant items. The workflow prunes run folders older than 90
+days so the repository doesn't grow without bound.
 
 ## CLI usage
 
-Everything also runs locally. You need Python 3.10+ and:
+Everything also runs locally. For the reproducible environment used by the
+test suite, use Python 3.11 and install the fully pinned dependency set:
 
 ```bash
-pip install -r requirements.txt
+python -m pip install -r requirements.lock
 ```
+
+`requirements.txt` lists only the direct, permissive dependency ranges and is
+the input for future lock refreshes. `requirements.lock` records the exact
+direct and transitive versions verified together on Python 3.11.
 
 Three modes:
 
@@ -104,18 +109,28 @@ source file's standing brief.
 
 Every invocation writes `runs/<date>-<brief-slug>/` containing:
 
-- `findings.md` — the human-readable report: synthesis first, then ranked items.
+- `findings.md` — a human-readable report rebuilt from committed artifact rows.
 - `brief.md` — the question the run answered.
 - `sources.json` — where the platform looked.
-- `items.json` — every normalized item that was fetched.
-- `evaluated_items.json` — scores, summaries, key points, tags, rationale.
+- `items.json` — normalized metadata plus exact retained-evidence bundles.
+- `evaluated_items.json` — evaluations with claims provable from `items.json`.
 - `run.json` — a slim manifest (brief, counts, file list).
 
-Because this repository is public, committed artifacts store only short
-excerpts of fetched third-party text (configurable via
-`storage.max_committed_item_text_chars`), never full content. Failed fetches
-are reported in the findings rather than silently dropped, so a broken source
-stays visible until you fix or remove it.
+Artifacts use schema version 2. Every substantive claim carries an exact
+source-text excerpt of at most 300 characters. `items.json` stores only a
+deterministic bundle of retained excerpts; evidence ranges and hashes are
+rewritten against that committed bundle, and the nested item in
+`evaluated_items.json` is identical to its `items.json` row. Claims that cannot
+fit the configured caps are omitted. If a substantive evaluated item loses all
+committed proof, run health fails with `committed_evidence_unavailable`.
+Provider-authored rationale, uncertainty, and tag prose is not committed.
+`run.json` records source outcomes, sanitized provider execution, total-budget
+usage, run health, and acknowledgment state.
+
+Because this repository is public, committed artifacts store only exact
+evidence excerpts within `storage.max_committed_item_text_chars`, never full
+content or surrounding context. Failed fetches remain observable through the
+source outcomes and run health in `run.json`.
 
 ## Source types
 
@@ -136,9 +151,57 @@ stays visible until you fix or remove it.
   defaults to the evaluation settings.
 - `min_relevance_score` — items below this score (1–5) stay out of findings.
 - `storage.max_committed_item_text_chars` — excerpt cap for committed artifacts.
+- `storage.max_committed_evidence_chars_per_item` — collective evidence cap.
+- `execution.retries` — at most three attempts, only for transient timeout,
+  connection, HTTP 408/429, and 5xx failures; source and model request
+  timeouts are bounded by the remaining elapsed-time budget.
+- `execution.budgets` — optional total source, item, provider-attempt, input,
+  output, and elapsed-time limits. Exhaustion is observable and fails the run.
+- `execution.acknowledgment_mode` — `after_run` for the public legacy workflow,
+  or `external` when a downstream sender acknowledges only after delivery.
 
 API-backed sources reference secrets by environment variable name in their
 YAML config — never put keys in files.
+
+### Health, fallback, and acknowledgment
+
+Provider and source failures use stable codes; raw exception strings and raw
+model responses are not committed. Public/demo configuration may keep local
+fallback, but fallback is always `degraded` and monitor items are not marked
+seen. A strict consumer should configure:
+
+```yaml
+models:
+  evaluation:
+    provider: anthropic
+    on_missing_credentials: fail
+    on_error: fail
+  synthesis:
+    provider: anthropic
+    on_error: fail
+execution:
+  acknowledgment_mode: external
+  require_total_limits: true
+```
+
+External processing is source-specific. Set
+`access.allow_external_processing: true` only when sending that source's text
+to the configured external model is permitted. `api_json` defaults to false;
+public webpage and RSS sources default to true.
+
+RSS evaluation is grounded only in exact RSS entry text. Linked articles are
+not fetched. Provenance labels the basis as `rss_entry`, and valid empty feeds
+are distinct from failed feeds.
+
+In `external` mode, `run.json` contains eligible item IDs but leaves
+`committed` false. After a healthy run is delivered, a downstream caller can
+invoke `research_platform.runner.acknowledge_run` with the run directory and
+`knowledge/platform_state.json`. State writes are atomic and corrupt state
+fails closed instead of resetting silently. Before changing seen-state, the
+acknowledgment gate reloads `items.json` and `evaluated_items.json`, validates
+their manifest hashes and counts, rechecks every evidence reference, and
+requires manifest eligibility to exactly match successful committed
+evaluations. Failed or degraded runs expose no eligible IDs.
 
 ## Agent skill
 
@@ -150,7 +213,7 @@ and "what does this page say" all map onto the three modes.
 ## Tests
 
 ```bash
-python -m unittest discover -s tests
+python -m unittest discover -s tests -v
 ```
 
 Tests also run in CI on every push via `.github/workflows/tests.yml`.

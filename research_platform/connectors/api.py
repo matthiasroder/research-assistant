@@ -13,12 +13,18 @@ from ..models import ResearchItem, Source, stable_id
 class ApiJsonConnector:
     source_type = "api_json"
 
-    def fetch(self, source: Source, limit_items: int = 20, limit_chars: int = 8000) -> list[ResearchItem]:
+    def fetch(
+        self,
+        source: Source,
+        limit_items: int = 20,
+        limit_chars: int = 8000,
+        timeout: float = 30,
+    ) -> list[ResearchItem]:
         if not source.url:
             return []
 
         request = urllib.request.Request(source.url, headers=self._headers(source))
-        with urllib.request.urlopen(request, timeout=30) as response:
+        with urllib.request.urlopen(request, timeout=timeout) as response:
             payload = json.loads(response.read(5_000_000).decode("utf-8", errors="replace"))
 
         records = _items_at_path(payload, source.metadata.get("items_path"))
@@ -28,11 +34,14 @@ class ApiJsonConnector:
             records = [payload]
 
         items: list[ResearchItem] = []
-        for index, record in enumerate(records[:limit_items]):
+        for record in records[:limit_items]:
             if not isinstance(record, dict):
                 record = {"value": record}
             title = _first_value(record, source.metadata.get("title_fields", ["title", "name", "headline"])) or source.name
-            url = _first_value(record, source.metadata.get("url_fields", ["url", "link", "web_url"])) or source.url
+            record_url = _first_value(
+                record, source.metadata.get("url_fields", ["url", "link", "web_url"])
+            )
+            url = record_url or source.url
             text = "\n".join(
                 value
                 for value in (
@@ -45,10 +54,14 @@ class ApiJsonConnector:
                 text = json.dumps(record, indent=2)[:limit_chars]
             store_full_text = bool(source.access.get("store_full_text", False))
             max_store_chars = int(source.access.get("max_store_chars", limit_chars if store_full_text else 1000))
+            record_key = _first_value(record, source.metadata.get("id_fields", ["id", "uuid", "guid"]))
+            stable_record_key = (
+                record_key or record_url or json.dumps(record, sort_keys=True, default=str)
+            )
 
             items.append(
                 ResearchItem(
-                    id=stable_id(source.id, url, title, str(index)),
+                    id=stable_id(source.id, stable_record_key),
                     source_id=source.id,
                     source_type=source.type,
                     title=title,
@@ -60,6 +73,7 @@ class ApiJsonConnector:
                         "store_full_text": store_full_text,
                         "max_store_chars": max_store_chars,
                         "license": source.access.get("license", "configured_provider"),
+                        "allow_external_processing": source.access.get("allow_external_processing", False),
                     },
                     provenance={"connector": "api_json", "retrieval": "http_json"},
                 )

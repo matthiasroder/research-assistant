@@ -1,8 +1,9 @@
+import json
 import tempfile
 import unittest
 from pathlib import Path
 
-from research_platform.state import SeenStore
+from research_platform.state import SeenStore, StateCorruptionError
 
 
 class SeenStoreTests(unittest.TestCase):
@@ -36,12 +37,65 @@ class SeenStoreTests(unittest.TestCase):
             store.save()
             self.assertEqual(store.data["seen_item_ids"], ["a", "b"])
 
-    def test_corrupt_file_resets(self):
+    def test_corrupt_file_fails_closed(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "state.json"
             path.write_text("{not json")
+            with self.assertRaises(StateCorruptionError):
+                SeenStore(path)
+            self.assertEqual(path.read_text(), "{not json")
+
+    def test_version_one_loads_and_saves_as_version_two(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "state.json"
+            path.write_text('{"seen_item_ids": ["old"]}')
             store = SeenStore(path)
-            self.assertFalse(store.has_seen("a"))
+            self.assertTrue(store.has_seen("old"))
+            store.acknowledge(["new"], run_id="run-1")
+            store.save()
+            data = json.loads(path.read_text())
+            self.assertEqual(data["schema_version"], 2)
+            self.assertEqual(data["seen_item_ids"], ["old", "new"])
+            self.assertEqual(data["item_status"]["new"]["status"], "acknowledged")
+
+    def test_version_two_item_status_entry_must_be_an_object(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "state.json"
+            path.write_text(
+                json.dumps(
+                    {
+                        "schema_version": 2,
+                        "seen_item_ids": [],
+                        "item_status": {"item-1": "acknowledged"},
+                    }
+                )
+            )
+            with self.assertRaises(StateCorruptionError):
+                SeenStore(path)
+
+    def test_version_two_item_status_fields_are_validated(self):
+        invalid_statuses = [
+            {"status": "unknown"},
+            {"status": "attempted", "attempt_count": True},
+            {"status": "attempted", "attempt_count": -1},
+            {"status": "acknowledged", "run_id": 123},
+            {"status": "attempted", "unexpected": "value"},
+        ]
+        for item_status in invalid_statuses:
+            with self.subTest(item_status=item_status):
+                with tempfile.TemporaryDirectory() as tmp:
+                    path = Path(tmp) / "state.json"
+                    path.write_text(
+                        json.dumps(
+                            {
+                                "schema_version": 2,
+                                "seen_item_ids": [],
+                                "item_status": {"item-1": item_status},
+                            }
+                        )
+                    )
+                    with self.assertRaises(StateCorruptionError):
+                        SeenStore(path)
 
 
 if __name__ == "__main__":

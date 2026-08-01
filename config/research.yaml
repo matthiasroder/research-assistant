@@ -13,6 +13,11 @@ models:
   evaluation:
     provider: anthropic
     model: claude-haiku-4-5-20251001
+    # Public/demo compatibility: missing credentials or provider errors use a
+    # visibly degraded local evaluation. Production consumers should set both
+    # policies to `fail`.
+    on_missing_credentials: local
+    on_error: local
     # provider: local
 
   # Cross-item synthesis at the top of findings.md. Falls back to the
@@ -27,6 +32,42 @@ storage:
   # excerpts of fetched third-party text. Evaluation still uses full text
   # in memory before artifacts are written.
   max_committed_item_text_chars: 700
+  # Evidence is exact, never more than 300 characters per claim, and bounded
+  # collectively per evaluated item artifact.
+  max_committed_evidence_chars_per_item: 700
+
+execution:
+  timezone: Europe/Vienna
+  acknowledgment_mode: after_run
+
+  retries:
+    # The runtime clamps this to at most three. Only timeouts, connection
+    # failures, HTTP 408/429, and 5xx responses are retried.
+    max_attempts: 3
+    initial_delay_seconds: 0.5
+    max_delay_seconds: 4.0
+    source_timeout_seconds: 30
+    model_timeout_seconds: 60
+
+  fallback:
+    evaluation_missing_credentials: local
+    evaluation_error: local
+    synthesis_error: omit
+
+  privacy:
+    max_evidence_excerpt_chars: 300
+    max_evidence_total_chars_per_item: 700
+
+  # Missing totals preserve the public template's legacy unbounded behavior.
+  # A private/production consumer should supply every approved limit and use
+  # acknowledgment_mode: external.
+  budgets:
+    max_sources_total:
+    max_items_total:
+    max_provider_attempts_total:
+    max_input_chars_total:
+    max_output_tokens_total:
+    max_elapsed_seconds:
 
 access_profiles:
   public:

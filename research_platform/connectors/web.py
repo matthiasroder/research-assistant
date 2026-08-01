@@ -76,7 +76,9 @@ class _ReadableHtmlParser(HTMLParser):
 class WebpageConnector:
     source_type = "webpage"
 
-    def fetch(self, source: Source, limit_chars: int = 12000) -> list[ResearchItem]:
+    def fetch(
+        self, source: Source, limit_chars: int = 12000, timeout: float = 20
+    ) -> list[ResearchItem]:
         if not source.url:
             return []
 
@@ -87,7 +89,7 @@ class WebpageConnector:
                 "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
             },
         )
-        with urllib.request.urlopen(request, timeout=20) as response:
+        with urllib.request.urlopen(request, timeout=timeout) as response:
             content_type = response.headers.get("content-type", "")
             raw = response.read(2_000_000)
 
@@ -111,6 +113,11 @@ class WebpageConnector:
             url=source.url,
             text=body,
             metadata={"content_type": content_type, "feed_links": feed_links},
+            access_rights={
+                "store_full_text": source.access.get("store_full_text", True),
+                "max_store_chars": source.access.get("max_store_chars", limit_chars),
+                "allow_external_processing": source.access.get("allow_external_processing", True),
+            },
             provenance={"connector": "webpage", "retrieval": "urlopen"},
         )
         return [item]
@@ -133,4 +140,3 @@ class WebpageConnector:
                     if candidate not in discovered:
                         discovered.append(candidate)
         return discovered
-

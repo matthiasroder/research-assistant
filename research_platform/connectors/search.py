@@ -6,6 +6,7 @@ import re
 import urllib.parse
 import urllib.request
 
+from ..execution import call_with_retries
 from ..models import Source, stable_id
 
 
@@ -27,8 +28,12 @@ def discover_web_sources(query: str, max_sources: int = 8) -> list[Source]:
             "Accept": "text/html,*/*;q=0.8",
         },
     )
-    with urllib.request.urlopen(request, timeout=20) as response:
-        html = response.read(1_000_000).decode("utf-8", errors="replace")
+    def retrieve() -> bytes:
+        with urllib.request.urlopen(request, timeout=20) as response:
+            return response.read(1_000_000)
+
+    raw, _ = call_with_retries(retrieve, max_attempts=3)
+    html = raw.decode("utf-8", errors="replace")
 
     urls: list[str] = []
     for encoded in re.findall(r"uddg=([^&\"']+)", html):
@@ -52,4 +57,3 @@ def discover_web_sources(query: str, max_sources: int = 8) -> list[Source]:
             )
         )
     return sources
-

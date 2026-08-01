@@ -29,6 +29,9 @@ periodic research monitoring through GitHub Actions.
 4. Mention the run folder path so the user can inspect `brief.md`,
    `sources.json`, `items.json`, `evaluated_items.json`, `findings.md`, and
    `run.json` (a slim manifest with the brief, counts, and file list).
+5. Check `run.json.health.status` before presenting or delivering the result.
+   `degraded` means a configured fallback was used; `failed` means a source,
+   model, grounding, state, or budget gate failed.
 
 ## Scheduling With GitHub Actions
 
@@ -39,7 +42,9 @@ When the user asks to schedule or deploy periodic monitoring:
    source file.
 3. Keep `workflow_dispatch` enabled so the monitor can be run manually.
 4. Use a `schedule` cron trigger for unattended runs.
-5. Ensure the workflow installs `requirements.txt` from the repository root.
+5. Ensure the workflow installs the fully pinned `requirements.lock` from the
+   repository root. Refresh it only from a tested Python 3.11 environment when
+   direct dependencies change.
 6. Run:
 
    ```bash
@@ -69,10 +74,25 @@ When the user asks to schedule or deploy periodic monitoring:
   intent for monitoring; `--brief` on the command line takes precedence.
 - Model selection lives in `config/research.yaml`. The default provider is
   `anthropic` (Claude-backed evaluation when `ANTHROPIC_API_KEY` is set); the
-  gateway automatically falls back to local extractive evaluation when the key
-  is missing, so the platform still runs without credentials.
-- The repository is PUBLIC. Run artifacts are committed, but item text is
-  truncated to short excerpts (`storage.max_committed_item_text_chars` in
-  `config/research.yaml`) so full third-party content is never republished.
+  public gateway can fall back to local extractive evaluation when the key is
+  missing, but that outcome is explicitly degraded and is never eligible for
+  monitor acknowledgment. Strict consumers must set evaluation and synthesis
+  failure policies to `fail`.
+- Schema-v2 substantive claims include exact evidence excerpts (maximum 300
+  characters). Committed item text is an excerpt-only bundle; evidence ranges
+  and hashes are rewritten against that bundle, and evaluations without
+  committed proof are omitted. RSS claims are grounded in RSS entry text;
+  linked article retrieval is not performed.
+- Use `execution.acknowledgment_mode: external` when delivery happens after the
+  run. A downstream sender acknowledges eligible IDs only after the same
+  healthy run is delivered. The acknowledgment gate revalidates committed
+  artifact hashes, exact evidence, and derived eligibility before seen-state
+  changes; failed or degraded runs have no eligible IDs.
+- Total limits live under `execution.budgets`; exhaustion blocks
+  acknowledgment. Retries are bounded to three transient attempts.
+- The repository is PUBLIC. Run artifacts are committed, but item text contains
+  only the exact retained-evidence bundle bounded by
+  `storage.max_committed_item_text_chars` in `config/research.yaml`, so full
+  third-party content and surrounding context are never republished.
   Never commit API keys or provider material that is restricted by license
   terms, and keep personal context out of committed files.
